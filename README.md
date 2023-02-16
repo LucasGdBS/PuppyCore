@@ -1,6 +1,6 @@
 # PuppyCore ❣️
 
-> Este é um projeto para disciplina de Fundamentos de Software que tem como objetivo atender à centros veterinarios facilitando o acompanhamento da caderneta de vacinação dos pets aos profissionais e tutores
+> Este é um projeto para disciplina de Fundamentos de Software que tem como objetivo atender à clínicas e hospitais veterinários facilitando o acompanhamento do check up de saúde dos pets, tanto aos profissionais quanto aos tutores.
 
 ## 🤝 Colaboradores
 
