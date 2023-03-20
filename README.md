@@ -11,6 +11,6 @@
 </p>Ivy Pires ➡️ itmp@cesar.school<p>
 </p>Mariane Fontes ➡️ mbsf@cesar.school<p>
 
-Link para o Jira <https://criando.atlassian.net/jira/projects>
+Link para o Jira: <https://criando.atlassian.net/jira/projects>
 
 
