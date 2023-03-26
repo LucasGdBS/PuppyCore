@@ -21,7 +21,7 @@
 
 <p><a href="https://www.figma.com/file/yhHxb06MAyxgnLezRENs22/Prototipo-LO-Fi?node-id=5-275&t=UoghXO0d0ZcEMj5K-0">Protótipo Lo-fi no figma</a></p>
 
-<p align="center">Quadro de Sprint no Jira:</p<
+<p align="center">Quadro de Sprint no Jira:</p>
 
 ![image](https://user-images.githubusercontent.com/114539692/227807489-fc6fe755-38c3-45fa-aa9f-2c83797e59c6.png)
 
