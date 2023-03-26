@@ -11,6 +11,22 @@
 </p>Ivy Pires ➡️ itmp@cesar.school<p>
 </p>Mariane Fontes ➡️ mbsf@cesar.school<p>
 
-Link para o Jira: <https://criando.atlassian.net/jira/projects>
+##
+<p><a href="https://criando.atlassian.net/jira/projects">Nosso quadro no Jira</a></p>
+
+## Primeira entrega
+
+
+<p><a href="https://drive.google.com/file/d/1CvuR4QCUmiyf9B1eh9v1H3iH3YZBhISB/view?usp=share_link">ScreenCast</a></p>
+
+<p><a href="https://www.figma.com/file/yhHxb06MAyxgnLezRENs22/Prototipo-LO-Fi?node-id=5-275&t=UoghXO0d0ZcEMj5K-0">Protótipo Lo-fi no figma</a></p>
+
+<p align="center">Quadro de Sprint no Jira:</p<
+
+![image](https://user-images.githubusercontent.com/114539692/227807489-fc6fe755-38c3-45fa-aa9f-2c83797e59c6.png)
+
+<p align="center">Quadro BackLog no Jira:</p>
+
+![image](https://user-images.githubusercontent.com/114539692/227807517-18db7a57-2d48-47cf-92f7-fcbae41e71fd.png)
 
 
