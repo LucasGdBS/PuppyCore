@@ -1,0 +1,7 @@
+Para entrar no ambiente virtual digite: " .\venv\Scripts\Activate.ps1 " (sem as aspas)
+Link do evernote para tirar duvidas:
+
+    Criando projeto django: https://www.evernote.com/shard/s697/sh/cb0f9b39-e6f8-d829-81bf-8627656a89d2/SgtdH8TezcfaI6BozrQnwheTC_QKGWgl5_GkODFHVF-9lW4nMrIrGAEqAg
+    Django camada model: https://www.evernote.com/shard/s697/sh/dc146ac2-c6f4-8233-e746-13e8b49ec680/3gozvCIik7FTJ83h42dGYvgON-UMSFDNqK8YTlOuA27r9nE-karIwM8N6A
+    Django cadama view: https://www.evernote.com/shard/s697/sh/5dfc79ae-675c-d726-14e6-c838b68d2b85/0uUmCY2HkHogM3CtSqyVkiLKNztEBCRJBoQCRvYCDOyD5crMgxSvfeLK9w
+    Instalação do django no python: https://www.evernote.com/shard/s697/sh/2a4fb9aa-f9e4-da86-59c9-a88b6237953c/WwQcv0tsyYC5KySWCOkisegNbfr8i-fO1fGVoxuumCTzdynSEK-_IcgovA
