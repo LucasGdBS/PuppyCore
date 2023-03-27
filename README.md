@@ -2,7 +2,7 @@
 
 > Este é um projeto para disciplina de Fundamentos de Software que tem como objetivo atender à clínicas e hospitais veterinários facilitando o acompanhamento do check up de saúde dos pets, tanto aos profissionais quanto aos tutores. Tendo como principal foco o a atulização do cartão de vacina do pet e de facilitar o acesso a reultado de exames aos tutores.
 
-## 🤝 Colaboradores
+## 🤝 Colaboradores;
 
 </p>Adriana Lucia ➡️ alfr@cesar.school<p>
 </p>Carlos Eduardo de Paula ➡️ cepc@cesar.school<p>
