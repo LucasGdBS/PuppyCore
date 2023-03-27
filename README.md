@@ -19,7 +19,7 @@
 
 <p><a href="https://drive.google.com/file/d/1CvuR4QCUmiyf9B1eh9v1H3iH3YZBhISB/view?usp=share_link">ScreenCast</a></p>
 
-<p><a href="https://www.figma.com/file/yhHxb06MAyxgnLezRENs22/Prototipo-LO-Fi?node-id=5-275&t=UoghXO0d0ZcEMj5K-0">Protótipo Lo-fi no figma</a></p>
+<p><a href="https://www.figma.com/proto/yhHxb06MAyxgnLezRENs22/Prototipo-LO-Fi?node-id=5-276&scaling=scale-down&page-id=5%3A275&starting-point-node-id=5%3A276">Protótipo Lo-fi no figma</a></p>
 
 <p align="center">Quadro de Sprint no Jira:</p>
 
