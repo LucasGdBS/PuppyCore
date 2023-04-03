@@ -8,6 +8,10 @@
 </head>
 <body>
     <h1>Cadastro Tutor</h1>
-    <p>Aqui você ira cadastrar novos tutores</p>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Enviar</button>
+    </form>
 </body>
 </html>
