@@ -11,7 +11,7 @@ def cadastroTutor(request):
             tutor = Tutor(**form.cleaned_data)
 
             tutor.save()
-            return render(request, 'clinica/cadastroTutor.html', {'form': form})
+            return render(request, 'clinica/sucessocadastro.html')
         else: 
             return render(request, 'clinica/falhacadastro.html')
     else:
@@ -20,6 +20,9 @@ def cadastroTutor(request):
     
 def falhacadastro(request):
     return render(request, 'clinica/falhacadastro.html')
+
+def sucessocadastro(request):
+    return render(request, 'clinica/sucessocadastro.html')
 
 
 
