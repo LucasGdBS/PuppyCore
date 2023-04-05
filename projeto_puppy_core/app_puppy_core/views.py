@@ -12,9 +12,14 @@ def cadastroTutor(request):
 
             tutor.save()
             return render(request, 'clinica/cadastroTutor.html', {'form': form})
+        else: 
+            return render(request, 'clinica/falhacadastro.html')
     else:
         form = tutorCadastro()
         return render(request, 'clinica/cadastroTutor.html', {'form': form})
+    
+def falhacadastro(request):
+    return render(request, 'clinica/falhacadastro.html')
 
 
 

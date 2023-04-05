@@ -1,4 +1,5 @@
 Para entrar no ambiente virtual digite: " .\venv\Scripts\Activate.ps1 " (sem as aspas)
+Para mac  source venv/bin/activate
 Link do evernote para tirar duvidas:
 
     Criando projeto django: https://www.evernote.com/shard/s697/sh/cb0f9b39-e6f8-d829-81bf-8627656a89d2/SgtdH8TezcfaI6BozrQnwheTC_QKGWgl5_GkODFHVF-9lW4nMrIrGAEqAg
