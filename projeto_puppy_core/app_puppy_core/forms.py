@@ -1,5 +1,6 @@
 from django import forms
 from .models import Tutor
+from .models import Pet
 
 
 class tutorCadastro(forms.ModelForm):
@@ -22,7 +23,7 @@ class petCadastro(forms.ModelForm):
             'especie',
             'raca',
             'dtNasc',
-            'sexo'
+            'sexo',
             'peso',
             'porte',
             'foto',
