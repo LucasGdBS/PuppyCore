@@ -6,6 +6,7 @@ urlpatterns = [
     path('cadastroTutor/', views.cadastroTutor, name='Cadastro Tutor'),
     path('falhacadastro/', views.falhacadastro, name='Falha Cadastro'),
     path('sucessocadastro/', views.sucessocadastro, name='Sucesso Cadastro'),
+    path('cadastroPet/', views.cadastroPet, name='Cadastro Pet'),
 
     # puppycore.com
     # puppycore.com/cadastroTutor/ 
