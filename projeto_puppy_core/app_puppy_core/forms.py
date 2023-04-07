@@ -26,6 +26,5 @@ class petCadastro(forms.ModelForm):
             'sexo',
             'peso',
             'porte',
-            'foto',
             'cadAtivo',
         ]
