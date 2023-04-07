@@ -24,5 +24,7 @@ def falhacadastro(request):
 def sucessocadastro(request):
     return render(request, 'clinica/sucessocadastro.html')
 
+def cadastroPet(request):
+    return render(request, 'clinica/cadastroPet.html')
 
 

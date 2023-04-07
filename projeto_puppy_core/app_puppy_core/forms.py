@@ -1,6 +1,7 @@
 from django import forms
 from .models import Tutor
 
+
 class tutorCadastro(forms.ModelForm):
     class Meta:
         model = Tutor
@@ -10,4 +11,20 @@ class tutorCadastro(forms.ModelForm):
             'dataNascimento',
             'celular',
             'email'
+        ]
+
+
+class petCadastro(forms.ModelForm):
+    class Meta:
+        model = Pet
+        fields = [
+            'nomePet',
+            'especie',
+            'raca',
+            'dtNasc',
+            'sexo'
+            'peso',
+            'porte',
+            'foto',
+            'cadAtivo',
         ]

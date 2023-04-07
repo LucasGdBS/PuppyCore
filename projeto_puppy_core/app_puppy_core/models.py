@@ -10,4 +10,14 @@ class Tutor(models.Model):
     celular = models.CharField(max_length=13, blank=False, null=False)
     email = models.EmailField(max_length=254, blank=False, null=False)
 
-    
+
+class Pet(models.Model):
+    nomePet = models.CharField(max_length=50, null=False, blank=False)
+    especie = models.CharField(max_length=20, null=False, blank=False)
+    raca = models.CharField(max_length=20, null=False, blank=False)
+    dtNasc = models.DateField(null=True, blank=True)
+    sexo = models.CharField(max_length=1, null=False, blank=False)
+    peso = models.FloatField(max_length=5, null=True, blank=True)
+    porte = models.CharField(max_length=20, null=False, blank=False)
+    foto = models.CharField(max_length=100, null=True, blank=True)
+    cadAtivo = models.BooleanField(default=True)
