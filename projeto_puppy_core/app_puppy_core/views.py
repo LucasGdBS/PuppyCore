@@ -24,5 +24,8 @@ def falhacadastro(request):
 def sucessocadastro(request):
     return render(request, 'clinica/sucessocadastro.html')
 
+def home(request):
+    return render(request, 'clinica/home.html')
+
 
 
