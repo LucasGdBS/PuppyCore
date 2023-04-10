@@ -1,13 +1,41 @@
-<!DOCTYPE html>
+<!doctype html>
+{%load static%}
+
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PuppyCore</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link href="{% static 'app_puppy_core/style.css' %}" rel="stylesheet">
+    <link href="{% static 'app_puppy_core/reset.css' %}" rel="stylesheet">
+
 </head>
-<body>
-    <h1>Home</h1>
-    <button><a href="{% url 'Cadastro Tutor' %}">Cadastrar Tutor</a></button>
+  <body>
+    <script rel="script" src="script.js"></script>
+    
+    <header class="site-header"> 
+        <img class="logo" src="{% static 'app_puppy_core/images/medicamento.png' %}">
+        <div class="button-container-header">
+            <button type="button" class="button-base-header" onclick="window.location.replace('http://127.0.0.1:8000/cadastroPet/')">Cadastro Pet</button>
+            <button type="button" class="button-base-header" onclick="window.location.replace('http://127.0.0.1:8000/cadastroTutor/')">Cadastro Tutor</button>
+        </div>
+    </header>
+
+    <main class="site-main">
+        <div class="center-container">
+            <div class="image">
+                <img class="center-img" src="{% static 'app_puppy_core/images/dog_draw.jpg' %}">
+            </div>
+            <div class="text">
+                <p>A saúde do seu pet sendo nossa<br>é a nossa prioridade</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="button-container-footer">
+            <button type="button" class="button-base-footer" onclick="aviso()">?</button>
+        </div>
+    </footer>
 </body>
 </html>
