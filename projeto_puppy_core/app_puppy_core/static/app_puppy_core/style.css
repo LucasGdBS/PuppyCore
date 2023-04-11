@@ -1,5 +1,4 @@
 
-
 /*CSS HOME PAGE*/
 .site-header{
     display: flex;
@@ -44,6 +43,14 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+@media only screen and (max-width: 540px) {
+    .button-base-header{
+        font-size: small;
+        padding: 5px 2px 5px 2px;
+    }
+}
+
+
 .button-base-header:hover{
     background: #d53b3b;
     color: white;
@@ -60,8 +67,14 @@
 .center-container {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+}
+
+@media only screen and(max-width: 540px){
+    .center-container{
+        align-items: center;
+    }
 }
   
 .center-img {
@@ -71,9 +84,17 @@
 }
   
 .text {
+    padding: 20px 0px 0px 20px ;
     color: aliceblue;
-    font-size: 20px;
-    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    
+}
+
+@media only screen and(max-width: 540px){
+    .text{
+        padding-left: 0px;
+    }
 }
 
 .site-footer{
