@@ -44,3 +44,5 @@ def cadastroPet(request):
         return render(request, 'clinica/cadastroPet.html', {'form': form})
 
 
+def verVacinas(request):
+    return render(request, 'tutor/verVacinas.html')
