@@ -1,7 +1,7 @@
-
 <!DOCTYPE html>
 {% load static %}
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +9,7 @@
     <link href="{% static 'app_puppy_core/forms.css' %}" rel="stylesheet">
     <title>Cadastro Pet</title>
 </head>
+
 <body>
     <h1 align="center">Cadastro Pet</h1>
     <form method="post">
@@ -27,11 +28,12 @@
         <input id="peso" type="number" step="any" name="peso" maxlength="100">
         <label for="porte">Porte: </label>
         <input id="porte" type="text" name="porte" maxlength="100" required>
-        <label for="cadAtivo">Ativo: </label>
-        <input id="cadAtivo" type="checkbox" name="cadAtivo" maxlength="100"><br>
-        <button type="button"  onclick="window.location.replace('http://127.0.0.1:8000/')">Cancelar</button>
+        <label for="cadAtivo">Ativo: <input id="cadAtivo" type="checkbox" name="cadAtivo" maxlength="100" checked></label>
+        <br>
+        <button type="button" onclick="window.location.replace('http://127.0.0.1:8000/')">Cancelar</button>
         <button type="submit">Enviar</button>
     </form>
-        
+
 </body>
+
 </html>
