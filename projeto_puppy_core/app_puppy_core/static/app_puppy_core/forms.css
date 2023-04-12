@@ -1,0 +1,43 @@
+form {
+    text-align: center;
+    background-color: #6b72d4;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    margin: 0 auto; 
+}
+input[type=text], input[type=email], input[type=number], input[type=date] {
+    border: 1px solid #ccc; /* define a borda da caixa de digitação */
+    border-radius: 5px; /* define o raio de borda da caixa de digitação */
+    padding: 10px; /* define o preenchimento interno da caixa de digitação */
+    font-size: 16px; /* define o tamanho da fonte da caixa de digitação */
+    margin-bottom: 10px; /* define a margem inferior da caixa de digitação */
+    align-items: center;
+}
+label {
+    display: block; /* define o display para block para que a label fique em uma linha separada */
+    margin-bottom: 5px; /* define a margem inferior da label */
+    font-size: 16px; /* define o tamanho da fonte da label */
+    color: #ffffff; /* define a cor do texto da label */
+    
+}
+button {
+    background-color: #4CAF50; /* define a cor de fundo do botão */
+    border: none; /* remove a borda do botão */
+    color: white; /* define a cor do texto do botão */
+    padding: 12px 24px; /* define o preenchimento interno do botão */
+    text-align: center; /* centraliza o texto dentro do botão */
+    text-decoration: none; /* remove a decoração de texto padrão do botão */
+    display: inline-block; /* define o display do botão para inline-block */
+    font-size: 16px; /* define o tamanho da fonte do botão */
+    margin: 10px 0; /* define a margem superior e inferior do botão */
+    cursor: pointer; /* define o cursor do mouse para o botão */
+    border-radius: 5px; /* define o raio de borda do botão */
+}
+button:hover {
+    background-color: #3e8e41; /* muda a cor de fundo do botão quando o mouse passa sobre ele */
+}
+button:active {
+    background-color: #2e6b36; /* muda a cor de fundo do botão quando o botão é clicado */
+}
