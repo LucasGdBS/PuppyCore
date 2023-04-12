@@ -3,6 +3,7 @@ from .forms import tutorCadastro
 from .models import Tutor
 from .forms import petCadastro
 from .models import Pet
+from .models import cartaoVacina
 
 # Create your views here.
 
@@ -42,5 +43,6 @@ def cadastroPet(request):
     else:   
         form = petCadastro()
         return render(request, 'clinica/cadastroPet.html', {'form': form})
+    
 
 

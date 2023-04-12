@@ -9,8 +9,6 @@ class Tutor(models.Model):
     celular = models.CharField(max_length=13, blank=False, null=False)
     email = models.EmailField(max_length=254, blank=False, null=False)
 
-
-
 class Pet(models.Model):
     nomePet = models.CharField(max_length=50, null=False, blank=False)
     especie = models.CharField(max_length=20, null=False, blank=False)
@@ -21,3 +19,10 @@ class Pet(models.Model):
     porte = models.CharField(max_length=20, null=False, blank=False)
     cadAtivo = models.BooleanField(default=True)
     tutor = models.ForeignKey('Tutor', on_delete=models.CASCADE, default=1)
+
+class CartaoVacina(models.Model):
+    #nomePet = Pet.nomePet
+    tipoVacina = models.CharField(max_length=30, null=False)
+    dataVacina = models.DateField(null=True, black=True, black=False)
+    pet = models.ForeignKey('Pet', on_delete=models.CASCADE, default=1)
+
