@@ -1,8 +1,6 @@
 from django.shortcuts import render
-from .forms import tutorCadastro
-from .models import Tutor
-from .forms import petCadastro
-from .models import Pet
+from .forms import tutorCadastro, petCadastro
+from .models import Tutor, Pet
 
 # Create your views here.
 
