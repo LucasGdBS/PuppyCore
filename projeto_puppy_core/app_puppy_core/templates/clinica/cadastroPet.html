@@ -7,12 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="{% static 'app_puppy_core/forms.css' %}" rel="stylesheet">
+    <link href="{% static 'app_puppy_core/reset.css' %}" rel="stylesheet">
     <title>Cadastro Pet</title>
 </head>
 
-<body>
-    <h1 align="center">Cadastro Pet</h1>
-    <form method="post">
+<body class="site_body">
+    <div class="forms_title"><h1>Cadastro Pet</h1></div>
+    <div class="forms_container">
+    <form class="cadastro_forms" method="post">
         {% csrf_token %}
         <label for="nomePet">Nome do Pet: </label>
         <input id="nomePet" type="text" name="nomePet" maxlength="100" required>
@@ -33,7 +35,7 @@
         <button type="button" onclick="window.location.replace('http://127.0.0.1:8000/')">Cancelar</button>
         <button type="submit">Enviar</button>
     </form>
-
+    </div>
 </body>
 
 </html>

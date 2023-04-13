@@ -63,3 +63,4 @@ def cadastroVacina(request):
         form = vacinaCadastro()
         return render(request, 'clinica/cadastroVacina.html', {'form': form})
 
+

@@ -9,6 +9,7 @@ urlpatterns = [
     path('cadastroPet/', views.cadastroPet, name='Cadastro Pet'),
     path('cartaoVacinas/', views.cartaoVacina, name='Visualizar Vacinas'),
     path('cadastroVacinas/', views.cadastroVacina, name='Cadastrar Vacinas'),
+
     
     # puppycore.com
     # puppycore.com/cadastroTutor/ 
