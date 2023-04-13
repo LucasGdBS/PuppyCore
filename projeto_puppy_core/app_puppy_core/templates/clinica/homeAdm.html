@@ -1,34 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 {%load static%}
 
-<html lang="pt-br">
-  <head>
+<html>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home</title>
     <link href="{% static 'app_puppy_core/style.css' %}" rel="stylesheet">
     <link href="{% static 'app_puppy_core/reset.css' %}" rel="stylesheet">
+    <title>Home Adm</title>
 
 </head>
-  <body>
-    
+
+<body>
     <header class="site-header"> 
         <img class="logo" src="{% static 'app_puppy_core/images/medicamento.png' %}">
-        <div class="button-container-header">
-            <button type="button" class="button-base-header" onclick="window.location.replace('http://127.0.0.1:8000/homeAdm/')">Área do Admnistrador</button>
-            <button type="button" class="button-base-header" onclick="window.location.replace('http://127.0.0.1:8000/homeTutor/')">Área do Tutor</button>
-        </div>
+
     </header>
 
     <main class="site-main">
         <div class="center-container">
-            <div class="image">
-                <img class="center-img" src="{% static 'app_puppy_core/images/dog_draw.jpg' %}">
+            <div class="button-container-header">
+                <button type="button" class="button-base-header" onclick="window.location.replace('http://127.0.0.1:8000/cadastroPet/')">Cadastro do Pet</button>
+                <button type="button" class="button-base-header" onclick="window.location.replace('http://127.0.0.1:8000/cadastroTutor/')">Cadastro do Tutor</button>
+                <button type="button" class="button-base-header" onclick="window.location.replace('http://127.0.0.1:8000/cadastroVacinas/')">Cadastro de Vacina</button>
             </div>
-            <div class="text">
-                <h1>A Saúde do Seu Pet<br>É a Nossa Prioridade</h1>
-            </div>
-        </div>
     </main>
 
     <footer class="site-footer">
@@ -36,5 +31,7 @@
             <button type="button" class="button-base-footer" onclick="aviso()">?</button>
         </div>
     </footer>
+
+
 </body>
 </html>

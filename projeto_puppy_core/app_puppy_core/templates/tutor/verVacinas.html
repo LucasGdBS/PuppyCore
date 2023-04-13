@@ -33,7 +33,7 @@
         <hr style="color: #000000; border: 1px solid #000000; margin: 95px 0;">
         
         {% for item in dados %}
-        {{ item }}, {{ item.tipoVacina }} </br>
+        {{ item.nomeVeterinario }}, {{ item.tipoVacina }}, {{item.dataVacina}}</br>
         {% endfor %}
 
         <!--<form>

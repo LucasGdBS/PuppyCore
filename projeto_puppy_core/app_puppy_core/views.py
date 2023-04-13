@@ -69,4 +69,8 @@ def cadastroVacina(request):
         form = vacinaCadastro()
         return render(request, 'clinica/cadastroVacina.html', {'form': form})
 
+def homeAdm(request):
+    return render(request, 'clinica/homeAdm.html')
 
+def homeTutor(request):
+    return render(request, 'tutor/homeTutor.html')
