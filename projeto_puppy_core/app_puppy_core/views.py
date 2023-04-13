@@ -46,8 +46,14 @@ def cadastroPet(request):
         return render(request, 'clinica/cadastroPet.html', {'form': form})
 
 def cartaoVacina(request):
+    dados = CartaoVacina.objects.all()
 
-    return render(request, 'tutor/verVacina.html')
+    context = {
+        'nomePet' : 'Tinker Bell',
+        'dados' : dados,
+    }
+        
+    return render(request, 'tutor/verVacinas.html', context)
 
 def cadastroVacina(request):
     if request.method == 'POST':

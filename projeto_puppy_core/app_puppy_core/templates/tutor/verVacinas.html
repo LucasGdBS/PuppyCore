@@ -29,9 +29,12 @@
 
         <button onclick="history.back()">Voltar</button>   
         <h1>Cartão de Vacinas</h1>
-        <h2>Nome: Tinker Bell</h2>
+        <h2>Nome: {{nomePet}}</h2>
         <hr style="color: #000000; border: 1px solid #000000; margin: 95px 0;">
-
+        
+        {% for item in dados %}
+        {{ item }}, {{ item.tipoVacina }} </br>
+        {% endfor %}
 
         <!--<form>
             <label for="procurar">Procurar:</label>
