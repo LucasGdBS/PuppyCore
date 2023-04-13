@@ -1,10 +1,9 @@
 from django.shortcuts import render
 
-from .forms import tutorCadastro
 from .models import Tutor
-from .forms import petCadastro
+from .forms import tutorCadastro, petCadastro , vacinaCadastro
 from .models import Pet
-from .models import cartaoVacina
+from .models import CartaoVacina
 
 
 # Create your views here.
@@ -48,4 +47,19 @@ def cadastroPet(request):
 
 def cartaoVacina(request):
 
-    return render(request, 'tutor/cartaoVacina.html')
+    return render(request, 'tutor/verVacina.html')
+
+def cadastroVacina(request):
+    if request.method == 'POST':
+        form = vacinaCadastro(request.POST)
+        if form.is_valid():
+            cartaoVacina = CartaoVacina(**form.cleaned_data)
+
+            cartaoVacina.save()
+            return render(request, 'clinica/sucessocadastro.html')
+        else: 
+            return render(request, 'clinica/falhacadastro.html')
+    else:   
+        form = vacinaCadastro()
+        return render(request, 'clinica/cadastroVacina.html', {'form': form})
+
