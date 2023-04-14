@@ -1,7 +1,9 @@
 from django.urls import path
 from app_puppy_core import views
+from django.contrib import admin
 
 urlpatterns = [
+    path('admin/', admin.site.urls),
     path('', views.home, name='Home'),
     path('home/', views.home, name='Home'),
     path('cadastroTutor/', views.cadastroTutor, name='Cadastro Tutor'),
