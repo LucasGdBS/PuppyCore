@@ -6,14 +6,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home</title>
-    <link href="{% static 'app_puppy_core/style.css' %}" rel="stylesheet">
+    <link href="{% static 'app_puppy_core/home.css' %}" rel="stylesheet">
     <link href="{% static 'app_puppy_core/reset.css' %}" rel="stylesheet">
 
 </head>
   <body>
     
     <header class="site-header"> 
-        <img class="logo" src="{% static 'app_puppy_core/images/medicamento.png' %}">
+        <img alt="Dog image" onclick="window.location.replace('http://127.0.0.1:8000/home/')" class="logo" src="{% static 'app_puppy_core/images/medicamento.png' %}" >
         <div class="button-container-header">
             <button type="button" class="button-base-header" onclick="window.location.replace('http://127.0.0.1:8000/homeAdm/')">Área do Admnistrador</button>
             <button type="button" class="button-base-header" onclick="window.location.replace('http://127.0.0.1:8000/homeTutor/')">Área do Tutor</button>
