@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #171b52;
+    background-color: #3A2D27;
 }
 
 .forms_title{
@@ -21,7 +21,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #6b72d4;
+    background-color: #B48565;
     width: 70%;
     border-radius: 40px;
 }

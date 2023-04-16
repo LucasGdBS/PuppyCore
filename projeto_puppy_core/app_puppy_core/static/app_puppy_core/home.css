@@ -14,6 +14,7 @@
 }
 
 .logo{
+    cursor: pointer;
     width: auto;
     height: auto;
     margin: 2vh;
@@ -85,6 +86,7 @@
     justify-content: center;
 }
 
+
 @media only screen and(max-width: 540px){
     .center-container{
         align-items: center;
@@ -144,7 +146,6 @@
     background-color: #B48565;
 
 }
-
 
 .button-base-footer:hover{
     background: #3A2D27;
