@@ -1,9 +1,10 @@
+
 .site-header{
     display: flex;
-    height: 15vh;
+    height: 8vh;
     justify-content: flex-start;
     align-content: center;
-    background: rgb(10, 10, 83);
+    background: #EBE2DB;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -17,10 +18,10 @@
 
 .site-main{
     display: flex;
-    height: 75vh;
+    height: 85vh;
     align-items: center;
     justify-content: center;
-    background: rgb(69, 69, 177);
+    background: #EBE2DB;
 }
 
 .center-container{
@@ -33,7 +34,7 @@
 
 .button-base-center{
     margin: 1%;
-    border: 2px solid #d5d5d5;
+    border: 2px solid  #EBE2DB;
     padding: 2vh 1vw;
     text-align: center;
     display: flex;
@@ -44,8 +45,8 @@
     height: auto;
     transition-duration: 0.4s;
     cursor: pointer;
-    color: rgb(213, 213, 213);
-    background-color: rgba(255, 255, 255, 0);
+    color: #ffffff;
+    background-color: #B48565;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -56,20 +57,19 @@
     }
 }
 
-
 .button-base-center:hover{
-    background: #d53b3b;
+    background: #3A2D27;
     color: white;
 }
 
 
 .site-footer{
     display: flex;
-    height: 10vh;
+    height: 6.8vh;
     justify-content: flex-start;
     align-content: center;
-    background: rgb(10, 10, 83);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background: #B48565;
+    filter: drop-shadow(0px 3px 3px #3A2D27);
 }
 
 .button-container-footer{
@@ -83,7 +83,7 @@
 .button-base-footer{
     border-radius: 100%;
     margin: 1%;
-    border: 2px solid #dddddd;
+    border: 2px solid #EBE2DB;
     padding: 2vh 3vh;
     text-align: center;
     display: flex;
@@ -94,13 +94,13 @@
     height: auto;
     transition-duration: 0.4s;
     cursor: pointer;
-    color: rgb(230, 230, 230); 
-    background-color: rgba(255, 255, 255, 0);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    color: #EBE2DB; 
+    background-color: #B48565;
+    filter: drop-shadow(0px 4px 4px rgba(235, 15, 15, 0.25));
 
 }
 
 .button-base-footer:hover{
-    background: #d53b3b;
-    color: white;
+    background: #3A2D27;
+    color: #EBE2DB;
 }

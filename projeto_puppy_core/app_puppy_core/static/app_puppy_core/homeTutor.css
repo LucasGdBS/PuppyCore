@@ -1,0 +1,106 @@
+
+.site-header{
+    display: flex;
+    height: 15vh;
+    justify-content: flex-start;
+    align-content: center;
+    background: #EBE2DB;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.logo{
+    cursor: pointer;
+    width: auto;
+    height: auto;
+    margin: 2vh;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.site-main{
+    display: flex;
+    height: 75vh;
+    align-items: center;
+    justify-content: center;
+    background: #EBE2DB;
+}
+
+.center-container{
+    display: flex;
+    flex:1;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.button-base-center{
+    margin: 1%;
+    border: 2px solid  #EBE2DB;
+    padding: 2vh 1vw;
+    text-align: center;
+    display: flex;
+    font-size: x-large;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: auto;
+    height: auto;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #B48565;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+@media only screen and (max-width: 540px) {
+    .button-base-center{
+        font-size: small;
+        padding: 5px 2px 5px 2px;
+    }
+}
+
+.button-base-center:hover{
+    background: #3A2D27;
+    color: white;
+}
+
+
+.site-footer{
+    display: flex;
+    height: 10vh;
+    justify-content: flex-start;
+    align-content: center;
+    background: #B48565;
+    filter: drop-shadow(0px 3px 3px #3A2D27);
+}
+
+.button-container-footer{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 1vh;
+}
+
+.button-base-footer{
+    border-radius: 100%;
+    margin: 1%;
+    border: 2px solid #EBE2DB;
+    padding: 2vh 3vh;
+    text-align: center;
+    display: flex;
+    font-size: larger;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: auto;
+    height: auto;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    color: #EBE2DB; 
+    background-color: #B48565;
+    filter: drop-shadow(0px 4px 4px rgba(235, 15, 15, 0.25));
+
+}
+
+.button-base-footer:hover{
+    background: #3A2D27;
+    color: #EBE2DB;
+}

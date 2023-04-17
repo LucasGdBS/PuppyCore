@@ -17,11 +17,6 @@
         font-weight: bold;
         position: absolute; top: 365px; left: 519px;
     }
-    h2{
-        font-family: 'Poppins', sans-serif;
-        color: #EBE2DB;
-        font-weight: bold;
-    }
     h3{
         font-size: 32px;
         font-family: 'Script Regular', script;
@@ -38,24 +33,22 @@
 </style>
 </head>
   <body>
-    <section>
-        <div class="circle"></div>
-    </section>
+ 
     <header class="site-header"> 
-        <img alt="Woof" onclick="window.location.replace('http://127.0.0.1:8000/home/')" src="{% static 'app_puppy_core/images/woof2.png' %}" width="100">
+        <img alt="Woof" onclick="window.location.replace('/home/')" src="{% static 'app_puppy_core/images/woof2.png' %}" width="100">
         <div class="button-container-header">
-            <button type="button" class="button-base-header" onclick="window.location.replace('http://127.0.0.1:8000/homeAdm/')"><h4>Área do Admnistrador</h4></button>
-            <button type="button" class="button-base-header" onclick="window.location.replace('http://127.0.0.1:8000/homeTutor/')"><h4>Área do Tutor</h4></button>
+            <button type="button" class="button-base-header" onclick="window.location.replace('/homeAdm/')"><h4>Área do Admnistrador</h4></button>
+            <button type="button" class="button-base-header" onclick="window.location.replace('/homeTutor/')"><h4>Área do Tutor</h4></button>
         </div>
     </header>
 
     <main class="site-main">
         <div class="center-container">
             <div class="image">
-                <img src="{% static 'app_puppy_core/images/wooflogo.png.png' %}" width="550" style="position: absolute; top: 100px; left: 60px;">
+                <img class="center-img" src="{% static 'app_puppy_core/images/wooflogo.png.png' %}">
             </div>
-            <div class="center-larger-text">
-                <h1>PORQUE O AMOR PELOS ANIMAIS<br>É A NOSSA</h1><h3>especialidade</h3>
+            <div class="text">
+                <p>PORQUE O AMOR PELOS ANIMAIS<br>É A NOSSA ESPECIALIDADE</p>
             </div>
         </div>
     </main>
@@ -63,9 +56,6 @@
     <footer class="site-footer">
         <div class="button-container-footer">
             <button type="button" class="button-base-footer" onclick="aviso()">?</button>
-            <h2>AJUDA</h2>
-            
-            
         </div>
     </footer>
 </body>

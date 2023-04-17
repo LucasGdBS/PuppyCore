@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="{% static 'app_puppy_core/adm&tutor-page.css' %}" rel="stylesheet">
+    <link href="{% static 'app_puppy_core/homeTutor.css' %}" rel="stylesheet">
     <link href="{% static 'app_puppy_core/reset.css' %}" rel="stylesheet">
     <title>Home Tutor</title>
 
@@ -13,14 +13,12 @@
 
 <body>
     <header class="site-header"> 
-        <img alt="Nome da Logo" onclick="window.location.replace('http://127.0.0.1:8000/home/')" class="logo" src="{% static 'app_puppy_core/images/Logotipo PuppyCore.png' %}" >
-
+        <img alt="Nome da Logo" onclick="window.location.replace('/home/')" class="logo" src="{% static 'app_puppy_core/images/woof2.png' %}" >
     </header>
 
     <main class="site-main">
         <div class="center-container">
-         
-        <button type="button" class="button-base-center" onclick="window.location.replace('http://127.0.0.1:8000/cartaoVacinas/')">Visualizar cartão de vacina</button>
+         <button type="button" class="button-base-center" onclick="window.location.replace('/cartaoVacinas/')">Visualizar cartão de vacina</button>
         </div>
     </main>
 
