@@ -42,6 +42,9 @@
 ![image](https://user-images.githubusercontent.com/114539692/232482900-a849ed46-4e34-4abd-a05a-a10c1d3d44aa.png)
 
 <h3 align="center">Deploy:</h3>
+<p align="center"><a href="http://puppycore.sa-east-1.elasticbeanstalk.com">Site PuppyCore</a></p>
+<p align="center"><a href="https://drive.google.com/file/d/10ySUwWDtmXgav7QF9oweqH3wc2ApBuKB/view?usp=sharing">ScreenCast do uso do sistema</a></p>
+<p align="center">Instruções de acesso:<br>Basta fazer o cadastro do tutor, cadastro do pet e registrar a vacina. Após isso visualizar as vacinas na áreia do tutor</p>
 
 <h3 align="center">Relato Pair Programming</h3>
 <p>Nossa equipe tem tido uma experiência extremamente positiva com o pair programming, pode se dizer que operando dessa forma nos somos capazes de progredir com maior facilidade em nosso aprendizado. Ao trabalharmos em pares, conseguimos produzir um código mais limpo, eficiente e de melhor qualidade. Além disso, a colaboração constante nos permite compartilhar conhecimentos e aprender uns com os outros, o que fortalece a coesão da equipe e aprimora nossas habilidades de trabalho em equipe. Como resultado, somos capazes de identificar problemas e soluções mais rapidamente, o que torna o processo de desenvolvimento mais eficiente, uma vez que, temos a possibilidade de nos ajudarmos mutuamente durante o processo. Ao dividir as tarefas em 3 grupos de 2 pessoas, podemos compartilhar nossas especialidades, tornando a equipe mais diversificada e capaz de lidar com uma variedade de desafios. Em resumo, conseguimos realizar a segunda entrega graças à fluidez do processo, que foi facilitada ao utilizar esse método.</p>
