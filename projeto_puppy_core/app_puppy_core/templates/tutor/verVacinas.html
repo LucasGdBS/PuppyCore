@@ -48,8 +48,14 @@
                                 <th>Médico Veterinário</th>
                                 <th>Tipo de Vacina</th>
                                 <th>Data da Aplicação</th>
-                                <th>Nome do Pet</th>
                             </tr>
+                            {% for item in dados %}
+                            <tr>
+                                <td>{{ item.nomeVeterinario }}</td>
+                                <td>{{ item.tipoVacina }}</td>
+                                <td>{{item.dataVacina}}</td>
+                            </tr>
+                            {% endfor %}
                         </table>
                     </div>
                    
@@ -59,11 +65,6 @@
             <button type="button" class="button-base-footer" onclick="aviso()">?</button>
         </div>
     </footer>
-
-    
-    {% for item in dados %}
-    {{ item.nomeVeterinario }}, {{ item.tipoVacina }}, {{item.dataVacina}}</br>
-    {% endfor %}
 
     <!--<form>
         <label for="procurar">Procurar:</label>
