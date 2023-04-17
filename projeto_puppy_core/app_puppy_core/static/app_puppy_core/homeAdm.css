@@ -1,7 +1,7 @@
 
 .site-header{
     display: flex;
-    height: 15vh;
+    height: 8vh;
     justify-content: flex-start;
     align-content: center;
     background: #EBE2DB;
@@ -18,7 +18,7 @@
 
 .site-main{
     display: flex;
-    height: 75vh;
+    height: 85vh;
     align-items: center;
     justify-content: center;
     background: #EBE2DB;
@@ -65,7 +65,7 @@
 
 .site-footer{
     display: flex;
-    height: 10vh;
+    height: 6.8vh;
     justify-content: flex-start;
     align-content: center;
     background: #B48565;
