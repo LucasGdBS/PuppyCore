@@ -1,13 +1,18 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Falha Cadastro</title>
+    <link href="{% static 'app_puppy_core/statuscadastro.css' %}" rel="stylesheet">
+    <link href="{% static 'app_puppy_core/reset.css' %}" rel="stylesheet">
 </head>
-<body>
-    <h1>Houve uma falha no cadastro</h1>
-    <button onclick="history.back()">Tente novamente</button>
+<body class="site_body">
+    <div class="unique_container">
+    <p>Houve uma falha no cadastro❌</p>
+    <button class="button_error" onclick="history.back()">Tente novamente</button>
+    </div>
 </body>
 </html>
