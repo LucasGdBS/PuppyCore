@@ -1,57 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
+{%load static%}
 
-    <html lang="pt-br">
-
-    <head>
-
-        <meta charset="UTF-8">
-        <title>Cartão de Vacinas</title>
-
-        <style>
-            h1 {
-            font-family: Arial,sans-serif;
-            font-size: 30pt;
-            color: #000000;
-            text-shadow: 1px 1px 1px rgb(63, 60, 57);
-            position: absolute; top: 10px; left: 250px;
-            }
-            h2 {
-            font-family: Arial,Serif,serif;
-            color: rgb(0, 0, 0);
-            position: absolute; top: 5px; right: 150px;
-            }
-            </style>
-
-    </head>
-
-    <body>
-        <h1>Cartão de Vacinas do Pet</h1>
-        <table>
-          <thead>
-            <tr>
-              <th>Veterinário</th>
-              <th>Tipo de Vacina</th>
-              <th>Data de Aplicação</th>
-              <th>Nome do Pet</th>
-            </tr>
-          </thead>
-        </table>
-        <button type="button"  onclick="window.location.replace('http://127.0.0.1:8000/homeTutor/')">Voltar</button>  
-        <h1>Cartão de Vacinas</h1>
-        <h2>Nome: {{nomePet}}</h2>
-        <hr style="color: #000000; border: 1px solid #000000; margin: 95px 0;">
-        
-        {% for item in dados %}
-        {{ item.nomeVeterinario }}, {{ item.tipoVacina }}, {{item.dataVacina}}</br>
-        {% endfor %}
-
-        <!--<form>
-            <label for="procurar">Procurar:</label>
-            <input type="text" id="procurar" name="procurar">
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link href="{% static 'app_puppy_core/verVacina.css' %}" rel="stylesheet">
+    <link href="{% static 'app_puppy_core/reset.css' %}" rel="stylesheet">
+  
+    <style>
+    h1{
+        font-size: 25px;
+        font-family: 'Poppins', sans-serif;
+        color: #3A2D27;
+        font-weight: bold;
+        position: absolute; top: 365px; left: 519px;
+    }
+    h3{
+        font-size: 32px;
+        font-family: 'Script Regular', script;
+        color: #3A2D27;
+        font-weight: bold;
+        position: absolute; top: 390px; left: 670px;
+    }
+    h4{
+        font-family: 'Poppins', sans-serif;
+        color: #EBE2DB;
+        font-weight: bold; 
+    }
+ 
+</style>
+</head>
+<body>
+    <header class="site-header"> 
+        <img alt="Nome da Logo" onclick="window.location.replace('/home/')" class="logo" src="{% static 'app_puppy_core/images/woof2.png' %}" >
+    </header>
+    <h1>Cartão de Vacinas do Pet</h1>
+    <main class="site-main">
+        <div class="center-container">
+            <table>
+                <thead>
+                  <tr>
+                    <th>Veterinário</th>
+                    <th>Tipo de Vacina</th>
+                    <th>Data de Aplicação</th>
+                    <th>Nome do Pet</th>
+                  </tr>
+                </thead>
+              </table>
+        </div>
+    </main>
+    <footer class="site-footer">
+        <div class="button-container-footer">
+            <button type="button" class="button-base-footer" onclick="aviso()">?</button>
+        </div>
+    </footer>
     
-            <input type="submit" value="Salvar">
-        </form>
-        -->
-    </body>
+    <button type="button"  onclick="window.location.replace('http://127.0.0.1:8000/homeTutor/')">Voltar</button>  
+    <h1>Cartão de Vacinas</h1>
+    <h2>Nome: {{nomePet}}</h2>
+    
+    {% for item in dados %}
+    {{ item.nomeVeterinario }}, {{ item.tipoVacina }}, {{item.dataVacina}}</br>
+    {% endfor %}
 
-    </html>
+    <!--<form>
+        <label for="procurar">Procurar:</label>
+        <input type="text" id="procurar" name="procurar">
+
+        <input type="submit" value="Salvar">
+    </form>
+    -->
+</body>
+
+</html>
