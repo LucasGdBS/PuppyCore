@@ -1,5 +1,6 @@
 <!doctype html>
 {%load static%}
+{% for item in dados %}
 
 <html lang="pt-br">
   <head>
@@ -50,9 +51,14 @@
                                 <th>Data da Aplicação</th>
                                 <th>Nome do Pet</th>
                             </tr>
+                            <tr>
+                                <th>{{ item.nomeVeterinario }}</th>
+                                <th>{{ item.tipoVacina }}</th>
+                                <th>{{ item.dataVacina }}</th>
+                                <th>{{ nomePet }}</th>
+                            </tr>
                         </table>
                     </div>
-                   
     </main>
     <footer class="site-footer">
         <div class="button-container-footer">
@@ -60,9 +66,6 @@
         </div>
     </footer>
 
-    
-    {% for item in dados %}
-    {{ item.nomeVeterinario }}, {{ item.tipoVacina }}, {{item.dataVacina}}</br>
     {% endfor %}
 
     <!--<form>
