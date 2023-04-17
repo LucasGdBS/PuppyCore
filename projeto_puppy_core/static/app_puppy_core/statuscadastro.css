@@ -1,0 +1,45 @@
+.site_body{
+    display: flex;
+    height: 100vh;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #ecd9ca;
+}
+
+.unique_container{
+    border-radius: 40px;
+    padding: 40px 40px 40px 40px;
+    font-size: xx-large;
+    color: #ecd9ca;
+    background-color: #3A2D27;
+}
+
+
+button {
+    font-family:'Courier New', Courier, monospace;
+    border: 2px solid #ffffff;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: #ffffff00; /* define a cor de fundo do botão */
+    color: white; /* define a cor do texto do botão */
+    padding: 8px 8px; /* define o preenchimento interno do botão */
+    text-align: center; /* centraliza o texto dentro do botão */
+    text-decoration: none; /* remove a decoração de texto padrão do botão */
+    display: inline-block; /* define o display do botão para inline-block */
+    font-size: 16px; /* define o tamanho da fonte do botão */
+    margin: 10px 0; /* define a margem superior e inferior do botão */
+    cursor: pointer; /* define o cursor do mouse para o botão */
+    border-radius: 5px; /* define o raio de borda do botão */
+    transition-duration: 0.4s;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.button_confirm:hover {
+    background-color: #1bbe5c; /* muda a cor de fundo do botão quando o mouse passa sobre ele */
+}
+
+.button_error:hover {
+    background-color: #be1b1b; /* muda a cor de fundo do botão quando o mouse passa sobre ele */
+}
