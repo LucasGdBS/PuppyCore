@@ -8,7 +8,13 @@
     <link href="{% static 'app_puppy_core/homeAdm.css' %}" rel="stylesheet">
     <link href="{% static 'app_puppy_core/reset.css' %}" rel="stylesheet">
     <title>Home Adm</title>
-
+    <style>
+        h1{
+        font-family: 'Poppins', sans-serif;
+        color: #EBE2DB;
+        font-weight: bold; 
+    }
+    </style>
 </head>
 
 <body>
@@ -19,9 +25,9 @@
     
     <main class="site-main">
         <div class="center-container">
-            <button type="button" class="button-base-center" onclick="window.location.replace('/cadastroPet/ ')">Cadastro do Pet</button>
-            <button type="button" class="button-base-center" onclick="window.location.replace('/cadastroTutor/')">Cadastro do Tutor</button>
-            <button type="button" class="button-base-center" onclick="window.location.replace('/cadastroVacinas/')">Cadastro de Vacina</button>
+            <button type="button" class="button-base-center" onclick="window.location.replace('/cadastroPet/ ')"><h1>Cadastro do Pet</h1></button>
+            <button type="button" class="button-base-center" onclick="window.location.replace('/cadastroTutor/')"><h1>Cadastro do Tutor</h1></button>
+            <button type="button" class="button-base-center" onclick="window.location.replace('/cadastroVacinas/')"><h1>Cadastro de Vacina</h1></button>
         </div>
     </main>
 
