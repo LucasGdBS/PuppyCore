@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-2)=nur&*+u4w@^wsmj&qe@s0&k_435r(=^*!*gqs9p#+ekt@8g
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'puppycore-venv.eba-vxfjkdf6.us-east-2.elasticbeanstalk.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'puppycore-venv.eba-vxfjkdf6.us-east-2.elasticbeanstalk.com', 'puppycore.sa-east-1.elasticbeanstalk.com']
 
 
 # Application definition
