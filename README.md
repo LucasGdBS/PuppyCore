@@ -31,8 +31,6 @@
  
 ## Segunda Entrega 📦
 
-<p align="center">Em desenvolvimento...</p>
-
 <h3 align="center"><a href="https://drive.google.com/open?id=1mVYlSODSaHsIhDBvQLKx2nHhTPpPayq7&usp=drive_copy">Diagrama de atividades:</h3></p>
 
 ![image](https://user-images.githubusercontent.com/114539692/232468002-5abebf33-c884-486e-a9b6-c96f87084b64.png)
