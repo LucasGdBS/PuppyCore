@@ -1,6 +1,6 @@
 # PuppyCore ❣️
 
-> Este é um projeto para disciplina de Fundamentos de Software que tem como objetivo atender à clínicas e hospitais veterinários facilitando o acompanhamento do check up de saúde dos pets, tanto aos profissionais quanto aos tutores. Tendo como principal foco o a atulização do cartão de vacina do pet e de facilitar o acesso a reultado de exames aos tutores. yay
+> Este é um projeto para disciplina de Fundamentos de Software que tem como objetivo atender à clínicas e hospitais veterinários facilitando o acompanhamento do check up de saúde dos pets, tanto aos profissionais quanto aos tutores. Tendo como principal foco o a atulização do cartão de vacina do pet e de facilitar o acesso a reultado de exames aos tutores.
 
 
 ## 🤝 Colaboradores:
@@ -9,7 +9,7 @@
 </p>Carlos Eduardo de Paula ➡️ cepc@cesar.school<p>
 </p>Gabriel Chaves ➡️ gco@cesar.school<p>
 </p>Lucas Gabriel de Brito ➡️ lgbs@cesar.school<p>
-</p>Ivy Pires ➡️ itmp@cesar.school<p>
+</p>Pedro Villas Boas ➡️ phavb@cesar.school<p>
 </p>Mariane Fontes ➡️ mbsf@cesar.school<p>
 
 ##
