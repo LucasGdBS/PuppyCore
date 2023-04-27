@@ -1,5 +1,5 @@
 from django import forms
-from .models import Tutor, Pet, CartaoVacina
+from .models import Tutor, Pet, CartaoVacina, CartaoExames
 
 
 class tutorCadastro(forms.ModelForm):
@@ -28,14 +28,37 @@ class petCadastro(forms.ModelForm):
             'cadAtivo',
         ]
 
+
 class vacinaCadastro(forms.ModelForm):
     class Meta:
         model = CartaoVacina
         fields = [
-            #'nomePet',
+            # 'nomePet',
             'nomeVeterinario',
             'dataVacina',
             'tipoVacina',
         ]
 
 
+class tutorAltera(forms.ModelForm):
+    class Meta:
+        model = Tutor
+        fields = [
+            'nome',
+            'cpf',
+            'dataNascimento',
+            'celular',
+            'email'
+        ]
+
+
+class cadastroExames(forms.ModelForm):
+    class Meta:
+        model = CartaoExames
+        fields = [
+            'exame',
+            'dataSolicitacao',
+            'dataResultado',
+            'resultado',
+            'nomeVeterinario'
+        ]
