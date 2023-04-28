@@ -5,16 +5,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="{% static 'app_puppy_core/verVacina.css' %}" rel="stylesheet">
+    <link href="{% static 'app_puppy_core/homeAdm.css' %}" rel="stylesheet">
     <link href="{% static 'app_puppy_core/reset.css' %}" rel="stylesheet">
     <title>Home Adm</title>
-    <style>
-        h1{
-        font-family: 'Poppins', sans-serif;
-        color: #000000;
-        font-weight: bold; 
-    }
-    </style>
 </head>
 
 <body>
@@ -25,11 +18,11 @@
     
     <main class="site-main">
         <div>
-            <h1>Clientes</h1>
+            <h1 class="text">Clientes</h1>
         </div>
         <button type="button" class="button-base-center" onclick="window.location.replace('/cadastroTutor/')"><h1>Cadastro do Tutor</h1></button>
-        <div>
-            <table>
+        <div class="table-container">
+            <table >
                 <tr>
                     <th>Nome</th>
                     <th>Telefone</th>
