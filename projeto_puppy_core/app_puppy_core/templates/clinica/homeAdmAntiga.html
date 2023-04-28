@@ -5,9 +5,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="{% static 'app_puppy_core/homeTutor.css' %}" rel="stylesheet">
+    <link href="{% static 'app_puppy_core/homeAdm.css' %}" rel="stylesheet">
     <link href="{% static 'app_puppy_core/reset.css' %}" rel="stylesheet">
-    <title>Home Tutor</title>
+    <title>Home Adm</title>
     <style>
         h1{
         font-family: 'Poppins', sans-serif;
@@ -18,13 +18,16 @@
 </head>
 
 <body>
+
     <header class="site-header"> 
         <img class="logo" alt="Woof" onclick="window.location.replace('/home/')" src="{% static 'app_puppy_core/images/logomaisnome.png' %}" >
     </header>
-
+    
     <main class="site-main">
         <div class="center-container">
-            <button type="button" class="button-base-center" onclick="window.location.replace('/cartaoVacinas/ ')"><h1>Cartão de Vacinas</h1></button>
+            <button type="button" class="button-base-center" onclick="window.location.replace('/cadastroPet/ ')"><h1>Cadastro do Pet</h1></button>
+            <button type="button" class="button-base-center" onclick="window.location.replace('/cadastroTutor/')"><h1>Cadastro do Tutor</h1></button>
+            <button type="button" class="button-base-center" onclick="window.location.replace('/cadastroVacinas/')"><h1>Cadastro de Vacina</h1></button>
         </div>
     </main>
 

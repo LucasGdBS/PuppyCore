@@ -14,6 +14,7 @@ urlpatterns = [
     path('cadastroVacinas/', views.cadastroVacina, name='Cadastrar Vacinas'),
     path('homeAdm/', views.homeAdm, name='Home do Administrador'),
     path('homeTutor/', views.homeTutor, name='Home do Tutor'),
+    path('homeAdm/infoTutor/<pk>', views.infoTutor, name='Info Tutor'),
     
     # puppycore.com
     # puppycore.com/cadastroTutor/ 

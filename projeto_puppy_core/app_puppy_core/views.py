@@ -78,7 +78,13 @@ def cadastroVacina(request):
 
 
 def homeAdm(request):
-    return render(request, 'clinica/homeAdm.html')
+    tutor = Tutor.objects.all()
+
+    context = {
+        'tutor': tutor
+    }
+
+    return render(request, 'clinica/homeAdm.html', context)
 
 
 def homeTutor(request):
@@ -97,3 +103,8 @@ def cadastroExames(request):
     else:
         form = cadastroExames()
         return render(request, 'clinica/cadastroExames.html', {'form': form})
+    
+def infoTutor(request, pk:int):
+    if request.method == 'GET':
+        tutor = Tutor.objects.get(pk=pk)
+        return render(request, 'clinica/infoTutor.html', context = {'tutor': tutor})

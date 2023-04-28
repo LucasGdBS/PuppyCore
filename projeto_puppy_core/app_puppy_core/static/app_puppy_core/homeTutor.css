@@ -53,8 +53,8 @@
     transition-duration: 0.4s;
     cursor: pointer;
     color: #B48565;
-    background-color: #B48565;
-    filter: drop-shadow(0px 2px 2px #EBE2DB);
+    background-color: #EBE2DB;
+    filter: drop-shadow(0px 2px 2px #dcdbeb);
 }
 
 @media only screen and (max-width: 540px) {
