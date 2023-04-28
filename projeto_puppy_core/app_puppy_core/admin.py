@@ -6,6 +6,8 @@ from .models import *
 admin.site.register(Tutor)
 admin.site.register(Pet)
 admin.site.register(CartaoVacina)
+admin.site.register(CartaoExames)
+admin.site.register(Login)
 
 
 # Register your models here.

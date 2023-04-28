@@ -38,3 +38,7 @@ class CartaoExames(models.Model):
     dataResultado = models.DateField(null=False, blank=True)
     resultado = models.FileField(upload_to='resultados/')
     pet = models.ForeignKey('Pet', on_delete=models.CASCADE, default=1)
+
+class Login(models.Model):
+    cpf = models.CharField(max_length=11, null=False, blank=False)
+    senha = models.CharField(max_length=50, null=False, blank=False)

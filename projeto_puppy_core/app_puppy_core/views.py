@@ -1,10 +1,7 @@
 from django.shortcuts import render
 
-from .models import Tutor
-from .forms import tutorCadastro, petCadastro, vacinaCadastro
-from .models import Pet
-from .models import CartaoVacina
-from .models import CartaoExames
+from .models import Tutor , Pet, CartaoExames, CartaoVacina
+from .forms import tutorCadastro, petCadastro, vacinaCadastro, formLogin
 
 # Create your views here.
 
@@ -109,3 +106,18 @@ def infoTutor(request, pk:int):
     if request.method == 'GET':
         tutor = Tutor.objects.get(pk=pk)
         return render(request, 'clinica/infoTutor.html', context = {'tutor': tutor})
+
+def login(request):
+    if request.method == 'POST':
+        form = formLogin(request.POST)
+        if form.is_valid():
+            Login = Login(**form.cleaned_data)
+
+            formLogin.save()
+            return render(request, 'clinica/homeAdm.html')
+        else:
+            return render(request, 'geral/login.html')
+    else:
+        form = formLogin()
+        return render(request, 'geral/login.html', {'form': form})
+    
