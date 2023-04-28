@@ -36,11 +36,12 @@ def home(request):
     return render(request, 'clinica/home.html')
 
 
-def cadastroPet(request):
+def cadastroPet(request, pk:int):
     if request.method == 'POST':
         form = petCadastro(request.POST)
         if form.is_valid():
-            pet = Pet(**form.cleaned_data)
+            pet = Pet(tutor = Tutor(id=pk), **form.cleaned_data)
+            
 
             pet.save()
             return render(request, 'clinica/sucessocadastro.html')

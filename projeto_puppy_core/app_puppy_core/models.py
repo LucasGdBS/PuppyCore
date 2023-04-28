@@ -19,7 +19,7 @@ class Pet(models.Model):
     peso = models.FloatField(max_length=5, null=True, blank=True)
     porte = models.CharField(max_length=20, null=False, blank=False)
     cadAtivo = models.BooleanField(default=True)
-    tutor = models.ForeignKey('Tutor', on_delete=models.CASCADE, default=1)
+    tutor = models.ForeignKey('Tutor', on_delete=models.CASCADE)
 
 
 class CartaoVacina(models.Model):
