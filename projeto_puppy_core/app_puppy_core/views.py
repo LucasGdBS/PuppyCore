@@ -49,7 +49,7 @@ def cadastroPet(request, pk:int):
             return render(request, 'clinica/falhacadastro.html')
     else:
         form = petCadastro()
-        return render(request, 'clinica/cadastroPet.html', {'form': form})
+        return render(request, 'clinica/cadastroPet.html', {'form': form, 'pk': pk})
 
 
 def cartaoVacina(request):
