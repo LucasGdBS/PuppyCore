@@ -69,3 +69,7 @@ button {
 button:hover {
     background-color: #f00d01; /* muda a cor de fundo do botão quando o mouse passa sobre ele */
 }
+
+button[type=submit]:hover{
+    background-color: #1bbe5c;
+}
