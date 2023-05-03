@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="{% static 'app_puppy_core/homeGeral.css' %}" rel="stylesheet">
     <link href="{% static 'app_puppy_core/reset.css' %}" rel="stylesheet">
-    <title>Informações do Tutor</title>
+    <title>Informações do Pet</title>
 
 </head>
 
@@ -18,26 +18,25 @@
 
     <main class="site-main">
         <div>
-            <h1>Detalhe do Tutor</h1>
-        </div>
-        <div>
-            <button type="button" class="button-base-center" onclick="window.location.replace('/cadastroPet/{{ tutor.id }} ')">Cadastro do Pet</button>
-        </div>
-        <div>
-            <ul>
-                <li>Nome: {{ tutor.nome }}</li>
-                <li>CPF: {{ tutor.cpf }}</li>
-                <li>Data de nascimento: {{ tutor.dataNascimento }}</li>
-                <li>Celular: {{ tutor.celular }}</li>
-                <li>Email: {{ tutor.email }}</li>
-            </ul>
+            <h1>Informações de {{ pet.nomePet }}</h1>
         </div>
 
         <div>
             <ul>
-                <li>Pet: {{ pet.nomePet }}</li>
+                <li>Nome: {{ pet.nomePet }}</li>
+                <li>Espécie: {{ pet.especie }}</li>
+                <li>Raça: {{ pet.raca }}</li>
+                <li>Data de Nascimento: {{ pet.dtNasc }}</li>
+                <li>Sexo: {{ pet.sexo }}</li>
+                <li>Peso: {{ pet.peso }}</li>
+                <li>Porte: {{ pet.porte }}</li>
             </ul>
         </div>
+        
+        <div>
+            <button type="button" class="button-base-center" onclick="window.alert('Funcionalidade Indisponível')">Editar informações</button>
+        </div>
+        
     </main>
 
     <footer class="site-footer">
@@ -49,15 +48,3 @@
 
 </body>
 </html>
-
-<!-- 
-    especificaçoes do tutor
-        nome -> ficar no centro da pagina
-            email
-            cpf
-            dados...
-    botao
-        adicionar pet
-    listagem de pet
-        nao agora (:
- -->

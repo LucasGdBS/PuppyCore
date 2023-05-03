@@ -42,3 +42,4 @@ class CartaoExames(models.Model):
 class Login(models.Model):
     cpf = models.CharField(max_length=11, null=False, blank=False)
     senha = models.CharField(max_length=50, null=False, blank=False)
+

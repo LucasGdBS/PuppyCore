@@ -105,7 +105,15 @@ def cadastroExames(request):
 def infoTutor(request, pk:int):
     if request.method == 'GET':
         tutor = Tutor.objects.get(pk=pk)
-        return render(request, 'clinica/infoTutor.html', context = {'tutor': tutor})
+        dados = Pet.objects.all()
+
+        context = {
+            'nomePet': 'Tinker Bell',
+            'dados': dados,
+            'tutor': tutor,
+        }
+
+        return render(request, 'clinica/infoTutor.html', context)
 
 def login(request):
     if request.method == 'POST':
@@ -121,3 +129,12 @@ def login(request):
         form = formLogin()
         return render(request, 'geral/login.html', {'form': form})
     
+def infoPets(request):
+     dados = Pet.objects.all()
+
+     context = {
+         'nomePet': 'Tinker Bell',
+         'dados': dados,
+     }
+
+     return render(request, 'clinica/infoPets.html', context)

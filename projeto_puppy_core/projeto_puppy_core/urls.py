@@ -16,6 +16,8 @@ urlpatterns = [
     path('homeTutor/', views.homeTutor, name='Home do Tutor'),
     path('homeAdm/infoTutor/<pk>/', views.infoTutor, name='Info Tutor'),
     path('login/', views.login, name='Login'),
+    path('infoPets/', views.infoPets, name='Info Pets'),
+    
 
     
     # puppycore.com
