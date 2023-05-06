@@ -17,6 +17,7 @@ urlpatterns = [
     path('homeAdm/infoTutor/<pk>/', views.infoTutor, name='Info Tutor'),
     path('login/', views.login, name='Login'),
     path('infoPets/', views.infoPets, name='Info Pets'),
+    path('cadastroexames/', views.cadastrarExames, name='Cadastro Exames'),
     
 
     

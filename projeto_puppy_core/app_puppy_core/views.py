@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 from .models import Tutor , Pet, CartaoExames, CartaoVacina
-from .forms import tutorCadastro, petCadastro, vacinaCadastro, formLogin
+from .forms import tutorCadastro, petCadastro, vacinaCadastro, formLogin, cadastroExames
 
 # Create your views here.
 
@@ -88,7 +88,7 @@ def homeAdm(request):
 def homeTutor(request):
     return render(request, 'tutor/homeTutor.html')
 
-def cadastroExames(request):
+def cadastrarExames(request):
     if request.method == 'POST':
         form = cadastroExames(request.POST)
         if form.is_valid():
