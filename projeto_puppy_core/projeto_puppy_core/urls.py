@@ -20,9 +20,6 @@ urlpatterns = [
     path('homeTutor/', views.homeTutor, name='Home do Tutor'),
     path('homeTutor/cartaoVacinas/', views.cartaoVacina, name='Visualizar Vacinas'),
 
-    path('falhacadastro/', views.falhacadastro, name='Falha Cadastro'),
-    path('sucessocadastro/', views.sucessocadastro, name='Sucesso Cadastro'),
-
     # puppycore.com
     # puppycore.com/cadastroTutor/ 
     # NÃO ESQUECER DA BARRA / E DA VÍRGULA

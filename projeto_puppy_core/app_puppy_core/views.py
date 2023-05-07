@@ -21,14 +21,6 @@ def cadastroTutor(request):
         return render(request, 'clinica/cadastroTutor.html', {'form': form})
 
 
-def falhacadastro(request):
-    return render(request, 'clinica/falhacadastro.html')
-
-
-def sucessocadastro(request):
-    return render(request, 'clinica/sucessocadastro.html')
-
-
 def home(request):
     return render(request, 'clinica/home.html')
 
