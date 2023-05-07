@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 
 from .models import Tutor , Pet, CartaoExames, CartaoVacina
 from .forms import tutorCadastro, petCadastro, vacinaCadastro, formLogin, cadastroExames
@@ -105,13 +105,15 @@ def cadastrarExames(request):
 def infoTutor(request, pk:int):
     if request.method == 'GET':
         tutor = Tutor.objects.get(pk=pk)
-        dados = Pet.objects.all()
+        idtutor = get_object_or_404(Tutor, pk=pk)
+        pets = idtutor.pet_set.all()
 
         context = {
-            'nomePet': 'Tinker Bell',
-            'dados': dados,
+            'pets': pets,
             'tutor': tutor,
         }
+
+        #itens = Item.objects.filter(usuario=request.user)
 
         return render(request, 'clinica/infoTutor.html', context)
 

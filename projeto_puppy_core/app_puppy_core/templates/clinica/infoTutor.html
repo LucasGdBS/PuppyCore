@@ -21,7 +21,7 @@
             <h1>Detalhe do Tutor</h1>
         </div>
         <div>
-            <button type="button" class="button-base-center" onclick="window.location.replace('/cadastroPet/{{ tutor.id }} ')">Cadastro do Pet</button>
+            <button type="button" class="button-base-center" onclick="window.location.replace('cadastroPet/')">Cadastro do Pet</button>
         </div>
         <div>
             <ul>
@@ -35,7 +35,11 @@
 
         <div>
             <ul>
-                <li>Pet: {{ pet.nomePet }}</li>
+                {% for pet in pets %}
+                    <li>Pet: {{ pet.nomePet }}</li>
+                {% empty %}
+                    <li>Nenhum pet encontrado.</li>
+                {% endfor %}
             </ul>
         </div>
     </main>

@@ -5,22 +5,26 @@ from django.contrib import admin
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='Home'),
-    path('home/', views.home, name='Home'),
-    path('cadastroTutor/', views.cadastroTutor, name='Cadastro Tutor'),
-    path('falhacadastro/', views.falhacadastro, name='Falha Cadastro'),
-    path('sucessocadastro/', views.sucessocadastro, name='Sucesso Cadastro'),
-    path('cadastroPet/<pk>/', views.cadastroPet, name='Cadastro Pet'),
-    path('cartaoVacinas/', views.cartaoVacina, name='Visualizar Vacinas'),
-    path('cadastroVacinas/', views.cadastroVacina, name='Cadastrar Vacinas'),
-    path('homeAdm/', views.homeAdm, name='Home do Administrador'),
-    path('homeTutor/', views.homeTutor, name='Home do Tutor'),
-    path('homeAdm/infoTutor/<pk>/', views.infoTutor, name='Info Tutor'),
+
     path('login/', views.login, name='Login'),
-    path('infoPets/', views.infoPets, name='Info Pets'),
-    path('cadastroexames/', views.cadastrarExames, name='Cadastro Exames'),
+
+    path('homeAdm/', views.homeAdm, name='Home do Administrador'),
+
+    path('homeAdm/cadastroTutor/', views.cadastroTutor, name='Cadastro Tutor'),
+    path('homeAdm/infoTutor/<pk>/', views.infoTutor, name='Info Tutor'),
+    path('homeAdm/infoTutor/<pk>/cadastroPet/', views.cadastroPet, name='Cadastro Pet'),
+    path('homeAdm/infoPet/', views.infoPets, name='Info Pets'),
+    path('homeAdm/cadastroexames/', views.cadastrarExames, name='Cadastro Exames'),
+    path('homeAdm/cadastroVacinas/', views.cadastroVacina, name='Cadastrar Vacinas'),
+
+    path('homeTutor/', views.homeTutor, name='Home do Tutor'),
+    path('homeTutor/cartaoVacinas/', views.cartaoVacina, name='Visualizar Vacinas'),
+    
     
 
-    
+    path('falhacadastro/', views.falhacadastro, name='Falha Cadastro'),
+    path('sucessocadastro/', views.sucessocadastro, name='Sucesso Cadastro'),
+
     # puppycore.com
     # puppycore.com/cadastroTutor/ 
     # NÃO ESQUECER DA BARRA / E DA VÍRGULA
