@@ -13,14 +13,12 @@ urlpatterns = [
     path('homeAdm/cadastroTutor/', views.cadastroTutor, name='Cadastro Tutor'),
     path('homeAdm/infoTutor/<pk>/', views.infoTutor, name='Info Tutor'),
     path('homeAdm/infoTutor/<pk>/cadastroPet/', views.cadastroPet, name='Cadastro Pet'),
-    path('homeAdm/infoPet/', views.infoPets, name='Info Pets'),
-    path('homeAdm/cadastroexames/', views.cadastrarExames, name='Cadastro Exames'),
-    path('homeAdm/cadastroVacinas/', views.cadastroVacina, name='Cadastrar Vacinas'),
+    path('homeAdm/infoTutor/<pk>/infoPet/<id_pet>', views.infoPets, name='Info Pets'),
+    path('homeAdm/cadastroexames/', views.cadastrarExames, name='Cadastro Exames'), # Falta implementar
+    path('homeAdm/cadastroVacinas/', views.cadastroVacina, name='Cadastrar Vacinas'), # Falta implementar
 
     path('homeTutor/', views.homeTutor, name='Home do Tutor'),
     path('homeTutor/cartaoVacinas/', views.cartaoVacina, name='Visualizar Vacinas'),
-    
-    
 
     path('falhacadastro/', views.falhacadastro, name='Falha Cadastro'),
     path('sucessocadastro/', views.sucessocadastro, name='Sucesso Cadastro'),

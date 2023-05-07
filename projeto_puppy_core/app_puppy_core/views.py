@@ -131,12 +131,11 @@ def login(request):
         form = formLogin()
         return render(request, 'geral/login.html', {'form': form})
     
-def infoPets(request):
-     dados = Pet.objects.all()
+def infoPets(request, pk:int, id_pet:int):
+     pet = Pet.objects.get(pk=id_pet)
 
      context = {
-         'nomePet': 'Tinker Bell',
-         'dados': dados,
+         'pet': pet,
      }
 
      return render(request, 'clinica/infoPets.html', context)

@@ -36,10 +36,12 @@
         <div>
             <ul>
                 {% for pet in pets %}
-                    <li>Pet: {{ pet.nomePet }}</li>
+                    <li><a href="infoPet/{{ pet.id }}">Pet: {{ pet.nomePet }}</a></li>
                 {% empty %}
                     <li>Nenhum pet encontrado.</li>
                 {% endfor %}
+                <!-- <td><a href="infoTutor/{{ item.id }}">{{ item.nome }}</a></td>  -->
+                
             </ul>
         </div>
     </main>
