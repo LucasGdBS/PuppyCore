@@ -1,0 +1,87 @@
+
+button {
+    font-family:'Courier New', Courier, monospace;
+    border: 2px solid #d5d5d5;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: #ffffff00; /* define a cor de fundo do botão */
+    color: white; /* define a cor do texto do botão */
+    padding: 8px 8px; /* define o preenchimento interno do botão */
+    text-align: center; /* centraliza o texto dentro do botão */
+    text-decoration: none; /* remove a decoração de texto padrão do botão */
+    display: inline-block; /* define o display do botão para inline-block */
+    font-size: 16px; /* define o tamanho da fonte do botão */
+    margin: 10px 0; /* define a margem superior e inferior do botão */
+    cursor: pointer; /* define o cursor do mouse para o botão */
+    border-radius: 5px; /* define o raio de borda do botão */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #f00d01; /* muda a cor de fundo do botão quando o mouse passa sobre ele */
+}
+
+button[type=submit]:hover{
+    background-color: #1bbe5c;
+}
+
+
+.button-base-header{
+    border: 25%;
+    margin: 0.9%;
+    border: 2px solid #EBE2DB;
+    padding: 0.6vh 1vw;
+    text-align: center;
+    display: flex;
+    font-size: larger;
+    font-weight: bold;
+    width: auto;
+    height: auto;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    color: #EBE2DB;
+    background-color: #B48565;
+    filter: drop-shadow(0px 2px 2px #EBE2DB);
+}
+
+@media only screen and (max-width: 540px) {
+    .button-base-header{
+        font-size: small;
+        padding: 5px 2px 5px 2px;
+    }
+}
+
+.button-base-header:hover{
+    background: #3A2D27;
+    color: #EBE2DB;
+}
+
+.button-base-footer{
+    border-radius: 90%;
+    margin: 1%;
+    border: 2.5px solid #EBE2DB;
+    padding: 0.7vh 1.6vh;
+    text-align: center;
+    display: flex;
+    font-size: larger;
+    font-weight: bold;
+    width: auto;
+    height: auto;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    color: #EBE2DB; 
+    background-color: #B48565;
+
+}
+
+.button-base-footer:hover{
+    background: #3A2D27;
+    color: #EBE2DB;
+}
+
+.button_confirm:hover {
+    background-color: #1bbe5c; /* muda a cor de fundo do botão quando o mouse passa sobre ele */
+}
+
+.button_error:hover {
+    background-color: #be1b1b; /* muda a cor de fundo do botão quando o mouse passa sobre ele */
+}

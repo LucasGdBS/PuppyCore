@@ -1,0 +1,26 @@
+.logo{
+    cursor: pointer;
+}
+
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #DFCCB8;
+    clip-path: circle(50% at bottom right);
+}
+
+.center-img {
+    width: 70vh;
+    height: 70vh;
+    filter: drop-shadow(0px 3px 3px #3A2D27);
+}
+
+@media only screen and (max-width: 550px){
+    .center-img{
+        width: 46vh;
+        height: 46vh;
+    }
+}

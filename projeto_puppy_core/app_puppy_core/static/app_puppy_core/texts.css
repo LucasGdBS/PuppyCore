@@ -1,0 +1,22 @@
+.text {
+    padding: 20px 0px 0px 20px ;
+    color: #3A2D27;
+    font-size: xx-large;
+    
+}
+
+@media only screen and (max-width: 550px){
+    .text{
+        font-size: large;
+        padding: 0px;
+    }
+}
+
+.forms_title{
+    margin-top: 50px;
+    width: 100%;
+    font-size: xx-large;
+    font-family:'Courier New', Courier, monospace;
+    color: #ffffff;
+    padding: 10px 10px 10px 10px;
+}

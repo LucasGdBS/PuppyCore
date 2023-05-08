@@ -1,0 +1,81 @@
+.button-container-header{
+    flex-wrap: wrap;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 1vh;
+}
+
+.center-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 550px){
+    .center-container{
+        align-items: center;
+    }
+}
+
+.button-container-footer{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 1vh;
+}
+
+.forms_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #B48565;
+    width: 70%;
+    border-radius: 40px;
+}
+
+
+.forms_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #B48565;
+    width: 70%;
+    border-radius: 40px;
+}
+
+.button-container-footer{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 1vh;
+}
+
+.unique_container{
+    border-radius: 40px;
+    padding: 40px 40px 40px 40px;
+    font-size: xx-large;
+    color: #ecd9ca;
+    background-color: #3A2D27;
+}
+
+.table-container .table2 {
+    margin-left: 20px;
+    background: #EBE2DB;
+}
+
+.table-container {
+    display: flex;
+    flex-wrap: wrap;
+    background: #EBE2DB;
+}
+
+.table-container > div {
+    flex: 1;
+    padding: 10px;
+    background: #EBE2DB;
+}
