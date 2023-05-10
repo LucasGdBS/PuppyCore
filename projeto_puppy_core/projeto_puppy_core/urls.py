@@ -11,16 +11,22 @@ urlpatterns = [
     path('homeAdm/', views.homeAdm, name='Home do Administrador'),
 
     path('homeAdm/cadastroTutor/', views.cadastroTutor, name='Cadastro Tutor'),
+    path('homeAdm/infoTutor/<pk>/alteracaoTutor/',
+         views.alteracaoTutor, name='Alteracao Tutor'),
     path('homeAdm/infoTutor/<pk>/', views.infoTutor, name='Info Tutor'),
-    path('homeAdm/infoTutor/<pk>/cadastroPet/', views.cadastroPet, name='Cadastro Pet'),
-    path('homeAdm/infoTutor/<pk>/infoPet/<id_pet>', views.infoPets, name='Info Pets'),
-    path('homeAdm/cadastroexames/', views.cadastrarExames, name='Cadastro Exames'), # Falta implementar
-    path('homeAdm/cadastroVacinas/', views.cadastroVacina, name='Cadastrar Vacinas'), # Falta implementar
+    path('homeAdm/infoTutor/<pk>/cadastroPet/',
+         views.cadastroPet, name='Cadastro Pet'),
+    path('homeAdm/infoTutor/<pk>/infoPet/<id_pet>',
+         views.infoPets, name='Info Pets'),
+    path('homeAdm/cadastroexames/', views.cadastrarExames,
+         name='Cadastro Exames'),  # Falta implementar
+    path('homeAdm/cadastroVacinas/', views.cadastroVacina,
+         name='Cadastrar Vacinas'),  # Falta implementar
 
     path('homeTutor/', views.homeTutor, name='Home do Tutor'),
     path('homeTutor/cartaoVacinas/', views.cartaoVacina, name='Visualizar Vacinas'),
 
     # puppycore.com
-    # puppycore.com/cadastroTutor/ 
+    # puppycore.com/cadastroTutor/
     # NÃO ESQUECER DA BARRA / E DA VÍRGULA
 ]

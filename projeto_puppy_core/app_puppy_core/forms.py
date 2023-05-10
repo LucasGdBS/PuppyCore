@@ -13,6 +13,16 @@ class tutorCadastro(forms.ModelForm):
             'email'
         ]
 
+class alteracaoTutor(forms.ModelForm):
+    class Meta:
+        model = Tutor
+        fields = [
+            'nome',
+            'cpf',
+            'dataNascimento',
+            'celular',
+            'email'
+        ]
 
 class petCadastro(forms.ModelForm):
     class Meta:

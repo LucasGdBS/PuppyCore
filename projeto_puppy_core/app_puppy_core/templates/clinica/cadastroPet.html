@@ -6,36 +6,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="{% static 'app_puppy_core/forms.css' %}" rel="stylesheet">
+    <link href="{% static 'app_puppy_core/template.css' %}" rel="stylesheet">
+    <link href="{% static 'app_puppy_core/forms_tables.css' %}" rel="stylesheet">
+    <link href="{% static 'app_puppy_core/buttons.css' %}" rel="stylesheet">
+    <link href="{% static 'app_puppy_core/sections.css' %}" rel="stylesheet">
     <link href="{% static 'app_puppy_core/reset.css' %}" rel="stylesheet">
     <title>Cadastro Pet</title>
 </head>
 
 <body class="site_body">
-    <div class="forms_title"><h1>Cadastro Pet</h1></div>
+    <div class="forms_title">
+        <h1>Cadastro Pet</h1>
+    </div>
     <div class="forms_container">
-    <form class="cadastro_forms" method="post">
-        {% csrf_token %}
-        <label for="nomePet">Nome do Pet: </label>
-        <input id="nomePet" type="text" name="nomePet" maxlength="100" required>
-        <label for="especie">Especie: </label>
-        <input id="especie" type="text" name="especie" maxlength="100" required>
-        <label for="raca">Raça: </label>
-        <input id="raca" type="text" name="raca" maxlength="100" required>
-        <label for="dtNasc">Data Nascimento: </label>
-        <input id="dtNasc" type="date" name="dtNasc" maxlength="100">
-        <label for="sexo" aria-required="true">Sexo: </label>
-        <input id="sexo" type="radio" name="sexo" value="M">Macho
-        <input id="sexo" type="radio" name="sexo" value="F">Fêmea
-        <label for="peso">Peso: </label>
-        <input id="peso" type="number" step="any" name="peso" maxlength="100">
-        <label for="porte">Porte: </label>
-        <input id="porte" type="text" name="porte" maxlength="100" required>
-        <label for="cadAtivo">Ativo: <input id="cadAtivo" type="checkbox" name="cadAtivo" maxlength="100" checked></label>
-        <br>
-        <button type="button" onclick="window.location.replace('/homeAdm/infoTutor/{{ pk }}/')">Cancelar</button>
-        <button type="submit">Enviar</button>
-    </form>
+        <form class="cadastro_forms" method="post">
+            {% csrf_token %}
+            <label for="nomePet">Nome do Pet: </label>
+            <input id="nomePet" type="text" name="nomePet" maxlength="100" required>
+            <label for="especie">Especie: </label>
+            <input id="especie" type="text" name="especie" maxlength="100" required>
+            <label for="raca">Raça: </label>
+            <input id="raca" type="text" name="raca" maxlength="100" required>
+            <label for="dtNasc">Data Nascimento: </label>
+            <input id="dtNasc" type="date" name="dtNasc" maxlength="100">
+            <label for="sexo" aria-required="true">Sexo: </label>
+            <input id="sexo" type="radio" name="sexo" value="M">Macho
+            <input id="sexo" type="radio" name="sexo" value="F">Fêmea
+            <label for="peso">Peso: </label>
+            <input id="peso" type="number" step="any" name="peso" maxlength="100">
+            <label for="porte">Porte: </label>
+            <input id="porte" type="text" name="porte" maxlength="100" required>
+            <label for="cadAtivo">Ativo: <input id="cadAtivo" type="checkbox" name="cadAtivo" maxlength="100"
+                    checked></label>
+            <br>
+            <button type="button" onclick="window.location.replace('/homeAdm/infoTutor/{{ pk }}/')">Cancelar</button>
+            <button type="submit">Enviar</button>
+        </form>
     </div>
 </body>
 

@@ -7,36 +7,45 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ver Vacinas</title>
-    <link href="{% static 'app_puppy_core/verVacina.css' %}" rel="stylesheet">
+    <link href="{% static 'app_puppy_core/template.css' %}" rel="stylesheet">
+    <link href="{% static 'app_puppy_core/forms_tables.css' %}" rel="stylesheet">
+    <link href="{% static 'app_puppy_core/images.css' %}" rel="stylesheet">
+    <link href="{% static 'app_puppy_core/sections.css' %}" rel="stylesheet">
+    <link href="{% static 'app_puppy_core/texts.css' %}" rel="stylesheet">
     <link href="{% static 'app_puppy_core/reset.css' %}" rel="stylesheet">
-  
-<style>
-  table {
-    border-collapse: collapse;
-    margin: 0 auto;
-    max-width: 100%;
-  }
-  th, td {
-    border: 1px solid #B48565;
-    padding: 8px;
-    text-align: center;
-  }
-  th {
-    background-color: #EBE2DB;
-    color: #B48565;
-  }
-  h4{
-        font-family: 'Poppins', sans-serif;
-        color: #B48565;
-        font-weight: bold; 
-        left: 100px;
-    }
-</style>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+
+        th,
+        td {
+            border: 1px solid #B48565;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #EBE2DB;
+            color: #B48565;
+        }
+
+        h4 {
+            font-family: 'Poppins', sans-serif;
+            color: #B48565;
+            font-weight: bold;
+            left: 100px;
+        }
+    </style>
 </head>
 
 <body>
-    <header class="site-header"> 
-        <img class="logo" alt="Woof" onclick="window.location.replace('/homeTutor/')" src="{% static 'app_puppy_core/images/logomaisnome.png' %}" >
+    <header class="site-header">
+        <img class="logo" alt="Woof" onclick="window.location.replace('/homeTutor/')"
+            src="{% static 'app_puppy_core/images/logomaisnome.png' %}">
     </header>
     <main class="site-main">
         <div class="center-container">
@@ -64,10 +73,11 @@
     </main>
     <footer class="site-footer">
         <div class="button-container-footer">
-            <button type="button" class="button-base-footer" onclick="window.alert('Funcionalidade Indisponível')">?</button>
+            <button type="button" class="button-base-footer"
+                onclick="window.alert('Funcionalidade Indisponível')">?</button>
         </div>
     </footer>
-    
+
 </body>
 
 </html>

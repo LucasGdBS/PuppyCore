@@ -2,38 +2,47 @@
 {%load static%}
 
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="{% static 'app_puppy_core/homeGeral.css' %}" rel="stylesheet">
+    <link href="{% static 'app_puppy_core/template.css' %}" rel="stylesheet">
+    <link href="{% static 'app_puppy_core/forms_tables.css' %}" rel="stylesheet">
+    <link href="{% static 'app_puppy_core/images.css' %}" rel="stylesheet">
+    <link href="{% static 'app_puppy_core/sections.css' %}" rel="stylesheet">
+    <link href="{% static 'app_puppy_core/texts.css' %}" rel="stylesheet">
     <link href="{% static 'app_puppy_core/reset.css' %}" rel="stylesheet">
     <title>Home Tutor</title>
     <style>
-        h1{
-        font-family: 'Poppins', sans-serif;
-        color: #EBE2DB;
-        font-weight: bold; 
-    }
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            color: #EBE2DB;
+            font-weight: bold;
+        }
     </style>
 </head>
 
 <body>
-    <header class="site-header"> 
-        <img class="logo" alt="Woof" onclick="window.location.replace('/')" src="{% static 'app_puppy_core/images/logomaisnome.png' %}" >
+    <header class="site-header">
+        <img class="logo" alt="Woof" onclick="window.location.replace('/')"
+            src="{% static 'app_puppy_core/images/logomaisnome.png' %}">
     </header>
 
     <main class="site-main">
         <div class="center-container">
-            <button type="button" class="button-base-center" onclick="window.location.replace('cartaoVacinas/ ')">Cartão de Vacinas</button>
+            <button type="button" class="button-base-center" onclick="window.location.replace('cartaoVacinas/ ')">Cartão
+                de Vacinas</button>
         </div>
     </main>
 
     <footer class="site-footer">
         <div class="button-container-footer">
-            <button type="button" class="button-base-footer" onclick="window.alert('Funcionalidade Indisponível')">?</button>
+            <button type="button" class="button-base-footer"
+                onclick="window.alert('Funcionalidade Indisponível')">?</button>
         </div>
     </footer>
 
 
 </body>
+
 </html>

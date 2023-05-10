@@ -2,20 +2,31 @@
 {%load static%}
 
 <html lang="pt-br">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home</title>
-    <link href="{% static 'app_puppy_core/home.css' %}" rel="stylesheet">
+    <link href="{% static 'app_puppy_core/template.css' %}" rel="stylesheet">
+    <link href="{% static 'app_puppy_core/forms_tables.css' %}" rel="stylesheet">
+    <link href="{% static 'app_puppy_core/buttons.css' %}" rel="stylesheet">
+    <link href="{% static 'app_puppy_core/images.css' %}" rel="stylesheet">
+    <link href="{% static 'app_puppy_core/sections.css' %}" rel="stylesheet">
+    <link href="{% static 'app_puppy_core/texts.css' %}" rel="stylesheet">
     <link href="{% static 'app_puppy_core/reset.css' %}" rel="stylesheet">
 
 </head>
-  <body>
-    <header class="site-header"> 
-        <img class="logo" alt="Woof" onclick="window.location.replace('/')" src="{% static 'app_puppy_core/images/logomaisnome.png' %}" >
+
+<body>
+
+    <header class="site-header">
+        <img class="logo" alt="Woof" onclick="window.location.replace('/')"
+            src="{% static 'app_puppy_core/images/logomaisnome.png' %}">
         <div class="button-container-header">
-            <button type="button" class="button-base-header" onclick="window.location.replace('/login/')" id="login">Login Administrador</button>
-            <button type="button" class="button-base-header" onclick="window.location.replace('/homeTutor/')">Área do Tutor</button>
+            <button type="button" class="button-base-header" onclick="window.location.replace('/login/')"
+                id="login">Login Administrador</button>
+            <button type="button" class="button-base-header" onclick="window.location.replace('/homeTutor/')">Área do
+                Tutor</button>
         </div>
     </header>
 
@@ -32,8 +43,10 @@
 
     <footer class="site-footer">
         <div class="button-container-footer">
-            <button type="button" class="button-base-footer" onclick="window.alert('Funcionalidade Indisponível')">?</button>
+            <button type="button" class="button-base-footer"
+                onclick="window.alert('Funcionalidade Indisponível')">?</button>
         </div>
     </footer>
 </body>
+
 </html>

@@ -6,12 +6,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'app_puppy_core/forms.css' %}">
-    <link rel="stylesheet" href="{% static 'app_puppy_core/reset.css' %}">
+    <link href="{% static 'app_puppy_core/template.css' %}" rel="stylesheet">
+    <link href="{% static 'app_puppy_core/forms_tables.css' %}" rel="stylesheet">
+    <link href="{% static 'app_puppy_core/buttons.css' %}" rel="stylesheet">
+    <link href="{% static 'app_puppy_core/sections.css' %}" rel="stylesheet">
+    <link href="{% static 'app_puppy_core/texts.css' %}" rel="stylesheet">
+    <link href="{% static 'app_puppy_core/reset.css' %}" rel="stylesheet">
     <title>Alteração Dados Tutor</title>
 </head>
 
 <body class="site_body">
+    <header class="site-header">
+        <img class="logo" alt="Woof" onclick="window.location.replace('/homeAdm/')"
+            src="{% static 'app_puppy_core/images/logomaisnome.png' %}">
+    </header>
     <div class="forms_title">
         <h1 align="center">Alteração Cadastro Tutor</h1>
     </div>

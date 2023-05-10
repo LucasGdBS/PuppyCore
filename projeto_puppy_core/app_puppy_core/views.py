@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 
-from .models import Tutor , Pet, CartaoExames, CartaoVacina
-from .forms import tutorCadastro, petCadastro, vacinaCadastro, formLogin, cadastroExames
+from .models import Tutor, Pet, CartaoExames, CartaoVacina
+from .forms import tutorCadastro, petCadastro, vacinaCadastro, formLogin, cadastroExames, alteracaoTutor
 
 # Create your views here.
 
@@ -25,12 +25,11 @@ def home(request):
     return render(request, 'clinica/home.html')
 
 
-def cadastroPet(request, pk:int):
+def cadastroPet(request, pk: int):
     if request.method == 'POST':
         form = petCadastro(request.POST)
         if form.is_valid():
-            pet = Pet(tutor = Tutor(id=pk), **form.cleaned_data)
-            
+            pet = Pet(tutor=Tutor(id=pk), **form.cleaned_data)
 
             pet.save()
             return render(request, 'clinica/sucessocadastro.html')
@@ -80,6 +79,7 @@ def homeAdm(request):
 def homeTutor(request):
     return render(request, 'tutor/homeTutor.html')
 
+
 def cadastrarExames(request):
     if request.method == 'POST':
         form = cadastroExames(request.POST)
@@ -93,8 +93,9 @@ def cadastrarExames(request):
     else:
         form = cadastroExames()
         return render(request, 'clinica/cadastroExames.html', {'form': form})
-    
-def infoTutor(request, pk:int):
+
+
+def infoTutor(request, pk: int):
     if request.method == 'GET':
         tutor = Tutor.objects.get(pk=pk)
         idtutor = get_object_or_404(Tutor, pk=pk)
@@ -105,9 +106,10 @@ def infoTutor(request, pk:int):
             'tutor': tutor,
         }
 
-        #itens = Item.objects.filter(usuario=request.user)
+        # itens = Item.objects.filter(usuario=request.user)
 
         return render(request, 'clinica/infoTutor.html', context)
+
 
 def login(request):
     if request.method == 'POST':
@@ -122,12 +124,29 @@ def login(request):
     else:
         form = formLogin()
         return render(request, 'geral/login.html', {'form': form})
-    
-def infoPets(request, pk:int, id_pet:int):
-     pet = Pet.objects.get(pk=id_pet)
 
-     context = {
-         'pet': pet,
-     }
 
-     return render(request, 'clinica/infoPets.html', context)
+def infoPets(request, pk: int, id_pet: int):
+    pet = Pet.objects.get(pk=id_pet)
+
+    context = {
+        'pet': pet,
+    }
+
+    return render(request, 'clinica/infoPets.html', context)
+
+
+def alteracaoTutor(request, pk: int):
+    if request.method == 'GET':
+        tutor = Tutor.objects.get(pk=pk)
+        idtutor = get_object_or_404(Tutor, pk=pk)
+        pets = idtutor.pet_set.all()
+
+        context = {
+            'pets': pets,
+            'tutor': tutor,
+        }
+
+        # itens = Item.objects.filter(usuario=request.user)
+
+        return render(request, 'clinica/alteracaoTutor.html', context)

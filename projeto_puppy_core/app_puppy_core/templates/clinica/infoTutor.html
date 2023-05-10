@@ -2,18 +2,22 @@
 {%load static%}
 
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="{% static 'app_puppy_core/homeGeral.css' %}" rel="stylesheet">
+    <link href="{% static 'app_puppy_core/template.css' %}" rel="stylesheet">
+    <link href="{% static 'app_puppy_core/forms_tables.css' %}" rel="stylesheet">
+    <link href="{% static 'app_puppy_core/sections.css' %}" rel="stylesheet">
     <link href="{% static 'app_puppy_core/reset.css' %}" rel="stylesheet">
     <title>Informações do Tutor</title>
 
 </head>
 
 <body>
-    <header class="site-header"> 
-        <img class="logo" alt="Woof" onclick="window.location.replace('/homeAdm/')" src="{% static 'app_puppy_core/images/logomaisnome.png' %}" >
+    <header class="site-header">
+        <img class="logo" alt="Woof" onclick="window.location.replace('/homeAdm/')"
+            src="{% static 'app_puppy_core/images/logomaisnome.png' %}">
     </header>
 
     <main class="site-main">
@@ -21,7 +25,12 @@
             <h1>Detalhe do Tutor</h1>
         </div>
         <div>
-            <button type="button" class="button-base-center" onclick="window.location.replace('cadastroPet/')">Cadastro do Pet</button>
+            <button type="button" class="button-base-center"
+                onclick="window.location.replace('alteracaoTutor/')">Alterar Dados</button>
+        </div>
+        <div>
+            <button type="button" class="button-base-center" onclick="window.location.replace('cadastroPet/')">Cadastro
+                do Pet</button>
         </div>
         <div>
             <ul>
@@ -36,24 +45,26 @@
         <div>
             <ul>
                 {% for pet in pets %}
-                    <li><a href="infoPet/{{ pet.id }}">Pet: {{ pet.nomePet }}</a></li>
+                <li><a href="infoPet/{{ pet.id }}">Pet: {{ pet.nomePet }}</a></li>
                 {% empty %}
-                    <li>Nenhum pet encontrado.</li>
+                <li>Nenhum pet encontrado.</li>
                 {% endfor %}
                 <!-- <td><a href="infoTutor/{{ item.id }}">{{ item.nome }}</a></td>  -->
-                
+
             </ul>
         </div>
     </main>
 
     <footer class="site-footer">
         <div class="button-container-footer">
-            <button type="button" class="button-base-footer" onclick="window.alert('Funcionalidade Indisponível')">?</button>
+            <button type="button" class="button-base-footer"
+                onclick="window.alert('Funcionalidade Indisponível')">?</button>
         </div>
     </footer>
 
 
 </body>
+
 </html>
 
 <!-- 

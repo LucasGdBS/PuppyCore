@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 {% load static %}
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'app_puppy_core/forms.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/forms_tables.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/template.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/buttons.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/images.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/sections.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/texts.css' %}">
     <link rel="stylesheet" href="{% static 'app_puppy_core/reset.css' %}">
     <title>Login</title>
 </head>
+
 <body class="site_body">
-    <div class="forms_title"><h1 align="center">Login</h1></div>
+    <div class="forms_title">
+        <h1 align="center">Login</h1>
+    </div>
     <div class="forms_container">
-    <form class="cadastro_forms" method="POST">
-        {% csrf_token %}
-        <label for="CPF">CPF: </label>
-        <input id="cpf" type="text" name="cpf" maxlength="11" required>
-        <label for="senha">Senha: </label>
-        <input id="senha" type="password" name="senha" maxlength="51" required>
-        <br>
-        <button type="submit"  onclick="window.location.replace('/homeAdm/')">Login</button>
-        <button type="button"  onclick="window.location.replace('/')">Cancelar</button>
-    </form>
+        <form class="cadastro_forms" method="POST">
+            {% csrf_token %}
+            <label for="CPF">CPF: </label>
+            <input id="cpf" type="text" name="cpf" maxlength="11" required>
+            <label for="senha">Senha: </label>
+            <input id="senha" type="password" name="senha" maxlength="51" required>
+            <br>
+            <button type="submit" onclick="window.location.replace('/homeAdm/')">Login</button>
+            <button type="button" onclick="window.location.replace('/')">Cancelar</button>
+        </form>
     </div>
 </body>
+
 </html>
