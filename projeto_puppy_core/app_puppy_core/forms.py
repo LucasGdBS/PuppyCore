@@ -13,17 +13,6 @@ class tutorCadastro(forms.ModelForm):
             'email'
         ]
 
-class alteracaoTutor(forms.ModelForm):
-    class Meta:
-        model = Tutor
-        fields = [
-            'nome',
-            'cpf',
-            'dataNascimento',
-            'celular',
-            'email'
-        ]
-
 class petCadastro(forms.ModelForm):
     class Meta:
         model = Pet
@@ -48,19 +37,6 @@ class vacinaCadastro(forms.ModelForm):
             'dataVacina',
             'tipoVacina',
         ]
-
-
-class tutorAltera(forms.ModelForm):
-    class Meta:
-        model = Tutor
-        fields = [
-            'nome',
-            'cpf',
-            'dataNascimento',
-            'celular',
-            'email'
-        ]
-
 
 class cadastroExames(forms.ModelForm):
     class Meta:
