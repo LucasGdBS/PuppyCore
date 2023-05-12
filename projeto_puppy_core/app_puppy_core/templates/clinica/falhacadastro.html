@@ -7,16 +7,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="{% static 'app_puppy_core/statuscadastro.css' %}" rel="stylesheet">
+    <link href="{% static 'app_puppy_core/template.css' %}" rel="stylesheet">
+    <link href="{% static 'app_puppy_core/sections.css' %}" rel="stylesheet">
+    <link href="{% static 'app_puppy_core/texts.css' %}" rel="stylesheet">
     <link href="{% static 'app_puppy_core/reset.css' %}" rel="stylesheet">
+    <link href="{% static 'app_puppy_core/buttons.css' %}" rel="stylesheet">
     <title>Falha Cadastro</title>
 </head>
 
+
 <body class="site_body">
-    <div class="unique_container">
+
+    <header class="site-header">
+        <img class="logo" alt="Woof" onclick="window.location.replace('/')"
+            src="{% static 'app_puppy_core/images/logomaisnome.png' %}">
+    </header>
+    
+    <main class="site-main">
+    <div class="unique_container"
     <p>Houve uma falha no cadastro!</p>
     <button class="button_error" onclick="history.back()">Tente novamente</button>
     </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="button-container-footer">
+            <button type="button" class="button-base-footer"
+                onclick="window.alert('Funcionalidade Indisponível')">?</button>
+        </div>
+    </footer>
 </body>
 
 </html>

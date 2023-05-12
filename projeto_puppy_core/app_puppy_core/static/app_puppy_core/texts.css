@@ -1,6 +1,7 @@
 .text {
     padding: 20px 0px 0px 20px ;
     color: #3A2D27;
+    align-items: center;
     font-size: xx-large;
     font-family: Copperplate, 'Copperplate Gothic Light', sans-serif;
     font-weight: bold;
