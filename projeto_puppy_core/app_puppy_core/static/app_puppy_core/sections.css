@@ -32,7 +32,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #B48565;
+    background-color: #3A2D27;
     width: 100%;
     border-radius: 40px;
 }
@@ -81,7 +81,7 @@
     width: 100%;
     font-family:'Copperplate Gothic Light', Courier, monospace;
     font-size: 25px;
-    color: #B48565;
+    color: #3A2D27;
     
   }
   
@@ -89,6 +89,7 @@
     border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
+    color: #3A2D27;
     background-color: #f2f2f2;
   }
 
