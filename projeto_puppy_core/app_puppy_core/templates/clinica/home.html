@@ -7,14 +7,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home</title>
-    <link href="{% static 'app_puppy_core/template.css' %}" rel="stylesheet">
-    <link href="{% static 'app_puppy_core/forms_tables.css' %}" rel="stylesheet">
-    <link href="{% static 'app_puppy_core/buttons.css' %}" rel="stylesheet">
-    <link href="{% static 'app_puppy_core/images.css' %}" rel="stylesheet">
-    <link href="{% static 'app_puppy_core/sections.css' %}" rel="stylesheet">
-    <link href="{% static 'app_puppy_core/texts.css' %}" rel="stylesheet">
-    <link href="{% static 'app_puppy_core/reset.css' %}" rel="stylesheet">
-
+    <link rel="stylesheet" href="{% static 'app_puppy_core/forms_tables.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/template.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/buttons.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/images.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/sections.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/texts.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/reset.css' %}">
+    <title>Página Inicial</title>
 </head>
 
 <body>
@@ -36,7 +36,13 @@
                 <img class="center-img" src="{% static 'app_puppy_core/images/wooflogo.png.png' %}">
             </div>
             <div class="text">
-                <p>PORQUE O AMOR PELOS ANIMAIS<br>É A NOSSA ESPECIALIDADE</p>
+                <p>Não é apenas um<br>é o<br>da vida de algúem!</p>
+                <div class="text_detail_2">
+                    <p>amor</p>
+                </div>
+            </div>
+            <div class="text_detail">
+                <p>animal</p>
             </div>
         </div>
     </main>
@@ -47,6 +53,7 @@
                 onclick="window.alert('Funcionalidade Indisponível')">?</button>
         </div>
     </footer>
+
 </body>
 
 </html>

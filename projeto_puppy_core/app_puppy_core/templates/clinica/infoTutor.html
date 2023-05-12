@@ -6,12 +6,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="{% static 'app_puppy_core/template.css' %}" rel="stylesheet">
-    <link href="{% static 'app_puppy_core/forms_tables.css' %}" rel="stylesheet">
-    <link href="{% static 'app_puppy_core/sections.css' %}" rel="stylesheet">
-    <link href="{% static 'app_puppy_core/reset.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/forms_tables.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/template.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/buttons.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/images.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/sections.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/texts.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/reset.css' %}">
     <title>Informações do Tutor</title>
-
 </head>
 
 <body>
@@ -22,27 +24,23 @@
 
     <main class="site-main">
         <div>
-            <h1>Detalhe do Tutor</h1>
+            <button type="button" class="button_color"
+            onclick="window.location.replace('alteracaoTutor/')">Alterar Dados</button>
         </div>
         <div>
-            <button type="button" class="button-base-center"
-                onclick="window.location.replace('alteracaoTutor/')">Alterar Dados</button>
+            <button type="button" class="button_color" 
+            onclick="window.location.replace('cadastroPet/')">Cadastro do Pet</button>
         </div>
-        <div>
-            <button type="button" class="button-base-center" onclick="window.location.replace('cadastroPet/')">Cadastro
-                do Pet</button>
-        </div>
-        <div>
+        <div class="forms_title, table, table th, table td">
+            <h1 align="center">Informações do Tutor:</h1>
             <ul>
-                <li>Nome: {{ tutor.nome }}</li>
+                <li> Nome: {{ tutor.nome }}</li>
                 <li>CPF: {{ tutor.cpf }}</li>
                 <li>Data de nascimento: {{ tutor.dataNascimento }}</li>
                 <li>Celular: {{ tutor.celular }}</li>
                 <li>Email: {{ tutor.email }}</li>
             </ul>
-        </div>
-
-        <div>
+    
             <ul>
                 {% for pet in pets %}
                 <li><a href="infoPet/{{ pet.id }}">Pet: {{ pet.nomePet }}</a></li>

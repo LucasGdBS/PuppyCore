@@ -2,8 +2,32 @@
     padding: 20px 0px 0px 20px ;
     color: #3A2D27;
     font-size: xx-large;
-    
+    font-family: Copperplate, 'Copperplate Gothic Light', sans-serif;
+    font-weight: bold;
 }
+
+.text_detail { 
+    position: absolute; /* define o tipo de posicionamento */
+    top: 45.5%; /* define a distância em relação ao topo do elemento pai */
+    left: 77.5%;
+    transform: translateY(-45.5%, -77.5%); /* corrige a posição vertical */
+    color: #3A2D27;
+    font-size: 32px; /* define o tamanho da fonte em pixels */
+    font-family: 'Lucida Handwriting', cursive;
+    font-weight: bold;
+}
+
+.text_detail_2 {
+    position: absolute; /* define o tipo de posicionamento */
+    top: 49.8%; /* define a distância em relação ao topo do elemento pai */
+    left: 62%;
+    transform: translateY(-49.8%, -62%); /* corrige a posição vertical */
+    color: #3A2D27;
+    font-size: 32px; /* define o tamanho da fonte em pixels */
+    font-family: 'Lucida Handwriting', cursive;
+    font-weight: bold;
+}
+
 
 @media only screen and (max-width: 550px){
     .text{
@@ -16,7 +40,7 @@
     margin-top: 50px;
     width: 100%;
     font-size: xx-large;
-    font-family:'Courier New', Courier, monospace;
-    color: #ffffff;
+    font-family:'Copperplate Gothic Light', Courier, monospace;
+    color: #3A2D27;
     padding: 10px 10px 10px 10px;
 }

@@ -33,17 +33,7 @@
     align-items: center;
     justify-content: center;
     background-color: #B48565;
-    width: 70%;
-    border-radius: 40px;
-}
-
-
-.forms_container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #B48565;
-    width: 70%;
+    width: 100%;
     border-radius: 40px;
 }
 
@@ -79,3 +69,28 @@
     padding: 10px;
     background: #EBE2DB;
 }
+
+.table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute; /* define o tipo de posicionamento */
+    top: 20.5%; /* define a distância em relação ao topo do elemento pai */
+    transform: translateY(-20.5%); /* corrige a posição vertical */
+    border-collapse: collapse;
+    width: 100%;
+    font-family:'Copperplate Gothic Light', Courier, monospace;
+    font-size: 25px;
+    color: #B48565;
+    
+  }
+  
+  .table th, .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    background-color: #f2f2f2;
+  }
+  
+ 
+  

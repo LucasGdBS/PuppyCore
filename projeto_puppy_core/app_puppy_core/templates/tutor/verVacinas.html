@@ -6,40 +6,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ver Vacinas</title>
-    <link href="{% static 'app_puppy_core/template.css' %}" rel="stylesheet">
-    <link href="{% static 'app_puppy_core/forms_tables.css' %}" rel="stylesheet">
-    <link href="{% static 'app_puppy_core/images.css' %}" rel="stylesheet">
-    <link href="{% static 'app_puppy_core/sections.css' %}" rel="stylesheet">
-    <link href="{% static 'app_puppy_core/texts.css' %}" rel="stylesheet">
-    <link href="{% static 'app_puppy_core/reset.css' %}" rel="stylesheet">
-
-    <style>
-        table {
-            border-collapse: collapse;
-            margin: 0 auto;
-            max-width: 100%;
-        }
-
-        th,
-        td {
-            border: 1px solid #B48565;
-            padding: 8px;
-            text-align: center;
-        }
-
-        th {
-            background-color: #EBE2DB;
-            color: #B48565;
-        }
-
-        h4 {
-            font-family: 'Poppins', sans-serif;
-            color: #B48565;
-            font-weight: bold;
-            left: 100px;
-        }
-    </style>
+    <link rel="stylesheet" href="{% static 'app_puppy_core/forms_tables.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/template.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/buttons.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/images.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/sections.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/texts.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/reset.css' %}">
+    <title>Cartão de Vacinas</title>
 </head>
 
 <body>
@@ -48,27 +22,21 @@
             src="{% static 'app_puppy_core/images/logomaisnome.png' %}">
     </header>
     <main class="site-main">
-        <div class="center-container">
-            <div class="text">
-                <div class="table-container">
-                    <div class="table1">
-                        <table>
-                            <tr>
-                                <th>Médico Veterinário</th>
-                                <th>Tipo de Vacina</th>
-                                <th>Data da Aplicação</th>
-                            </tr>
-                            {% for item in dados %}
-                            <tr>
-                                <td>{{ item.nomeVeterinario }}</td>
-                                <td>{{ item.tipoVacina }}</td>
-                                <td>{{item.dataVacina}}</td>
-                            </tr>
-                            {% endfor %}
-                        </table>
-                    </div>
-                </div>
-            </div>
+        <div class="table, table th, table td">
+            <table>
+                <tr>
+                    <th>Médico Veterinário</th>
+                    <th>Tipo de Vacina</th>
+                    <th>Data da Aplicação</th>
+                </tr>
+                {% for item in dados %}
+                <tr>
+                    <td>{{ item.nomeVeterinario }}</td>
+                    <td>{{ item.tipoVacina }}</td>
+                    <td>{{item.dataVacina}}</td>
+                </tr>
+                {% endfor %}
+            </table>
         </div>
     </main>
     <footer class="site-footer">
@@ -77,7 +45,6 @@
                 onclick="window.alert('Funcionalidade Indisponível')">?</button>
         </div>
     </footer>
-
 </body>
 
 </html>

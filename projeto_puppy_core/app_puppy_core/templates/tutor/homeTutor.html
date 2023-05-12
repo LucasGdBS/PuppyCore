@@ -6,20 +6,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="{% static 'app_puppy_core/template.css' %}" rel="stylesheet">
-    <link href="{% static 'app_puppy_core/forms_tables.css' %}" rel="stylesheet">
-    <link href="{% static 'app_puppy_core/images.css' %}" rel="stylesheet">
-    <link href="{% static 'app_puppy_core/sections.css' %}" rel="stylesheet">
-    <link href="{% static 'app_puppy_core/texts.css' %}" rel="stylesheet">
-    <link href="{% static 'app_puppy_core/reset.css' %}" rel="stylesheet">
-    <title>Home Tutor</title>
-    <style>
-        h1 {
-            font-family: 'Poppins', sans-serif;
-            color: #EBE2DB;
-            font-weight: bold;
-        }
-    </style>
+    <link rel="stylesheet" href="{% static 'app_puppy_core/forms_tables.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/template.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/buttons.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/images.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/sections.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/texts.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/reset.css' %}">
+    <title>Área do Tutor</title>
 </head>
 
 <body>
@@ -29,9 +23,9 @@
     </header>
 
     <main class="site-main">
-        <div class="center-container">
-            <button type="button" class="button-base-center" onclick="window.location.replace('cartaoVacinas/ ')">Cartão
-                de Vacinas</button>
+        <div>
+            <button type="button" class="button_color"
+                onclick="window.location.replace('cartaoVacinas/ ')">Cartão de Vacinas</button>
         </div>
     </main>
 
@@ -41,8 +35,6 @@
                 onclick="window.alert('Funcionalidade Indisponível')">?</button>
         </div>
     </footer>
-
-
 </body>
 
 </html>

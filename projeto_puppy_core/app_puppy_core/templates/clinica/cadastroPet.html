@@ -6,20 +6,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="{% static 'app_puppy_core/template.css' %}" rel="stylesheet">
-    <link href="{% static 'app_puppy_core/forms_tables.css' %}" rel="stylesheet">
-    <link href="{% static 'app_puppy_core/buttons.css' %}" rel="stylesheet">
-    <link href="{% static 'app_puppy_core/sections.css' %}" rel="stylesheet">
-    <link href="{% static 'app_puppy_core/reset.css' %}" rel="stylesheet">
-    <title>Cadastro Pet</title>
+    <link rel="stylesheet" href="{% static 'app_puppy_core/forms_tables.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/template.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/buttons.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/images.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/sections.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/texts.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/reset.css' %}">
+    <title>Cartão do Pet</title>
 </head>
 
 <body class="site_body">
     <div class="forms_title">
-        <h1>Cadastro Pet</h1>
+        <h1 align="center">Cadastro Pet</h1>
     </div>
     <div class="forms_container">
-        <form class="cadastro_forms" method="post">
+        <form class="cadastro_forms" method="POST">
             {% csrf_token %}
             <label for="nomePet">Nome do Pet: </label>
             <input id="nomePet" type="text" name="nomePet" maxlength="100" required>

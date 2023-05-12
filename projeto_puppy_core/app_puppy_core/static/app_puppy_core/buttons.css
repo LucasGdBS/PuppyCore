@@ -1,6 +1,6 @@
 
 button {
-    font-family:'Courier New', Courier, monospace;
+    font-family:'Copperplate Gothic Light', Courier, monospace;
     border: 2px solid #d5d5d5;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     background-color: #ffffff00; /* define a cor de fundo do botão */
@@ -17,11 +17,11 @@ button {
     cursor: pointer;
 }
 button:hover {
-    background-color: #f00d01; /* muda a cor de fundo do botão quando o mouse passa sobre ele */
+    background-color: #861515; /* muda a cor de fundo do botão quando o mouse passa sobre ele */
 }
 
 button[type=submit]:hover{
-    background-color: #1bbe5c;
+    background-color: #228615;
 }
 
 
@@ -73,15 +73,37 @@ button[type=submit]:hover{
 
 }
 
+.button_color{
+    margin: 20%;
+    border: 1.5px solid #EBE2DB;
+    padding: 0.7vh 1.6vh;
+    text-align: center;
+    display: flex;
+    font-size: larger;
+    font-weight: bold;
+    width: auto;
+    height: auto;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    color: #EBE2DB; 
+    background-color: #B48565;
+
+}
+
+.button_color:hover{
+    background: #3A2D27;
+    color: #EBE2DB;
+}
+
 .button-base-footer:hover{
     background: #3A2D27;
     color: #EBE2DB;
 }
 
 .button_confirm:hover {
-    background-color: #1bbe5c; /* muda a cor de fundo do botão quando o mouse passa sobre ele */
+    background-color: #228615; /* muda a cor de fundo do botão quando o mouse passa sobre ele */
 }
 
 .button_error:hover {
-    background-color: #be1b1b; /* muda a cor de fundo do botão quando o mouse passa sobre ele */
+    background-color: #861515; /* muda a cor de fundo do botão quando o mouse passa sobre ele */
 }
