@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 
 from .models import Tutor, Pet, CartaoExames, CartaoVacina
-from .forms import tutorCadastro, petCadastro, vacinaCadastro, formLogin, cadastroExames, alteracaoTutor
+from .forms import tutorCadastro, petCadastro, vacinaCadastro, formLogin, cadastroExames
 
 # Create your views here.
 
@@ -139,14 +139,19 @@ def infoPets(request, pk: int, id_pet: int):
 def alteracaoTutor(request, pk: int):
     if request.method == 'GET':
         tutor = Tutor.objects.get(pk=pk)
-        idtutor = get_object_or_404(Tutor, pk=pk)
-        pets = idtutor.pet_set.all()
+        form = tutorCadastro(instance=tutor)
 
-        context = {
-            'pets': pets,
-            'tutor': tutor,
-        }
+        return render(request, template_name='clinica/alteracaoTutor.html', context={'form': form})
+    
+    elif request.method == 'POST':
+        tutor = Tutor.objects.get(pk=pk)
+        form = tutorCadastro(request.POST,instance=tutor)
 
-        # itens = Item.objects.filter(usuario=request.user)
+        if form.is_valid():
 
-        return render(request, 'clinica/alteracaoTutor.html', context)
+            form.save()
+
+            return render(request, 'clinica/sucessocadastro.html')
+        else:
+            return render(request, 'clinica/falhacadastro.html')
+        
