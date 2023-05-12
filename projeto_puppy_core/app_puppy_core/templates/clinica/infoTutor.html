@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="{% static 'app_puppy_core/sections.css' %}">
     <link rel="stylesheet" href="{% static 'app_puppy_core/texts.css' %}">
     <link rel="stylesheet" href="{% static 'app_puppy_core/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/infoTutor.css' %}">
     <title>Informações do Tutor</title>
 </head>
 
@@ -32,24 +33,34 @@
             onclick="window.location.replace('cadastroPet/')">Cadastro do Pet</button>
         </div>
         <div class="forms_title, table, table th, table td">
-            <h1 align="center">Informações do Tutor:</h1>
-            <ul>
-                <li> Nome: {{ tutor.nome }}</li>
-                <li>CPF: {{ tutor.cpf }}</li>
-                <li>Data de nascimento: {{ tutor.dataNascimento }}</li>
-                <li>Celular: {{ tutor.celular }}</li>
-                <li>Email: {{ tutor.email }}</li>
-            </ul>
-    
-            <ul>
-                {% for pet in pets %}
-                <li><a href="infoPet/{{ pet.id }}">Pet: {{ pet.nomePet }}</a></li>
-                {% empty %}
-                <li>Nenhum pet encontrado.</li>
-                {% endfor %}
-                <!-- <td><a href="infoTutor/{{ item.id }}">{{ item.nome }}</a></td>  -->
-
-            </ul>
+            <div class="container-title">
+                <h1>Informações do Tutor:</h1>
+            </div>
+            <div class="container">
+                <div>
+                    <table>
+                        <td>
+                            <th>Nome: {{ tutor.nome }}</th>
+                            <th>CPF: {{ tutor.cpf }}</th>
+                            <th>Data de nascimento: {{ tutor.dataNascimento }}</th>
+                            <th>Celular: {{ tutor.celular }}</th>
+                            <th>Email: {{ tutor.email }}</th>
+                        </td>
+                    </table>
+                    <table class="pets-table">
+                        <td>Pets:
+                            <th>
+                                {% for pet in pets %}
+                                <ul><a href="infoPet/{{ pet.id }}">{{ pet.nomePet }}</a></ul>
+                                {% empty %}
+                                <ul>Nenhum pet encontrado.</ul>
+                                {% endfor %}
+                                <!-- <td><a href="infoTutor/{{ item.id }}">{{ item.nome }}</a></td>  -->
+                            </th>
+                        </td>
+                    </table>
+                </div>
+            </div>
         </div>
     </main>
 
@@ -59,10 +70,7 @@
                 onclick="window.alert('Funcionalidade Indisponível')">?</button>
         </div>
     </footer>
-
-
 </body>
-
 </html>
 
 <!-- 

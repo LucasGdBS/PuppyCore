@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="{% static 'app_puppy_core/sections.css' %}">
     <link rel="stylesheet" href="{% static 'app_puppy_core/texts.css' %}">
     <link rel="stylesheet" href="{% static 'app_puppy_core/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/infoTutor.css' %}">
     <title>Informações do Pet</title>
 </head>
 
@@ -23,27 +24,30 @@
     </header>
 
     <main class="site-main">
-        <div>
-            <h1>Informações de {{ pet.nomePet }}</h1>
-        </div>
+        <div class="forms_title, table, table th, table td">
+            <div class="title-infoPet">
+                <h1>Informações de {{ pet.nomePet }}</h1>
+            </div>
+            
+            <div>
+                <table class="lista">
+                    <td>
+                        <th>Nome: {{ pet.nomePet }}</th>
+                        <th>Espécie: {{ pet.especie }}</th>
+                        <th>Raça: {{ pet.raca }}</th>
+                        <th>Data de Nascimento: {{ pet.dtNasc }}</th>
+                        <th>Sexo: {{ pet.sexo }}</th>
+                        <th>Peso: {{ pet.peso }}</th>
+                        <th>Porte: {{ pet.porte }}</th>
+                    </td>
+                </table>
+            </div>
 
-        <div>
-            <ul>
-                <li>Nome: {{ pet.nomePet }}</li>
-                <li>Espécie: {{ pet.especie }}</li>
-                <li>Raça: {{ pet.raca }}</li>
-                <li>Data de Nascimento: {{ pet.dtNasc }}</li>
-                <li>Sexo: {{ pet.sexo }}</li>
-                <li>Peso: {{ pet.peso }}</li>
-                <li>Porte: {{ pet.porte }}</li>
-            </ul>
+            <div>
+                <button type="button" class="button-base-center"
+                    onclick="window.alert('Funcionalidade Indisponível')">Editar informações</button>
+            </div>
         </div>
-
-        <div>
-            <button type="button" class="button-base-center"
-                onclick="window.alert('Funcionalidade Indisponível')">Editar informações</button>
-        </div>
-
     </main>
 
     <footer class="site-footer">

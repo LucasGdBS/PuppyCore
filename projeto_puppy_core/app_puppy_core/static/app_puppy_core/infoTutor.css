@@ -1,0 +1,15 @@
+.container-title{
+    position:fixed;
+    padding-top: 1px;
+}
+
+.container{
+   align-self: center;
+   align-items: center;
+   padding-top: 150px;
+}
+
+.pets-table{
+    align-self: center;
+    align-items: center;
+}
