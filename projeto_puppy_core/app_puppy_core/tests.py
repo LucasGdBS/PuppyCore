@@ -23,7 +23,8 @@ class TesteTutor(TestCase):
         login.click()
         sleep(1)
         
-        # Teste para cadastrar 2 vezes o mesmo CPF
+        # Teste para cadastrar 2 vezes o mesmo CPF, aparece todos os tutores cadastrados
+        # não aparece nenhum tutor não cadastrado
         for i in range(2):
             driver.find_element(By.ID, 'cadastrar_tutor').click()
             
@@ -53,17 +54,18 @@ class TesteTutor(TestCase):
         driver.find_element(By.ID, 'confirmar').click()
         sleep(1)
         driver.find_element(By.ID, 'email').send_keys('.com')
-        sleep(5)
+        sleep(2)
         driver.find_element(By.ID, 'enviar').click()
-        sleep(5)
+        sleep(2)
         driver.find_element(By.ID, 'confirmar').click()
 
 
-        # adicionar um pet a um tutor cadastrado.
+        # adicionar um pet a um tutor cadastrado, visualizar todos os pets do tutor especifico,
+        # não aparece os pets de outros tutores, acessar todas as informações do tutor
         dados = {'pets': ['', 'Tesseract', 'Groot'],
                  'raca': ['', 'Joia do espaço', 'Árvore'],
                  'data': ['', '01011990', '02021992']}
-        driver.find_element(By.ID, '31').click()
+        driver.find_element(By.ID, 'nome_tutor').click()
         for i in range(3):
             if i != 1:
                 driver.find_element(By.ID, 'cadastrar_pet').click()
@@ -88,6 +90,10 @@ class TesteTutor(TestCase):
             sleep(1)
             if i != 0:
                 driver.find_element(By.ID, 'confirmar').click()
+        
+        # Deve ser possível acessar informações do pet ao entrar na sua pagina.
+        driver.find_element(By.NAME, 'nome_pet').click()
+        sleep(3)
         driver.close()
 
 

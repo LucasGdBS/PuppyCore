@@ -51,7 +51,7 @@
                         <td>Pets:
                             <th>
                                 {% for pet in pets %}
-                                <ul><a href="infoPet/{{ pet.id }}">{{ pet.nomePet }}</a></ul>
+                                <ul><a name="nome_pet" href="infoPet/{{ pet.id }}">{{ pet.nomePet }}</a></ul>
                                 {% empty %}
                                 <ul>Nenhum pet encontrado.</ul>
                                 {% endfor %}
