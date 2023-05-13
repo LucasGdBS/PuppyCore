@@ -31,7 +31,6 @@
             
             <div>
                 <table class="lista">
-                    <td>
                         <th>Nome: {{ pet.nomePet }}</th>
                         <th>Espécie: {{ pet.especie }}</th>
                         <th>Raça: {{ pet.raca }}</th>
@@ -39,7 +38,6 @@
                         <th>Sexo: {{ pet.sexo }}</th>
                         <th>Peso: {{ pet.peso }}</th>
                         <th>Porte: {{ pet.porte }}</th>
-                    </td>
                 </table>
             </div>
 
@@ -51,8 +49,8 @@
             onclick="window.alert('Funcionalidade Indisponível')">Editar informações</button>
         </div>
         <div>
-                <button id='alterar_tutor' type="button" class="button_color"
-                onclick="window.location.replace('cadastroVacinas/')">Cadastrar Vacina</button>
+            <button id='cadastra_vacina' type="button" class="button_color"
+            onclick="window.location.replace('cadastroVacinas/')">Cadastrar Vacina</button>
         </div>
     </main>
 

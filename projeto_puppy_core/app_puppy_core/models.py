@@ -23,15 +23,13 @@ class Pet(models.Model):
 
 
 class CartaoVacina(models.Model):
-    # nomePet = Pet.nomePet
     nomeVeterinario = models.CharField(max_length=100, null=False)
     dataVacina = models.DateField(null=False, blank=True)
     tipoVacina = models.CharField(max_length=30, null=False)
-    pet = models.ForeignKey('Pet', on_delete=models.CASCADE, default=1)
+    pet = models.ForeignKey('Pet', on_delete=models.CASCADE)
 
 
 class CartaoExames(models.Model):
-    # nomePet = Pet.nomePet
     exame = models.CharField(max_length=100, null=False)
     nomeVeterinario = models.CharField(max_length=100, null=False)
     dataSolicitacao = models.DateField(null=False, blank=False)

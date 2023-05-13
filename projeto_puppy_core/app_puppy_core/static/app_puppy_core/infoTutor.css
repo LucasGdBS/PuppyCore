@@ -1,5 +1,6 @@
 .container-title{
-    position:fixed;
+    
+    position:flex;
     padding-top: 1px;
 }
 

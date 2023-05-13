@@ -62,6 +62,7 @@ class TesteTutor(TestCase):
 
         # Alterar cadastro turtores, teste para alterar faltando alguma informação
         driver.find_element(By.ID, 'nome_tutor').click()
+        sleep(2)
         driver.find_element(By.ID, 'alterar_tutor').click()
         sleep(2)
         driver.find_element(By.ID, 'nome').clear()
@@ -73,7 +74,7 @@ class TesteTutor(TestCase):
         driver.find_element(By.ID, 'confirmar').click()
         sleep(1)
         driver.find_element(By.ID, 'voltar').click()
-        
+        sleep(2)
 
         # adicionar um pet a um tutor cadastrado, visualizar todos os pets do tutor especifico,
         # não aparece os pets de outros tutores, acessar todas as informações do tutor

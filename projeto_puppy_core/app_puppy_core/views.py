@@ -51,11 +51,11 @@ def cartaoVacina(request):
     return render(request, 'tutor/verVacinas.html', context)
 
 
-def cadastroVacina(request):
+def cadastroVacina(request, pk: int, id_pet: int):
     if request.method == 'POST':
         form = vacinaCadastro(request.POST)
         if form.is_valid():
-            cartaoVacina = CartaoVacina(**form.cleaned_data)
+            cartaoVacina = CartaoVacina(pet=Pet(id=id_pet), **form.cleaned_data)
 
             cartaoVacina.save()
             return render(request, 'clinica/sucessocadastro.html')
@@ -63,7 +63,7 @@ def cadastroVacina(request):
             return render(request, 'clinica/falhacadastro.html')
     else:
         form = vacinaCadastro()
-        return render(request, 'clinica/cadastroVacina.html', {'form': form})
+        return render(request, 'clinica/cadastroVacina.html', {'form': form, 'pk': pk, 'id_pet' : id_pet})
 
 
 def homeAdm(request):
