@@ -86,7 +86,6 @@ class TesteTutor(TestCase):
             if i != 1:
                 driver.find_element(By.ID, 'cadastrar_pet').click()
 
-
             driver.find_element(By.ID, 'nomePet').clear()
             driver.find_element(By.ID, 'nomePet').send_keys(dados['pets'][i])
             driver.find_element(By.ID, 'especie').clear()
@@ -109,7 +108,26 @@ class TesteTutor(TestCase):
         
         # Deve ser possível acessar informações do pet ao entrar na sua pagina.
         driver.find_element(By.NAME, 'nome_pet').click()
+        sleep(2)
+
+        # Acessar a pagina de ‘Cadastrar Vacinas’ do pet, adicionar informações da vacina
+        # Teste tentar cadastrar com campo em branco
+        driver.find_element(By.ID, 'cadastra_vacina').click()
+        driver.find_element(By.ID, 'nomeVeterinario').send_keys('Ultron')
+        driver.find_element(By.ID, 'dataVacina').send_keys('01061968')
+        driver.find_element(By.ID, 'tipoVacina').send_keys('')
+        sleep(2)
+        driver.find_element(By.ID, 'enviar').click()
+        sleep(2)
+        driver.find_element(By.ID, 'tipoVacina').send_keys('Anti-virus')
+        sleep(1)
+        driver.find_element(By.ID, 'enviar').click()
         sleep(3)
+        driver.find_element(By.ID, 'confirmar').click()
+        sleep(5)
+
+        driver.find_element(By.ID, 'voltar').click()
+        
         driver.close()
 
 
