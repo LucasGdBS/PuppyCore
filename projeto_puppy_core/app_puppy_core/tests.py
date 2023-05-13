@@ -28,7 +28,7 @@ class TesteTutor(TestCase):
         for i in range(2):
             driver.find_element(By.ID, 'cadastrar_tutor').click()
             
-            driver.find_element(By.ID, 'nome').send_keys('Thanos')
+            driver.find_element(By.ID, 'nome').send_keys('Tanos')
             driver.find_element(By.ID, 'cpf').send_keys('159.753.147-66')
             driver.find_element(By.ID, 'dataNascimento').send_keys('01021973')
             driver.find_element(By.ID, 'celular').send_keys('(81)915975324')
@@ -58,7 +58,22 @@ class TesteTutor(TestCase):
         driver.find_element(By.ID, 'enviar').click()
         sleep(2)
         driver.find_element(By.ID, 'confirmar').click()
+        sleep(2)
 
+        # Alterar cadastro turtores, teste para alterar faltando alguma informação
+        driver.find_element(By.ID, 'nome_tutor').click()
+        driver.find_element(By.ID, 'alterar_tutor').click()
+        sleep(2)
+        driver.find_element(By.ID, 'nome').clear()
+        driver.find_element(By.ID, 'enviar').click()
+        sleep(2)
+        driver.find_element(By.ID, 'nome').send_keys('Thanos')
+        sleep(1)
+        driver.find_element(By.ID, 'enviar').click()
+        driver.find_element(By.ID, 'confirmar').click()
+        sleep(1)
+        driver.find_element(By.ID, 'voltar').click()
+        
 
         # adicionar um pet a um tutor cadastrado, visualizar todos os pets do tutor especifico,
         # não aparece os pets de outros tutores, acessar todas as informações do tutor

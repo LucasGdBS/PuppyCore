@@ -19,13 +19,13 @@
 
 <body>
     <header class="site-header">
-        <img class="logo" alt="Woof" onclick="window.location.replace('/homeAdm/')"
+        <img id='voltar' class="logo" alt="Woof" onclick="window.location.replace('/homeAdm/')"
             src="{% static 'app_puppy_core/images/logomaisnome.png' %}">
     </header>
 
     <main class="site-main">
         <div>
-            <button type="button" class="button_color"
+            <button id='alterar_tutor' type="button" class="button_color"
             onclick="window.location.replace('alteracaoTutor/')">Alterar Dados</button>
         </div>
         <div>

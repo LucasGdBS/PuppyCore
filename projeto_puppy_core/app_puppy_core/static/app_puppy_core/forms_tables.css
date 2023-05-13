@@ -7,7 +7,7 @@
     margin: 0 auto; 
 }
 
-input[type=text], input[type=email], input[type=number], input[type=date], input[type=password]{
+input[type=text], input[type=email], input[type=number], input[type=date], input[type=datetime], input[type=password]{
     border: 1px solid #ccc; /* define a borda da caixa de digitação */
     border-radius: 5px; /* define o raio de borda da caixa de digitação */
     padding: 7px; /* define o preenchimento interno da caixa de digitação */
