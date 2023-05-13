@@ -32,7 +32,7 @@
             <label for="CPF">CPF: </label>
             <input value="{{ form.cpf.value }}" id="cpf" type="text" name="cpf" maxlength="14" required>
             <label for="dataNascimento">Data de Nascimento: </label>
-            <input value="{{ form.dataNascimento.value }}" id="dataNascimento" type="datetime" name="dataNascimento" required>
+            <input value="{{ form.dataNascimento.value|date:'Y-m-d' }}" id="dataNascimento" type="date" name="dataNascimento">
             <label for="celular">Celular: </label>
             <input value="{{ form.celular.value }}" id="celular" type="text" name="celular" maxlength="13" required>
             <label for="Email">E-mail: </label>
