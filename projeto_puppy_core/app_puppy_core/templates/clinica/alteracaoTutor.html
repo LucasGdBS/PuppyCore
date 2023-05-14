@@ -28,16 +28,15 @@
         <form class="cadastro_forms" method="POST">
             {% csrf_token %}
             <label for="nome">Nome: </label>
-            <input value="{{ tutor.nome }}" id="nome" type="text" name="nome" maxlength="100" required>
+            <input value="{{ form.nome.value }}" id="nome" type="text" name="nome" maxlength="100" required>
             <label for="CPF">CPF: </label>
-            <input value="{{ tutor.cpf }}" id="cpf" type="text" name="cpf" maxlength="14" required>
+            <input value="{{ form.cpf.value }}" id="cpf" type="text" name="cpf" maxlength="14" required>
             <label for="dataNascimento">Data de Nascimento: </label>
-            <input value="{{ tutor.dataNascimento }}" id="dataNascimento" type="date"
-                name="dataNascimento">
+            <input value="{{ form.dataNascimento.value|date:'Y-m-d' }}" id="dataNascimento" type="date" name="dataNascimento">
             <label for="celular">Celular: </label>
-            <input value="{{ tutor.celular }}" id="celular" type="text" name="celular" maxlength="13" required>
+            <input value="{{ form.celular.value }}" id="celular" type="text" name="celular" maxlength="13" required>
             <label for="Email">E-mail: </label>
-            <input value="{{ tutor.email }}" id="email" type="email" name="email" maxlength="254" required>
+            <input value="{{ form.email.value }}"id="email" type="email" name="email" maxlength="254" required>
             <br>
             <button type="button" onclick="window.location.replace('/homeAdm/')">Cancelar</button>
             <button id="enviar" type="submit">Salvar Alterações</button>
