@@ -21,7 +21,7 @@ class TesteTutor(TestCase):
         sleep(1)
         login = driver.find_element(By.ID, 'login')
         login.click()
-        sleep(1)
+        sleep(2)
         
         # Teste para cadastrar 2 vezes o mesmo CPF, aparece todos os tutores cadastrados
         # não aparece nenhum tutor não cadastrado
