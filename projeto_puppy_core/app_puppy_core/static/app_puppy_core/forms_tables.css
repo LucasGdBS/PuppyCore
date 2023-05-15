@@ -30,6 +30,11 @@ table {
     background: #EBE2DB;
 }
 
+.pets-table{
+    align-self: center;
+    align-items: center;
+}
+
 td, th {
     padding: 8px;
     text-align: left;

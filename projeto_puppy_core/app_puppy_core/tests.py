@@ -130,14 +130,3 @@ class TesteTutor(TestCase):
         
         driver.close()
 
-
-
-
-
-
-        
-
-
-
-        
-
