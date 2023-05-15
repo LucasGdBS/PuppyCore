@@ -155,3 +155,20 @@ def alteracaoTutor(request, pk: int):
         else:
             return render(request, 'clinica/falhacadastro.html')
         
+def cartaoVacinaAdm(request, pk: int, id_pet: int):
+    if request.method == 'GET':
+        idpet = get_object_or_404(Pet, pk=id_pet)
+        vacinas = idpet.cartaovacina_set.all()
+
+    context = {
+        'dados': vacinas,
+        'pk': pk,
+        'id_pet': id_pet
+
+    }
+
+
+    return render(request, 'tutor/verVacinas.html', context)
+
+
+        

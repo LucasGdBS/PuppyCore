@@ -122,11 +122,13 @@ class TesteTutor(TestCase):
         driver.find_element(By.ID, 'tipoVacina').send_keys('Anti-virus')
         sleep(1)
         driver.find_element(By.ID, 'enviar').click()
-        sleep(3)
+        sleep(2)
         driver.find_element(By.ID, 'confirmar').click()
+        sleep(2)
+
+        # Ver cartão de vacina
+        driver.find_element(By.ID, 'cartao').click()
         sleep(5)
 
-        driver.find_element(By.ID, 'voltar').click()
-        
         driver.close()
 
