@@ -69,7 +69,12 @@
 <p align="center"><a href="http://puppycore.sa-east-1.elasticbeanstalk.com">Site PuppyCore</a></p>
 <p align="center"><a href="https://drive.google.com/file/d/10ySUwWDtmXgav7QF9oweqH3wc2ApBuKB/view?usp=sharing">ScreenCast - Uso do sistema</a></p>
 <p align="center">Instruções de acesso:<br>Basta fazer o cadastro do tutor, cadastro do pet e registrar a vacina. Após isso visualizar as vacinas na áreia do tutor</p>
-
+ 
+ <h3 align="center"><a href ="https://drive.google.com/file/d/1ok0R7KEWV5_CvnZrUqL-qyEKXQbZR7NY/view?usp=sharing">Screencast Testes - 2ª Sprint</a></h3>
+ 
+ <h3 align="center"><a href ="https://drive.google.com/file/d/1F4ObIyyVYa3jv1KxS1rBy4sr6OsXZyj7/view?usp=sharing">Screencast Lofi - Histórias 3ª Entrega</a></h3>
+ <br>
+ 
  <h3 align="center">Relato Pair Programming</h3>
  <p>Nossa equipe tem desfrutado de uma experiência extremamente positiva ao continuar praticando o pair programming. Podemos afirmar que, ao adotar esse método, conseguimos avançar mais facilmente em nosso aprendizado. ALém de que trabalhando em pares, somos capazes de produzir um código mais limpo, eficiente e de qualidade superior.A colaboração constante nos permite compartilhar conhecimentos e aprender uns com os outros, fortalecendo a coesão da equipe e aprimorando nossas habilidades de trabalho em equipe. Como resultado, conseguimos identificar problemas e soluções de forma mais rápida, tornando o processo de desenvolvimento mais eficiente, pois podemos nos ajudar mutuamente durante todo o processo. Ao dividir as tarefas em grupos de duas pessoas, podemos compartilhar nossas especialidades, tornando a equipe mais diversificada e capaz de enfrentar diversos desafios. Sintetizando tudo, conseguimos concluir com sucesso a terceira entrega graças à fluidez do processo, que foi facilitada pelo uso desse método.</p>
 
