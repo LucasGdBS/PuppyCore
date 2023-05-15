@@ -14,12 +14,11 @@
 
 ##
 <p><a href="https://criando.atlassian.net/jira/projects">Nosso quadro no Jira</a></p>
+<p><a href="https://www.figma.com/proto/yhHxb06MAyxgnLezRENs22/Prototipo-LO-Fi?node-id=5-276&scaling=scale-down&page-id=5%3A275&starting-point-node-id=5%3A276">Protótipo Lo-fi no figma</a></p><br><br>
 
 ## Primeira Entrega 📦
 
-<p><a href="https://drive.google.com/file/d/1CvuR4QCUmiyf9B1eh9v1H3iH3YZBhISB/view?usp=share_link">ScreenCast</a></p>
-
-<p><a href="https://www.figma.com/proto/yhHxb06MAyxgnLezRENs22/Prototipo-LO-Fi?node-id=5-276&scaling=scale-down&page-id=5%3A275&starting-point-node-id=5%3A276">Protótipo Lo-fi no figma</a></p>
+<p align="center" ><a href="https://drive.google.com/file/d/1CvuR4QCUmiyf9B1eh9v1H3iH3YZBhISB/view?usp=share_link">ScreenCast - Protótipo</a></p>
 
 <h3 align="center">Quadro de Sprint no Jira:</h3>
 
@@ -31,7 +30,7 @@
  
 ## Segunda Entrega 📦
 
-<h3 align="center"><a href="https://drive.google.com/open?id=1mVYlSODSaHsIhDBvQLKx2nHhTPpPayq7&usp=drive_copy">Diagrama de atividades:</h3></p>
+<h3 align="center"><a href="https://drive.google.com/open?id=1mVYlSODSaHsIhDBvQLKx2nHhTPpPayq7&usp=drive_copy">Diagrama de Atividades:</h3></p>
 
 ![image](https://user-images.githubusercontent.com/114539692/232468002-5abebf33-c884-486e-a9b6-c96f87084b64.png)
 
@@ -41,7 +40,7 @@
 
 <h3 align="center">Deploy:</h3>
 <p align="center"><a href="http://puppycore.sa-east-1.elasticbeanstalk.com">Site PuppyCore</a></p>
-<p align="center"><a href="https://drive.google.com/file/d/10ySUwWDtmXgav7QF9oweqH3wc2ApBuKB/view?usp=sharing">ScreenCast do uso do sistema</a></p>
+<p align="center"><a href="https://drive.google.com/file/d/10ySUwWDtmXgav7QF9oweqH3wc2ApBuKB/view?usp=sharing">ScreenCast - Uso do sistema</a></p>
 <p align="center">Instruções de acesso:<br>Basta fazer o cadastro do tutor, cadastro do pet e registrar a vacina. Após isso visualizar as vacinas na áreia do tutor</p>
 
 <h3 align="center">Relato Pair Programming</h3>
@@ -51,11 +50,26 @@
 
 ![image](https://user-images.githubusercontent.com/114539692/232493489-f04c1b32-fa10-4620-bab5-72ea1db91a2a.png)
 
+## Terceira Entrega 📦
 
+<h3 align="center"><a href="https://drive.google.com/file/d/1E0GVdHfnSAEzJH1zTx0cowaHT0GJ1oMF/view?usp=sharing">Diagrama de Atividades - Veterinário:</h3</p><br><br>
 
+ ![image](https://github.com/LucasGdBS/PuppyCore/assets/61997529/14ac61a3-9a81-486d-8dd8-5b2f9a8f8066)
 
+<h3 align="center"><a href="https://drive.google.com/file/d/1HJ5l6SJi4XA0LRCKWKdhJFsZSbv6Gip8/view?usp=sharing">Diagrama de Atividades - Tutor:</h3></p>
 
+ ![image](https://github.com/LucasGdBS/PuppyCore/assets/61997529/1f0a8612-9533-49c2-8e45-3f034049e152)
+ 
+ <h3 align="center">Issue/Bug tracker:</h3>
 
+ ![image](https://github.com/LucasGdBS/PuppyCore/assets/61997529/b7267312-1431-44a7-b229-1f51946f3573)
 
+ #SUBSTITUIR PELAS COISAS DA TERCEIRA ENTREGA
+<h3 align="center">Deploy:</h3>
+<p align="center"><a href="http://puppycore.sa-east-1.elasticbeanstalk.com">Site PuppyCore</a></p>
+<p align="center"><a href="https://drive.google.com/file/d/10ySUwWDtmXgav7QF9oweqH3wc2ApBuKB/view?usp=sharing">ScreenCast - Uso do sistema</a></p>
+<p align="center">Instruções de acesso:<br>Basta fazer o cadastro do tutor, cadastro do pet e registrar a vacina. Após isso visualizar as vacinas na áreia do tutor</p>
 
+ <h3 align="center">Relato Pair Programming</h3>
+ <p>Nossa equipe tem desfrutado de uma experiência extremamente positiva ao continuar praticando o pair programming. Podemos afirmar que, ao adotar esse método, conseguimos avançar mais facilmente em nosso aprendizado. ALém de que trabalhando em pares, somos capazes de produzir um código mais limpo, eficiente e de qualidade superior.A colaboração constante nos permite compartilhar conhecimentos e aprender uns com os outros, fortalecendo a coesão da equipe e aprimorando nossas habilidades de trabalho em equipe. Como resultado, conseguimos identificar problemas e soluções de forma mais rápida, tornando o processo de desenvolvimento mais eficiente, pois podemos nos ajudar mutuamente durante todo o processo. Ao dividir as tarefas em grupos de duas pessoas, podemos compartilhar nossas especialidades, tornando a equipe mais diversificada e capaz de enfrentar diversos desafios. Sintetizando tudo, conseguimos concluir com sucesso a terceira entrega graças à fluidez do processo, que foi facilitada pelo uso desse método.</p>
 
