@@ -180,7 +180,7 @@ class TesteTutor(TestCase):
         sleep(2)
         
         driver.find_element(By.ID, 'alterar_tutor').click()
-        sleep(5)
+        sleep(2)
         
         driver.find_element(By.ID, 'cpf').clear()
         driver.find_element(By.ID, 'cpf').send_keys('444.444.444-44')
@@ -238,7 +238,7 @@ class TesteTutor(TestCase):
         sleep(2)
         
         driver.find_element(By.ID, 'alterar_tutor').click()
-        sleep(5)
+        sleep(2)
         
         driver.find_element(By.ID, 'cpf').clear()
         driver.find_element(By.ID, 'cpf').send_keys('555.555.555-55')
