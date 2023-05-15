@@ -46,11 +46,16 @@
 <h3 align="center">Relato Pair Programming</h3>
 <p>Nossa equipe tem tido uma experiência extremamente positiva com o pair programming, pode se dizer que operando dessa forma nos somos capazes de progredir com maior facilidade em nosso aprendizado. Ao trabalharmos em pares, conseguimos produzir um código mais limpo, eficiente e de melhor qualidade. Além disso, a colaboração constante nos permite compartilhar conhecimentos e aprender uns com os outros, o que fortalece a coesão da equipe e aprimora nossas habilidades de trabalho em equipe. Como resultado, somos capazes de identificar problemas e soluções mais rapidamente, o que torna o processo de desenvolvimento mais eficiente, uma vez que, temos a possibilidade de nos ajudarmos mutuamente durante o processo. Ao dividir as tarefas em 3 grupos de 2 pessoas, podemos compartilhar nossas especialidades, tornando a equipe mais diversificada e capaz de lidar com uma variedade de desafios. Em resumo, conseguimos realizar a segunda entrega graças à fluidez do processo, que foi facilitada ao utilizar esse método.</p>
 
-<h3 align="center">Quadro de Sprint no Jira:</h3>
+<h3 align="center">Quadro da Sprint no Jira:</h3>
 
 ![image](https://user-images.githubusercontent.com/114539692/232493489-f04c1b32-fa10-4620-bab5-72ea1db91a2a.png)
 
 ## Terceira Entrega 📦
+
+<h3 align="center">Quadro da Sprint no Jira:</h3>
+
+![image](https://github.com/LucasGdBS/PuppyCore/assets/61997529/bd0794cf-3034-4bd6-92c0-c809bd29bb46)
+
 
 <h3 align="center"><a href="https://drive.google.com/file/d/1E0GVdHfnSAEzJH1zTx0cowaHT0GJ1oMF/view?usp=sharing">Diagrama de Atividades - Veterinário:</h3</p><br><br>
 
