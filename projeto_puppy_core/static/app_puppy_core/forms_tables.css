@@ -1,0 +1,43 @@
+/*FORMS*/
+
+.cadastro_forms {
+    text-align: center;
+    font-family:'Copperplate Gothic Light', Courier, monospace;
+    padding-top: 20px;
+    margin: 0 auto; 
+}
+
+input[type=text], input[type=email], input[type=number], input[type=date], input[type=datetime], input[type=password]{
+    border: 1px solid #ccc; /* define a borda da caixa de digitação */
+    border-radius: 5px; /* define o raio de borda da caixa de digitação */
+    padding: 7px; /* define o preenchimento interno da caixa de digitação */
+    font-size: 16px; /* define o tamanho da fonte da caixa de digitação */
+    margin-bottom: 10px; /* define a margem inferior da caixa de digitação */
+    align-items: center;
+}
+label {
+    display: block; /* define o display para block para que a label fique em uma linha separada */
+    margin-bottom: 5px; /* define a margem inferior da label */
+    font-size: 16px; /* define o tamanho da fonte da label */
+    color: #ffffff; /* define a cor do texto da label */
+    
+}
+
+/*TABLES*/
+
+table {
+    border-collapse: collapse;
+    background: #EBE2DB;
+}
+
+.pets-table{
+    align-self: center;
+    align-items: center;
+}
+
+td, th {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #B48565;
+    background: #EBE2DB;
+}

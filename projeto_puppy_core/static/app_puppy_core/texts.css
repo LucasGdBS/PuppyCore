@@ -1,0 +1,25 @@
+.text {
+    padding-bottom: 10px;
+    color: #3A2D27;
+    align-items: center;
+    font-size: xx-large;
+    font-family: Copperplate, 'Copperplate Gothic Light', sans-serif;
+    font-weight: bold;
+    width: 100%;
+}
+
+@media only screen and (max-width: 550px){
+    .text{
+        font-size: large;
+        padding: 0px;
+    }
+}
+
+.forms_title{
+    margin-top: 50px;
+    width: 100%;
+    font-size: xx-large;
+    font-family:'Copperplate Gothic Light', Courier, monospace;
+    color: #3A2D27;
+    padding: 10px 10px 10px 10px;
+}
