@@ -128,15 +128,3 @@ class TesteTutor(TestCase):
 
     def teste_conferir_vacina_pet(self):
         pass
-
-    
-
-
-    
-
-        
-             
-
-
-
-        

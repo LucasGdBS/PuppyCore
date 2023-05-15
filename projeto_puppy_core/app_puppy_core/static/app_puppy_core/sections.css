@@ -1,5 +1,6 @@
 .center-container {
     display: flex;
+    text-align: center;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -9,6 +10,18 @@
     .center-container{
         align-items: center;
     }
+}
+
+.container-title{
+    
+    position:flex;
+    padding-top: 1px;
+}
+
+.container{
+   align-self: center;
+   align-items: center;
+   padding-top: 150px;
 }
 
 .forms_container{
