@@ -354,6 +354,8 @@ class TesteTutor(TestCase):
         peso = driver.find_element(By.ID, 'peso_pet')
         porte = driver.find_element(By.ID, 'porte_pet')
 
-        assert nome.text == 'Nome: Goose' and especie.text == "Espécie: Gato" and raca.text == 'Raça: Laranja' and data.text == "Data de Nascimento: Feb. 2, 1201" and sexo.text == 'Sexo: M' and peso.text == 'Peso: 5.0' and porte.text == 'Porte: Pequeno'
+        assert nome.text == 'Nome: Goose' and especie.text == "Espécie: Gato" and\
+        raca.text == 'Raça: Laranja' and data.text == "Data de Nascimento: Feb. 2, 1201" and\
+        sexo.text == 'Sexo: M' and peso.text == 'Peso: 5.0' and porte.text == 'Porte: Pequeno'
         
         driver.close()
