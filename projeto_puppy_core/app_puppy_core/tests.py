@@ -10,7 +10,6 @@ def set_up():
         driver = webdriver.Chrome(options=chrome_options)
         driver.maximize_window()
         
-        
         return driver
 
 class TesteTutor(TestCase):
@@ -47,10 +46,8 @@ class TesteTutor(TestCase):
                 assert element.text == expected_text
                 break      
             
-        
         driver.close()
    
-
     def teste_ver_info_tutor(self):
         driver = set_up()
         driver.get('http://127.0.0.1:8000')
@@ -76,13 +73,11 @@ class TesteTutor(TestCase):
         driver.find_element(By.ID, 'confirmar').click()
         sleep(2)
         
-        
         elements = driver.find_elements(By.ID, 'nome_tutor')
         for element in elements:
             if element.text == 'NOME2':
                 element.click()
                 break
-        
         
         sleep(2)
         
