@@ -69,12 +69,12 @@
 
  ![image](https://github.com/LucasGdBS/PuppyCore/assets/61997529/b7267312-1431-44a7-b229-1f51946f3573)
 
- #SUBSTITUIR PELAS COISAS DA TERCEIRA ENTREGA
-<h3 align="center">Deploy:</h3>
-<p align="center"><a href="http://puppycore.sa-east-1.elasticbeanstalk.com">Site PuppyCore</a></p>
-<p align="center"><a href="https://drive.google.com/file/d/10ySUwWDtmXgav7QF9oweqH3wc2ApBuKB/view?usp=sharing">ScreenCast - Uso do sistema</a></p>
-<p align="center">Instruções de acesso:<br>Basta fazer o cadastro do tutor, cadastro do pet e registrar a vacina. Após isso visualizar as vacinas na áreia do tutor</p>
  
+<h3 align="center">Deploy:</h3>
+<p align="center">Instruções de acesso:<br>Login e senha não devem ser preenchidos</p>
+<p align="center"><a href="http://puppycore.sa-east-1.elasticbeanstalk.com">Site PuppyCore</a></p>
+<h3 align="center"><a href="https://drive.google.com/file/d/1ZBaM18vazVetwJsL7mK51Mz5pRpHPhhQ/view?usp=sharing">ScreenCast - Uso do sistema</a></h3>
+
  <h3 align="center"><a href ="https://drive.google.com/file/d/1ok0R7KEWV5_CvnZrUqL-qyEKXQbZR7NY/view?usp=sharing">Screencast Testes - 2ª Sprint</a></h3>
  
  <h3 align="center"><a href ="https://drive.google.com/file/d/1F4ObIyyVYa3jv1KxS1rBy4sr6OsXZyj7/view?usp=sharing">Screencast Lofi - Histórias 3ª Entrega</a></h3>
