@@ -21,6 +21,7 @@ urlpatterns = [
 
     path('homeTutor/', views.homeTutor, name='Home do Tutor'),
     path('homeTutor/cartaoVacinas/', views.cartaoVacina, name='Visualizar Vacinas'),
+    path('homeTutor/cartaoVacinas/', views.cartaoVacina, name='Marcar Vacina') #Mudar a url pra view correta
 
     # puppycore.com
     # puppycore.com/cadastroTutor/

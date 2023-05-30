@@ -1,5 +1,5 @@
 from django import forms
-from .models import Tutor, Pet, CartaoVacina, CartaoExames, Login
+from .models import Tutor, Pet, CartaoVacina, CartaoExames, Login, Vacinacao
 
 
 class tutorCadastro(forms.ModelForm):
@@ -57,3 +57,11 @@ class formLogin(forms.ModelForm):
             'senha'
         ]
 
+class marcarVacina(forms.ModelForm):
+    class Meta:
+        model = Vacinacao
+        fields = [
+            'nomeVacina',
+            'dataVacina',
+            'vetResponsavel'
+        ]

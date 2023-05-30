@@ -41,3 +41,7 @@ class Login(models.Model):
     cpf = models.CharField(max_length=11, null=False, blank=False)
     senha = models.CharField(max_length=50, null=False, blank=False)
 
+class Vacinacao(models.Model):
+    nomeVacina = models.CharField(max_length=100, null=False)
+    dataVacina = models.DateField(null=False, blank=False)
+    vetResponsavel = models.CharField(max_length=100, null=False)

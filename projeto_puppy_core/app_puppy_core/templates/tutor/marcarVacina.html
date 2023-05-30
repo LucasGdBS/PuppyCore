@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'app_puppy_core/forms_tables.css' %}" rel="stylesheet">
+    <link href="{% static 'app_puppy_core/reset.css' %}" rel="stylesheet">
+    <title>Cadastro de Exames</title>
+</head>
+
+<body class="site_body">
+    <div class="forms_title">
+        <h1 align="center">Cadastrar Exames</h1>
+    </div>
+    <div class="forms_container">
+        <form class="cadastro_forms" method="POST">
+            {% csrf_token %}
+            <label for="dataSolicitacao"> Data de Solicitação: </label>
+            <input id="dataSolicitacao" type="data" name="dataSolicitacao" required>
+            <label for="exame"> Nome do exame: </label>
+            <input id="exame" type="text" name="exame" maxlength="100" required>
+            <label id="dataResultado">Data do Resultado: </label>
+            <input id="dataResultado" type="data" name="dataResultado" required>
+            <label for="nomeVeterinario"> Nome do Veterinário: </label>
+            <input id="nomeVeterinario" type="text" maxlength="100" name="nomeVeterinario" required>
+            <label for="resultado"> Anexo: </label>
+            <input id="resultado" type="file" name="resultado" required>
+            <br>
+            <button type="button" onclick="window.location.replace('/homeAdm/')">Voltar</button>
+            <button type="submit">Cadastrar</button>
+            <button type="submit">Salvar alterações</button>
+        </form>
+    </div>
+</body>
+
+</html>

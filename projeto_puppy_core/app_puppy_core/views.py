@@ -1,11 +1,9 @@
 from django.shortcuts import render, get_object_or_404
 
-from .models import Tutor, Pet, CartaoExames, CartaoVacina
-from .forms import tutorCadastro, petCadastro, vacinaCadastro, formLogin, cadastroExames
+from .models import Tutor, Pet, CartaoExames, CartaoVacina, Vacinacao
+from .forms import tutorCadastro, petCadastro, vacinaCadastro, formLogin, cadastroExames, marcarVacina
 
 # Create your views here.
-
-
 def cadastroTutor(request):
     if request.method == 'POST':
         form = tutorCadastro(request.POST)
@@ -171,4 +169,17 @@ def cartaoVacinaAdm(request, pk: int, id_pet: int):
     return render(request, 'tutor/verVacinas.html', context)
 
 
+def vacinar(request):
+    if request.method == 'POST':
+        form = marcarVacina(request.POST)
+        if form.is_valid():
+            Vacinacao = Vacinacao(**form.cleaned_data)
+
+            Vacinacao.save()
+            return render(request, 'clinica/sucessocadastro.html') #mudar a pagina que é redirecionada
+        else:
+            return render(request, 'clinica/falhacadastro.html') #mudar a pagina que é redirecionada
+    else:
+        form = marcarVacina()
+        return render(request, 'clinica/cadastroExames.html', {'form': form}) #mudar a pagina que é redirecionada
         
