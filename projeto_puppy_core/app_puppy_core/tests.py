@@ -402,3 +402,25 @@ class TesteTutor(TestCase):
         
         driver.close()
         
+    def teste_incompletoMarcarVacina(self):
+        driver = set_up()
+        driver.get('http://127.0.0.1:8000')
+
+        sleep(1)
+        driver.find_element(By.ID, 'tutor').click()
+        
+        sleep(1)
+        driver.find_element(By.ID, 'marcar_vacina').click()
+
+        sleep(1)
+        driver.find_element(By.ID, 'dataVacina').send_keys('12122023')
+        driver.find_element(By.NAME, 'vetResponsavel').send_keys('Ricardo Berardo')
+        driver.find_element(By.ID, 'confirmar').click()
+
+        sleep(2)
+        expected_url = "http://127.0.0.1:8000/marcarVacina/"
+        current_url = driver.current_url
+
+        assert current_url == expected_url
+
+        driver.close()
