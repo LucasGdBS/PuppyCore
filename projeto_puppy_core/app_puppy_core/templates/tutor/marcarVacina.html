@@ -6,32 +6,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="{% static 'app_puppy_core/forms_tables.css' %}" rel="stylesheet">
-    <link href="{% static 'app_puppy_core/reset.css' %}" rel="stylesheet">
-    <title>Cadastro de Exames</title>
+    <link rel="stylesheet" href="{% static 'app_puppy_core/forms_tables.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/template.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/buttons.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/images.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/sections.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/texts.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/reset.css' %}">
+    <title>Marcar Vacina</title>
 </head>
 
 <body class="site_body">
     <div class="forms_title">
-        <h1 align="center">Cadastrar Exames</h1>
+        <h1 align="center">Marcar Vacina</h1>
     </div>
     <div class="forms_container">
         <form class="cadastro_forms" method="POST">
             {% csrf_token %}
-            <label for="dataSolicitacao"> Data de Solicitação: </label>
-            <input id="dataSolicitacao" type="data" name="dataSolicitacao" required>
-            <label for="exame"> Nome do exame: </label>
-            <input id="exame" type="text" name="exame" maxlength="100" required>
-            <label id="dataResultado">Data do Resultado: </label>
-            <input id="dataResultado" type="data" name="dataResultado" required>
-            <label for="nomeVeterinario"> Nome do Veterinário: </label>
-            <input id="nomeVeterinario" type="text" maxlength="100" name="nomeVeterinario" required>
-            <label for="resultado"> Anexo: </label>
-            <input id="resultado" type="file" name="resultado" required>
+            <label for="nomeVacina"> Nome da Vacina: </label>
+            <input id="nomeVacina" type="text" name="nomeVacina" maxlength="100" required>
+            <label for="dataVacina"> Data da Vacina: </label>
+            <input id="dataVacina" type="date" name="dataVacina" required>
+            <label id="vetResponsavel">Veterinario Responsavel: </label>
+            <input id="vetResponsavel" type="text" name="vetResponsavel" maxlength="100" required>
             <br>
-            <button type="button" onclick="window.location.replace('/homeAdm/')">Voltar</button>
-            <button type="submit">Cadastrar</button>
-            <button type="submit">Salvar alterações</button>
+            <button type="button" onclick="window.location.replace('/homeTutor/')">Voltar</button>
+            <button type="submit">Confirmar</button>
         </form>
     </div>
 </body>

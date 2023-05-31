@@ -173,13 +173,13 @@ def vacinar(request):
     if request.method == 'POST':
         form = marcarVacina(request.POST)
         if form.is_valid():
-            Vacinacao = Vacinacao(**form.cleaned_data)
+            vacinacao = Vacinacao(**form.cleaned_data)
 
-            Vacinacao.save()
+            vacinacao.save()
             return render(request, 'clinica/sucessocadastro.html') #mudar a pagina que é redirecionada
         else:
             return render(request, 'clinica/falhacadastro.html') #mudar a pagina que é redirecionada
     else:
         form = marcarVacina()
-        return render(request, 'clinica/cadastroExames.html', {'form': form}) #mudar a pagina que é redirecionada
+        return render(request, 'tutor/marcarVacina.html', {'form': form}) #mudar a pagina que é redirecionada
         
