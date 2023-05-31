@@ -15,13 +15,14 @@ urlpatterns = [
     path('homeAdm/infoTutor/<pk>/', views.infoTutor, name='Info Tutor'),
     path('homeAdm/infoTutor/<pk>/cadastroPet/', views.cadastroPet, name='Cadastro Pet'),
     path('homeAdm/infoTutor/<pk>/infoPet/<id_pet>/',views.infoPets, name='Info Pets'),
-    path('homeAdm/cadastroexames/', views.cadastrarExames, name='Cadastro Exames'),  # Falta implementar
+    path('homeAdm/infoTutor/<pk>/infoPet/<id_pet>/cadastroexames/', views.cadastrarExames, name='Cadastro Exames'),  # Falta implementar
     path('homeAdm/infoTutor/<pk>/infoPet/<id_pet>/cadastroVacinas/', views.cadastroVacina, name='Cadastrar Vacinas'),  # Falta implementar
     path('homeAdm/infoTutor/<pk>/infoPet/<id_pet>/cartaoVacinas/', views.cartaoVacinaAdm, name='Visualizar Vacinas'),
 
     path('homeTutor/', views.homeTutor, name='Home do Tutor'),
     path('homeTutor/cartaoVacinas/', views.cartaoVacina, name='Visualizar Vacinas'),
-    path('marcarVacina/', views.vacinar, name='Marcar Vacina')
+    path('marcarVacina/', views.vacinar, name='Marcar Vacina'),
+    path('homeAdm/infoTutor/<pk>/infoPet/<id_pet>/cartaoExames/', views.cartaoExames, name='Visualizar Exames'),
 
     # puppycore.com
     # puppycore.com/cadastroTutor/

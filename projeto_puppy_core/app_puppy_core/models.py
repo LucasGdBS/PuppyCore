@@ -34,7 +34,7 @@ class CartaoExames(models.Model):
     nomeVeterinario = models.CharField(max_length=100, null=False)
     dataSolicitacao = models.DateField(null=False, blank=False)
     dataResultado = models.DateField(null=False, blank=True)
-    resultado = models.FileField(upload_to='resultados/')
+    resultado = models.CharField(max_length=500, null=False)
     pet = models.ForeignKey('Pet', on_delete=models.CASCADE, default=1)
 
 class Login(models.Model):

@@ -77,20 +77,34 @@ def homeAdm(request):
 def homeTutor(request):
     return render(request, 'tutor/homeTutor.html')
 
+def cartaoExames(request, pk: int, id_pet: int):
+    if request.method == 'GET':
+        idpet = get_object_or_404(Pet, pk=id_pet)
+        exames = idpet.cartaoexames_set.all()
 
-def cadastrarExames(request):
+    context = {
+        'dados': exames,
+        'pk': pk,
+        'id_pet': id_pet
+
+    }
+
+
+    return render(request, 'clinica/cartaoExames.html', context)
+
+def cadastrarExames(request,  pk: int, id_pet: int):
     if request.method == 'POST':
         form = cadastroExames(request.POST)
         if form.is_valid():
-            CartaoExames = CartaoExames(**form.cleaned_data)
+            cartaoExames = CartaoExames(pet=Pet(id=id_pet), **form.cleaned_data)
 
-            CartaoExames.save()
+            cartaoExames.save()
             return render(request, 'clinica/sucessocadastro.html')
         else:
             return render(request, 'clinica/falhacadastro.html')
     else:
         form = cadastroExames()
-        return render(request, 'clinica/cadastroExames.html', {'form': form})
+        return render(request, 'clinica/cadastroExames.html', {'form': form, 'pk': pk, 'id_pet' : id_pet})
 
 
 def infoTutor(request, pk: int):
@@ -168,7 +182,6 @@ def cartaoVacinaAdm(request, pk: int, id_pet: int):
 
     return render(request, 'tutor/verVacinas.html', context)
 
-
 def vacinar(request):
     if request.method == 'POST':
         form = marcarVacina(request.POST)
@@ -182,4 +195,3 @@ def vacinar(request):
     else:
         form = marcarVacina()
         return render(request, 'tutor/marcarVacina.html', {'form': form}) #mudar a pagina que é redirecionada
-        

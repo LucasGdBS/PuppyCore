@@ -29,7 +29,7 @@
                     <th>Nome do Exame</th>
                     <th>Data do Resultado</th>
                     <th>Veterinário</th>
-                    <th>Anexos</th>
+                    <th>Resultados</th>
                 </tr>
                 {% for CartaoExames in dados %}
                 <tr>
@@ -37,7 +37,10 @@
                     <td>{{ CartaoExames.exame }}</td>
                     <td>{{ CartaoExames.dataResultado }}</td>
                     <td>{{ CartaoExames.nomeVeterinario}}</td>
-                    <td>{{ CartaoExames.resultado}}</td>
+                    <td><div class="button-container-footer">
+                            <button type="button" class="button-base-footer"
+                            onclick="window.alert('Funcionalidade Indisponível')">+</button>
+                    </div></td>
                 </tr>
                 {% endfor %}
             </table>
