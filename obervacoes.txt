@@ -1,4 +1,4 @@
-Para entrar no ambiente virtual digite: " .\venv\Scripts\Activate.ps1 " (sem as aspas)
+Para entrar no ambiente virtual digite: " .\venv\Scripts\Activate.ps1 " (sem as aspas) -> Antes verifique se está na pasta correta! Caso não, digite: "cd .." (Sem aspas)
 Para mac  source venv/bin/activate
 Link do evernote para tirar duvidas:
 
