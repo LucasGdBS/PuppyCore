@@ -354,3 +354,51 @@ class TesteTutor(TestCase):
         sexo.text == 'Sexo: M' and peso.text == 'Peso: 5.0' and porte.text == 'Porte: Pequeno'
         
         driver.close()
+
+    def teste_cancelarMarcarVacina(self):  
+        driver = set_up()
+        driver.get('http://127.0.0.1:8000')
+        
+        sleep(1)
+        driver.find_element(By.ID, 'tutor').click()
+        sleep(1)
+        driver.find_element(By.ID, 'marcar_vacina').click()
+        sleep(1)
+        driver.find_element(By.ID, 'voltar').click()
+        
+        expected_url = "http://127.0.0.1:8000/homeTutor/"  
+        current_url = driver.current_url
+        
+        assert current_url == expected_url
+        
+        driver.close()
+        
+    def teste_confirmarMarcarVacina(self):  
+        driver = set_up()
+        driver.get('http://127.0.0.1:8000')
+        
+        sleep(1)
+        driver.find_element(By.ID, 'tutor').click()
+        sleep(1)
+        driver.find_element(By.ID, 'marcar_vacina').click()
+        sleep(1)
+        
+        driver.find_element(By.ID, 'nomeVacina').send_keys('Raiva canina')
+        sleep(1)
+        driver.find_element(By.ID, 'dataVacina').send_keys('02102023')
+        sleep(1)
+        driver.find_element(By.NAME, 'vetResponsavel').send_keys('Miss Marvel')
+
+        sleep(2)
+        driver.find_element(By.ID, 'confirmar').click()
+        sleep(2)
+        driver.find_element(By.ID, 'confirmar').click()
+        sleep(2)
+        
+        expected_url = "http://127.0.0.1:8000/homeTutor/"  
+        current_url = driver.current_url
+        
+        assert current_url == expected_url
+        
+        driver.close()
+        
