@@ -176,7 +176,7 @@ def vacinar(request):
             vacinacao = Vacinacao(**form.cleaned_data)
 
             vacinacao.save()
-            return render(request, 'clinica/sucessocadastro.html') #mudar a pagina que é redirecionada
+            return render(request, 'tutor/sucessoEnvio.html') #mudar a pagina que é redirecionada
         else:
             return render(request, 'clinica/falhacadastro.html') #mudar a pagina que é redirecionada
     else:

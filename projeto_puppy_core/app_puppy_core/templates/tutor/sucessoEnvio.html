@@ -12,9 +12,8 @@
     <link href="{% static 'app_puppy_core/texts.css' %}" rel="stylesheet">
     <link href="{% static 'app_puppy_core/reset.css' %}" rel="stylesheet">
     <link href="{% static 'app_puppy_core/buttons.css' %}" rel="stylesheet">
-    <title>Falha na Operação</title>
+    <title>Sucesso no Envio</title>
 </head>
-
 
 <body class="site_body">
 
@@ -25,8 +24,8 @@
     
     <main class="site-main">
     <div class="unique_container">
-    <p>Houve uma falha na operação!</p>
-    <button id="confirmar" class="button_error" onclick="history.back()">Tente novamente</button>
+        <p>Vacina marcada!<br>O status do seu atendimento seré enviado para o seu email</p>
+        <button id="confirmar" class="button_confirm" onclick="window.location.replace('/homeTutor/')">Confirmar</button>
     </div>
     </main>
 
@@ -36,6 +35,8 @@
                 onclick="window.alert('Funcionalidade Indisponível')">?</button>
         </div>
     </footer>
+
+
 </body>
 
 </html>
