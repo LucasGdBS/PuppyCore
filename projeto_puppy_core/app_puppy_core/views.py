@@ -179,7 +179,6 @@ def cartaoVacinaAdm(request, pk: int, id_pet: int):
 
     }
 
-
     return render(request, 'tutor/verVacinas.html', context)
 
 def vacinar(request):
@@ -195,3 +194,25 @@ def vacinar(request):
     else:
         form = marcarVacina()
         return render(request, 'tutor/marcarVacina.html', {'form': form}) #mudar a pagina que é redirecionada
+    
+
+def alteracaoPet(request, pk: int, id_pet: int):
+
+    if request.method == 'GET':
+        pet = Pet.objects.get(pk=id_pet)
+        form = petCadastro(instance=pet)
+
+        return render(request, template_name='clinica/alteracaoPet.html', context={'form': form})
+    
+    elif request.method == 'POST':
+        pet = Pet.objects.get(pk=pk)
+        form = petCadastro(request.POST,instance=pet)
+
+        if form.is_valid():
+
+            form.save()
+
+            return render(request, 'clinica/sucessocadastro.html')
+        else:
+            return render(request, 'clinica/falhacadastro.html')
+    

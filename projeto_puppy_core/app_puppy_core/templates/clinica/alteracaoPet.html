@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/forms_tables.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/template.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/buttons.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/images.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/sections.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/texts.css' %}">
+    <link rel="stylesheet" href="{% static 'app_puppy_core/reset.css' %}">
+    <title>Alterar Dados do Pet</title>
+</head>
+
+<body class="site_body">
+    <header class="site-header">
+        <img class="logo" alt="Woof" onclick="window.location.replace('/homeAdm/')"
+            src="{% static 'app_puppy_core/images/logomaisnome.png' %}">
+    </header>
+    <div class="forms_title">
+        <h1 align="center">Alteração de Dados do Pet</h1>
+    </div>
+    <div class="forms_container">
+        <form class="cadastro_forms" method="POST">
+            {% csrf_token %}
+            <label for="nomePet">Nome do Pet: </label>
+            <input value="{{ form.nomePet.value }}" id="nomePet" type="text" name="nomePet" maxlength="100" required>
+            <label for="especie">Especie: </label>
+            <input value="{{ form.especie.value }}" id="especie" type="text" name="especie" maxlength="100" required>
+            <label for="raca">Raça: </label>
+            <input value="{{ form.raca.value }}" id="raca" type="text" name="raca" maxlength="100" required>
+            <label for="dtNasc">Data Nascimento: </label>
+            <input value="{{ form.dtNasc.value|date:'Y-m-d' }}" id="dtNasc" type="date" name="dtNasc" maxlength="100">
+            <label for="sexo" aria-required="true">Sexo: </label>
+            <input value="{{ form.sexo.value }}" id="sexo" type="radio" name="sexo" value="M">Macho
+            <input value="{{ form.sexo.value }}" id="sexo" type="radio" name="sexo" value="F">Fêmea
+            <label for="peso">Peso: </label>
+            <input value="{{ form.peso.value }}" id="peso" type="number" step="any" name="peso" maxlength="100">
+            <label for="porte">Porte: </label>
+            <input value="{{ form.porte.value }}" id="porte" type="text" name="porte" maxlength="100" required>
+            <label for="cadAtivo">Ativo: <input value="{{ form.cadAtivo.value }}" id="cadAtivo" type="checkbox" name="cadAtivo" maxlength="100"
+                    checked></label>
+            <br>
+            <button id='cancelar' type="button"
+                onclick="window.location.replace('/homeAdm/')">Cancelar</button>
+            <button id='enviar' type="submit">Salvar Alterações</button>
+        </form>
+    </div>
+</body>
+
+</html>

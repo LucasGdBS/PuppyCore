@@ -222,7 +222,7 @@ class TesteTutor(TestCase):
         driver.find_element(By.ID, 'cpf').send_keys('555.555.555-56')
         driver.find_element(By.ID, 'dataNascimento').send_keys('05052006')
         driver.find_element(By.ID, 'celular').send_keys('(81)555555555')
-        driver.find_element(By.ID, 'email').send_keys('email6@gmail.com')
+        driver.find_element(By.ID, 'email').send_keys('email5@gmail.com')
         sleep(2)
         driver.find_element(By.ID, 'enviar').click()
         sleep(2)
@@ -360,6 +360,207 @@ class TesteTutor(TestCase):
             sexo.text == 'Sexo: M' and peso.text == 'Peso: 5.0' and porte.text == 'Porte: Pequeno'
 
         driver.close()
+  
+    def teste_dados_alterar_preenchidos_pet(self):
+        driver = set_up()
+        driver.get('http://127.0.0.1:8000/homeAdm/')
+
+        driver.find_element(By.ID, 'cadastrar_tutor').click()
+
+        driver.find_element(By.ID, 'nome').send_keys('Mariane Beatriz Soares Fontes')
+        driver.find_element(By.ID, 'cpf').send_keys('704.358.274-13')
+        driver.find_element(By.ID, 'dataNascimento').send_keys('19092000')
+        driver.find_element(By.ID, 'celular').send_keys('(81)988877800')
+        driver.find_element(By.ID, 'email').send_keys(
+            'mbsf@cesar.school')
+        sleep(1)
+        driver.find_element(By.ID, 'enviar').click()
+        sleep(1)
+        driver.find_element(By.ID, 'confirmar').click()
+        sleep(1)
+
+        elements = driver.find_elements(By.ID, 'nome_tutor')
+        for i in elements:
+            if i.text == 'Mariane Beatriz Soares Fontes':
+                i.click()
+                break
+
+        sleep(2)
+        driver.find_element(By.ID, 'cadastrar_pet').click()
+        sleep(2)
+
+        driver.find_element(By.ID, 'nomePet').send_keys('Animal1')
+        driver.find_element(By.ID, 'especie').send_keys('C')
+        driver.find_element(By.ID, 'raca').send_keys('C')
+        driver.find_element(By.ID, 'dtNasc').send_keys('02062023')
+        driver.find_element(By.ID, 'sexo').click('M')
+        driver.find_element(By.ID, 'peso').send_keys(1)
+        driver.find_element(By.ID, 'porte').send_keys('G')
+        sleep(2)
+        driver.find_element(By.ID, 'enviar').click()
+        sleep(1)
+        driver.find_element(By.ID, 'confirmar').click()
+
+        pets = driver.find_element(By.NAME, 'nome_pet')
+        assert pets.text == 'Animal1'
+        sleep(2)
+        driver.close()
+
+        nomePet = driver.find_element(By.ID, 'nomePet').get_attribute("value")
+        especie = driver.find_element(By.ID, 'especie').get_attribute("value")
+        raca = driver.find_element(By.ID, 'nomePet').get_attribute("value")
+        dtNasc = driver.find_element(By.ID, 'dtNasc').get_attribute("value")
+        sexo = driver.find_element(By.ID, 'sexo').get_attribute("value")
+        peso = driver.find_element(By.ID, 'peso').get_attribute("value")
+        porte = driver.find_element(By.ID, 'porte').get_attribute("value")
+
+        assert nomePet == "Animal1" and especie == "C" and dtNasc == "2023-06-02" and raca == "C"
+        assert sexo == "M" and peso == "1" and porte == "G"
+
+        driver.close()
+
+
+    def teste_alterar_cadastro_pet(self):
+        driver = set_up()
+        driver.get('http://127.0.0.1:8000/homeAdm/')
+
+        driver.find_element(By.ID, 'cadastrar_tutor').click()
+
+        driver.find_element(By.ID, 'nome').send_keys('Mariane Beatriz Soares Fontes')
+        driver.find_element(By.ID, 'cpf').send_keys('704.358.274-13')
+        driver.find_element(By.ID, 'dataNascimento').send_keys('19092000')
+        driver.find_element(By.ID, 'celular').send_keys('(81)988877800')
+        driver.find_element(By.ID, 'email').send_keys(
+            'mbsf@cesar.school')
+        sleep(1)
+        driver.find_element(By.ID, 'enviar').click()
+        sleep(1)
+        driver.find_element(By.ID, 'confirmar').click()
+        sleep(1)
+
+        elements = driver.find_elements(By.ID, 'nome_tutor')
+        for i in elements:
+            if i.text == 'Mariane Beatriz Soares Fontes':
+                i.click()
+                break
+
+        sleep(2)
+        driver.find_element(By.ID, 'cadastrar_pet').click()
+        sleep(2)
+
+        driver.find_element(By.ID, 'nomePet').send_keys('Animal2')
+        driver.find_element(By.ID, 'especie').send_keys('C')
+        driver.find_element(By.ID, 'raca').send_keys('C')
+        driver.find_element(By.ID, 'dtNasc').send_keys('02062023')
+        driver.find_element(By.ID, 'sexo').click('M')
+        driver.find_element(By.ID, 'peso').send_keys(1)
+        driver.find_element(By.ID, 'porte').send_keys('G')
+        sleep(2)
+        driver.find_element(By.ID, 'enviar').click()
+        sleep(1)
+        driver.find_element(By.ID, 'confirmar').click()
+
+        pets = driver.find_element(By.NAME, 'nome_pet')
+        assert pets.text == 'Animal2'
+        sleep(2)
+        driver.close()
+
+        driver.find_element(By.ID, 'alterar_pet').click()
+        sleep(2)
+
+        driver.find_element(By.ID, 'raca').clear()
+        driver.find_element(By.ID, 'raca').send_keys('SRD')
+        sleep(1)
+
+        driver.find_element(By.ID, 'dtNasc').clear()
+        driver.find_element(By.ID, 'dtNasc').send_keys('12032012')
+        sleep(1)
+
+        driver.find_element(By.ID, 'peso').clear()
+        driver.find_element(By.ID, 'peso').send_keys('2')
+        sleep(1)
+
+        driver.find_element(By.ID, 'enviar').click()
+        sleep(2)
+        driver.find_element(By.ID, 'confirmar').click()
+        sleep(2)
+
+        assert driver.find_element(By.ID, 'raca_pet').text == "Raça: SRD" and\
+            driver.find_element(By.ID, 'data_pet').text == "Data de nascimento: March 12, 2012" and\
+            driver.find_element(By.ID, 'peso_pet').text == "Peso: 2Kg"
+
+        driver.close()
+
+    def teste_alterar_cadastro_faltando_dados_pet(self):
+        driver = set_up()
+        driver.get('http://127.0.0.1:8000/homeAdm/')
+
+        driver.find_element(By.ID, 'cadastrar_tutor').click()
+
+        driver.find_element(By.ID, 'nome').send_keys('Mariane Beatriz Soares Fontes')
+        driver.find_element(By.ID, 'cpf').send_keys('704.358.274-13')
+        driver.find_element(By.ID, 'dataNascimento').send_keys('19092000')
+        driver.find_element(By.ID, 'celular').send_keys('(81)988877800')
+        driver.find_element(By.ID, 'email').send_keys(
+            'mbsf@cesar.school')
+        sleep(1)
+        driver.find_element(By.ID, 'enviar').click()
+        sleep(1)
+        driver.find_element(By.ID, 'confirmar').click()
+        sleep(1)
+
+        elements = driver.find_elements(By.ID, 'nome_tutor')
+        for i in elements:
+            if i.text == 'Mariane Beatriz Soares Fontes':
+                i.click()
+                break
+
+        sleep(2)
+        driver.find_element(By.ID, 'cadastrar_pet').click()
+        sleep(2)
+
+        driver.find_element(By.ID, 'nomePet').send_keys('Animal3')
+        driver.find_element(By.ID, 'especie').send_keys('C')
+        driver.find_element(By.ID, 'raca').send_keys('C')
+        driver.find_element(By.ID, 'dtNasc').send_keys('02062023')
+        driver.find_element(By.ID, 'sexo').click('M')
+        driver.find_element(By.ID, 'peso').send_keys(1)
+        driver.find_element(By.ID, 'porte').send_keys('G')
+        sleep(2)
+        driver.find_element(By.ID, 'enviar').click()
+        sleep(1)
+        driver.find_element(By.ID, 'confirmar').click()
+
+        pets = driver.find_element(By.NAME, 'nome_pet')
+        assert pets.text == 'Animal3'
+        sleep(2)
+        driver.close()
+
+        driver.find_element(By.ID, 'alterar_pet').click()
+        sleep(2)
+
+        driver.find_element(By.ID, 'especie').clear()
+        driver.find_element(By.ID, 'especie').send_keys('Felino')
+        sleep(1)
+
+        driver.find_element(By.ID, 'dtNasc').clear()
+        driver.find_element(By.ID, 'dtNasc').send_keys('02052017')
+        sleep(1)
+
+        driver.find_element(By.ID, 'nomePet').clear()
+        sleep(1)
+
+        count = 0
+
+        driver.find_element(By.ID, 'nomePet').send_keys(Keys.ENTER)
+        count += 1
+        driver.find_element(By.ID, 'nomePet').send_keys(Keys.ENTER)
+        count += 1
+
+        assert count == 2
+
+        driver.close()
+
 
     def teste_cancelarMarcarVacina(self):
         driver = set_up()
