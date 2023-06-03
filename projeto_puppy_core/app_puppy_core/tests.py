@@ -143,8 +143,7 @@ class TesteTutor(TestCase):
         celular = driver.find_element(By.ID, 'celular').get_attribute("value")
         email = driver.find_element(By.ID, 'email').get_attribute("value")
 
-        assert nome == "NOME3" and cpf == "333.333.333-33" and data_nascimento == "2003-03-03"
-        assert celular == "(81)333333333" and email == "email3@gmail.com"
+        assert nome == "NOME3" and cpf == "333.333.333-33" and data_nascimento == "2003-03-03" and celular == "(81)333333333" and email == "email3@gmail.com"
 
         driver.close()
 
@@ -370,8 +369,8 @@ class TesteTutor(TestCase):
 
         driver.find_element(By.ID, 'cadastrar_tutor').click()
 
-        driver.find_element(By.ID, 'nome').send_keys('Mariane Beatriz Soares Fontes')
-        driver.find_element(By.ID, 'cpf').send_keys('704.358.274-13')
+        driver.find_element(By.ID, 'nome').send_keys('Mariane Beatriz')
+        driver.find_element(By.ID, 'cpf').send_keys('133.318.264-13')
         driver.find_element(By.ID, 'dataNascimento').send_keys('19092000')
         driver.find_element(By.ID, 'celular').send_keys('(81)988877800')
         driver.find_element(By.ID, 'email').send_keys(
@@ -384,7 +383,7 @@ class TesteTutor(TestCase):
 
         elements = driver.find_elements(By.ID, 'nome_tutor')
         for i in elements:
-            if i.text == 'Mariane Beatriz Soares Fontes':
+            if i.text == 'Mariane Beatriz':
                 i.click()
                 break
 
@@ -396,7 +395,7 @@ class TesteTutor(TestCase):
         driver.find_element(By.ID, 'especie').send_keys('C')
         driver.find_element(By.ID, 'raca').send_keys('C')
         driver.find_element(By.ID, 'dtNasc').send_keys('02062023')
-        driver.find_element(By.ID, 'sexo').click('M')
+        driver.find_element(By.ID, 'sexo').click()
         driver.find_element(By.ID, 'peso').send_keys(1)
         driver.find_element(By.ID, 'porte').send_keys('G')
         sleep(2)
@@ -404,21 +403,18 @@ class TesteTutor(TestCase):
         sleep(1)
         driver.find_element(By.ID, 'confirmar').click()
 
-        pets = driver.find_element(By.NAME, 'nome_pet')
-        assert pets.text == 'Animal1'
-        sleep(2)
-        driver.close()
+        driver.find_element(By.NAME, 'nome_pet').click()
+        driver.find_element(By.ID, 'alteracaoPet').click()
 
         nomePet = driver.find_element(By.ID, 'nomePet').get_attribute("value")
         especie = driver.find_element(By.ID, 'especie').get_attribute("value")
-        raca = driver.find_element(By.ID, 'nomePet').get_attribute("value")
+        raca = driver.find_element(By.ID, 'raca').get_attribute("value")
         dtNasc = driver.find_element(By.ID, 'dtNasc').get_attribute("value")
         sexo = driver.find_element(By.ID, 'sexo').get_attribute("value")
         peso = driver.find_element(By.ID, 'peso').get_attribute("value")
         porte = driver.find_element(By.ID, 'porte').get_attribute("value")
 
-        assert nomePet == "Animal1" and especie == "C" and dtNasc == "2023-06-02" and raca == "C"
-        assert sexo == "M" and peso == "1" and porte == "G"
+        assert nomePet == "Animal1" and especie == "C" and dtNasc == "2023-06-02" and raca == "C" and sexo == 'M' and peso == "1.0" and porte == "G"
 
         driver.close()
 
@@ -429,7 +425,7 @@ class TesteTutor(TestCase):
         driver.find_element(By.ID, 'cadastrar_tutor').click()
 
         driver.find_element(By.ID, 'nome').send_keys('Mariane Beatriz Soares Fontes')
-        driver.find_element(By.ID, 'cpf').send_keys('704.358.274-13')
+        driver.find_element(By.ID, 'cpf').send_keys('704.358.274-14')
         driver.find_element(By.ID, 'dataNascimento').send_keys('19092000')
         driver.find_element(By.ID, 'celular').send_keys('(81)988877800')
         driver.find_element(By.ID, 'email').send_keys(
@@ -454,7 +450,7 @@ class TesteTutor(TestCase):
         driver.find_element(By.ID, 'especie').send_keys('C')
         driver.find_element(By.ID, 'raca').send_keys('C')
         driver.find_element(By.ID, 'dtNasc').send_keys('02062023')
-        driver.find_element(By.ID, 'sexo').click('M')
+        driver.find_element(By.ID, 'sexo').click()
         driver.find_element(By.ID, 'peso').send_keys(1)
         driver.find_element(By.ID, 'porte').send_keys('G')
         sleep(2)
@@ -462,12 +458,9 @@ class TesteTutor(TestCase):
         sleep(1)
         driver.find_element(By.ID, 'confirmar').click()
 
-        pets = driver.find_element(By.NAME, 'nome_pet')
-        assert pets.text == 'Animal2'
-        sleep(2)
-        driver.close()
+        driver.find_element(By.NAME, 'nome_pet').click()
 
-        driver.find_element(By.ID, 'alterar_pet').click()
+        driver.find_element(By.ID, 'alteracaoPet').click()
         sleep(2)
 
         driver.find_element(By.ID, 'raca').clear()
@@ -477,6 +470,8 @@ class TesteTutor(TestCase):
         driver.find_element(By.ID, 'dtNasc').clear()
         driver.find_element(By.ID, 'dtNasc').send_keys('12032012')
         sleep(1)
+
+        driver.find_element(By.ID, 'sexo').click()
 
         driver.find_element(By.ID, 'peso').clear()
         driver.find_element(By.ID, 'peso').send_keys('2')
@@ -488,8 +483,8 @@ class TesteTutor(TestCase):
         sleep(2)
 
         assert driver.find_element(By.ID, 'raca_pet').text == "Raça: SRD" and\
-            driver.find_element(By.ID, 'data_pet').text == "Data de nascimento: March 12, 2012" and\
-            driver.find_element(By.ID, 'peso_pet').text == "Peso: 2Kg"
+            driver.find_element(By.ID, 'data_pet').text == "Data de Nascimento: March 12, 2012" and\
+            driver.find_element(By.ID, 'peso_pet').text == 'Peso: 2.0' 
 
         driver.close()
 

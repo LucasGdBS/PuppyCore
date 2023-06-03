@@ -205,7 +205,7 @@ def alteracaoPet(request, pk: int, id_pet: int):
         return render(request, template_name='clinica/alteracaoPet.html', context={'form': form})
     
     elif request.method == 'POST':
-        pet = Pet.objects.get(pk=pk)
+        pet = Pet.objects.get(pk=id_pet)
         form = petCadastro(request.POST,instance=pet)
 
         if form.is_valid():
