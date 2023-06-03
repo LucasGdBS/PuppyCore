@@ -17,10 +17,7 @@ def set_up():
 class TesteTutor(TestCase):
 
     def teste_ver_tutores(self):
-        chrome_options = webdriver.ChromeOptions()
-        chrome_options.add_argument('--icognito')
-        driver = webdriver.Chrome(options=chrome_options)
-
+        driver = set_up()
         driver.get('http://127.0.0.1:8000')
         sleep(2)
 
