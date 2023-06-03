@@ -30,4 +30,5 @@ jobs:
         pip install -r projeto_puppy_core/requirements.txt
     - name: Run Tests
       run: |
+        cd .\projeto_puppy_core\
         python manage.py test
