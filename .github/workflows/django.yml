@@ -34,6 +34,7 @@ jobs:
         chromedriver --url-base=/wd/hub &
     - name: Run Tests
       run: |
+        cd projeto_puppy_core
         python manage.py runserver &
         sleep 5
         python manage.py test
