@@ -6,9 +6,9 @@ from time import sleep
 
 
 def set_up():
-    chrome_options = webdriver.ChromeOptions()
-    chrome_options.add_argument('--icognito')
-    driver = webdriver.Chrome(options=chrome_options)
+    # chrome_options = webdriver.ChromeOptions()
+    # chrome_options.add_argument('--icognito')
+    driver = webdriver.Edge()
     driver.maximize_window()
 
     return driver
