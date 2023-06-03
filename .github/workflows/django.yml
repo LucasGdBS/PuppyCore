@@ -31,7 +31,5 @@ jobs:
         pip install msedge-selenium-tools
     - name: Run Tests
       run: |
-        cd projeto_puppy_core
-        python manage.py runserver
-        sleep 3
+        cd projeto_puppy_core        
         python manage.py test
