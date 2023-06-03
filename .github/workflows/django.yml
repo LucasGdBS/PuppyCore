@@ -27,12 +27,12 @@ jobs:
         wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
         sudo apt install ./google-chrome-stable_current_amd64.deb
         python -m pip install --upgrade pip
-        pip install -r requirements.txt
+        pip install -r projeto_puppy_core/requirements.txt
         pip install msedge-selenium-tools
     - uses: nanasess/setup-chromedriver@v2
     - run: |
         chromedriver --url-base=/wd/hub &
-    - name: Run local Server
+    - name: Run Tests
       run: |
         python manage.py runserver &
         sleep 5
