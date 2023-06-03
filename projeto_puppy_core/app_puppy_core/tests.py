@@ -8,11 +8,11 @@ from time import sleep
 def set_up():
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_argument('--icognito')
-    chrome_options.add_argument("--no-sandbox")
-    chrome_options.add_argument("--headless")
-    chrome_options.add_argument("--disable-gpu")
+    # chrome_options.add_argument("--no-sandbox")
+    # chrome_options.add_argument("--headless")
+    # chrome_options.add_argument("--disable-gpu")
     driver = webdriver.Chrome(options=chrome_options)
-    # driver.maximize_window()
+    driver.maximize_window()
 
     return driver
 
@@ -422,7 +422,6 @@ class TesteTutor(TestCase):
 
         driver.close()
 
-
     def teste_alterar_cadastro_pet(self):
         driver = set_up()
         driver.get('http://127.0.0.1:8000/homeAdm/')
@@ -564,7 +563,6 @@ class TesteTutor(TestCase):
 
         driver.close()
 
-
     def teste_cancelarMarcarVacina(self):
         driver = set_up()
         driver.get('http://127.0.0.1:8000')
@@ -636,7 +634,7 @@ class TesteTutor(TestCase):
 
         driver.close()
 
-    def test_cadastro_exames_elembranco(self):
+    def teste_cadastro_exames_em_branco(self):
         driver = set_up()
         driver.get('http://127.0.0.1:8000/homeAdm/')
         sleep(2)
@@ -645,7 +643,7 @@ class TesteTutor(TestCase):
         sleep(2)
 
         driver.find_element(By.ID, 'nome').send_keys('CapitaoAmerica')
-        driver.find_element(By.ID, 'cpf').send_keys('123.111.456-11')
+        driver.find_element(By.ID, 'cpf').send_keys('123.111.458-11')
         driver.find_element(By.ID, 'dataNascimento').send_keys('01012011')
         driver.find_element(By.ID, 'celular').send_keys('(81)111111111')
         driver.find_element(By.ID, 'email').send_keys('email3@gmail.com')
@@ -679,7 +677,7 @@ class TesteTutor(TestCase):
         driver.find_element(By.NAME, 'nome_pet').click()
         sleep(2)
 
-        driver.find_elment(By.ID, 'cadastra_exame').click()
+        driver.find_element(By.ID, 'cadastra_exame').click()
         sleep(2)
 
         driver.find_element(By.ID, 'nomeVeterinario').send_keys('Gabriel')
@@ -695,7 +693,7 @@ class TesteTutor(TestCase):
 
         driver.close()
 
-    def test_cadastro_exames(self):
+    def teste_cadastro_exames(self):
         driver = set_up()
         driver.get('http://127.0.0.1:8000/homeAdm/')
         sleep(2)
@@ -703,8 +701,8 @@ class TesteTutor(TestCase):
         driver.find_element(By.ID, 'cadastrar_tutor').click()
         sleep(2)
 
-        driver.find_element(By.ID, 'nome').send_keys('Batmam')
-        driver.find_element(By.ID, 'cpf').send_keys('123.178.111-11')
+        driver.find_element(By.ID, 'nome').send_keys('Batman')
+        driver.find_element(By.ID, 'cpf').send_keys('123.178.121-16')
         driver.find_element(By.ID, 'dataNascimento').send_keys('01012011')
         driver.find_element(By.ID, 'celular').send_keys('(81)111111111')
         driver.find_element(By.ID, 'email').send_keys('email3@gmail.com')
@@ -716,14 +714,14 @@ class TesteTutor(TestCase):
 
         elements = driver.find_elements(By.ID, 'nome_tutor')
         for element in elements:
-            if element.text == 'Batmam':
+            if element.text == 'Batman':
                 element.click()
                 break
         sleep(2)
 
         driver.find_element(By.ID, 'cadastrar_pet').click()
 
-        driver.find_element(By.ID, 'nomePet').send_keys('Robim')
+        driver.find_element(By.ID, 'nomePet').send_keys('Robin')
         driver.find_element(By.ID, 'especie').send_keys('Gato')
         driver.find_element(By.ID, 'raca').send_keys('Amarelo')
         driver.find_element(By.ID, 'dtNasc').send_keys('02022022')
@@ -738,16 +736,16 @@ class TesteTutor(TestCase):
         driver.find_element(By.NAME, 'nome_pet').click()
         sleep(2)
 
-        driver.find_elment(By.ID, 'cadastra_exame').click()
+        driver.find_element(By.ID, 'cadastra_exame').click()
         sleep(2)
 
         driver.find_element(By.ID, 'nomeVeterinario').send_keys('SuperHomem')
         driver.find_element(By.ID, 'exame').send_keys('Hemograma')
         driver.find_element(By.ID, 'dataSolicitacao').send_keys('30042023')
         driver.find_element(By.ID, 'dataResultado').send_keys('05052023')
-        driver.find_element(By.ID, 'resultado').send_keys("")
+        driver.find_element(By.ID, 'resultado').send_keys("Exemplo de resultado")
         sleep(2)
-        driver.find_element(By.ID, 'cancelar').click()
+        driver.find_element(By.ID, 'enviar').click()
         sleep(1)
 
         driver.close()
