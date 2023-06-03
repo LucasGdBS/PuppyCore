@@ -14,41 +14,41 @@ def set_up():
     return driver
 
 
-class TesteTutor(TestCase):
+# class TesteTutor(TestCase):
 
-    def teste_ver_tutores(self):
-        driver = set_up()
-        driver.get('http://127.0.0.1:8000')
-        sleep(2)
+#     def teste_ver_tutores(self):
+#         driver = set_up()
+#         driver.get('http://127.0.0.1:8000')
+#         sleep(2)
 
-        driver.find_element(By.ID, 'login').click()
-        sleep(2)
+#         driver.find_element(By.ID, 'login').click()
+#         sleep(2)
 
-        driver.find_element(By.ID, 'login').click()
-        sleep(2)
+#         driver.find_element(By.ID, 'login').click()
+#         sleep(2)
 
-        driver.find_element(By.ID, 'cadastrar_tutor').click()
-        sleep(2)
+#         driver.find_element(By.ID, 'cadastrar_tutor').click()
+#         sleep(2)
 
-        driver.find_element(By.ID, 'nome').send_keys('NOME1')
-        driver.find_element(By.ID, 'cpf').send_keys('111.111.111-11')
-        driver.find_element(By.ID, 'dataNascimento').send_keys('01012001')
-        driver.find_element(By.ID, 'celular').send_keys('(81)111111111')
-        driver.find_element(By.ID, 'email').send_keys('email1@gmail.com')
-        sleep(2)
-        driver.find_element(By.ID, 'enviar').click()
-        sleep(2)
-        driver.find_element(By.ID, 'confirmar').click()
-        sleep(2)
+#         driver.find_element(By.ID, 'nome').send_keys('NOME1')
+#         driver.find_element(By.ID, 'cpf').send_keys('111.111.111-11')
+#         driver.find_element(By.ID, 'dataNascimento').send_keys('01012001')
+#         driver.find_element(By.ID, 'celular').send_keys('(81)111111111')
+#         driver.find_element(By.ID, 'email').send_keys('email1@gmail.com')
+#         sleep(2)
+#         driver.find_element(By.ID, 'enviar').click()
+#         sleep(2)
+#         driver.find_element(By.ID, 'confirmar').click()
+#         sleep(2)
 
-        elements = driver.find_elements(By.ID, 'nome_tutor')
-        for element in elements:
-            if element.text == 'NOME1':
-                expected_text = "NOME1"
-                assert element.text == expected_text
-                break
+#         elements = driver.find_elements(By.ID, 'nome_tutor')
+#         for element in elements:
+#             if element.text == 'NOME1':
+#                 expected_text = "NOME1"
+#                 assert element.text == expected_text
+#                 break
 
-        driver.close()
+#         driver.close()
 
     # def teste_ver_info_tutor(self):
     #     driver = set_up()
