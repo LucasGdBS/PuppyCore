@@ -50,6 +50,13 @@ jobs:
     - name: Generate deployment package
       run: |
         cd projeto_puppy_core
+        python manage.py migrate
+        sleep 2
+        python manage.py createsuperuser
+        sleep 1
+        admin
+        sleep 1
+        admin
         zip -r deploy.zip . -x '*.git*'
       
     - name: Deploy to EB
