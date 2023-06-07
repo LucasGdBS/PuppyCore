@@ -8,7 +8,7 @@ on:
 
 jobs:
   test:
-
+  
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 4
@@ -30,9 +30,6 @@ jobs:
         sudo apt install ./google-chrome-stable_current_amd64.deb
         python -m pip install --upgrade pip
         pip install -r projeto_puppy_core/requirements.txt
-#     - uses: nanasess/setup-chromedriver@v2
-#     - run: |
-#         chromedriver --url-base=/wd/hub &
     - name: Run Tests
       run: |
         cd projeto_puppy_core
@@ -41,3 +38,30 @@ jobs:
         python manage.py runserver &
         sleep 5
         python manage.py test
+
+  deploy:
+    needs: [test]
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout source code
+      uses: actions/checkout@v2
+      
+    - name: Generate deployment package
+      run: |
+        cd projeto_puppy_core
+        zip -r deploy.zip . -x '*.git*'
+      
+    - name: Deploy to EB
+      uses: einaregilsson/beanstalk-deploy@v20
+      with:
+        aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        application_name: PuppyCore
+        environment_name: PuppyCore-env
+        version_label: 12348
+        region: "sa-east-1"
+        deployment_package: deploy.zip
+      
+    
+      
