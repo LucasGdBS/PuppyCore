@@ -2,12 +2,12 @@ name: Django CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "CI/CD" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "CI/CD" ]
 
 jobs:
-  build:
+  test:
 
     runs-on: ubuntu-latest
     strategy:
@@ -30,9 +30,9 @@ jobs:
         sudo apt install ./google-chrome-stable_current_amd64.deb
         python -m pip install --upgrade pip
         pip install -r projeto_puppy_core/requirements.txt
-    - uses: nanasess/setup-chromedriver@v2
-    - run: |
-        chromedriver --url-base=/wd/hub &
+#     - uses: nanasess/setup-chromedriver@v2
+#     - run: |
+#         chromedriver --url-base=/wd/hub &
     - name: Run Tests
       run: |
         cd projeto_puppy_core
