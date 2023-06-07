@@ -70,7 +70,7 @@ jobs:
         environment_name: PuppyCore-env
         version_label: 12348
         region: "sa-east-1"
-        deployment_package: deploy.zip
+        deployment_package:  projeto_puppy_core/deploy.zip
       
     
       
