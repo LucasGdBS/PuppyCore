@@ -47,8 +47,15 @@ jobs:
     - name: Checkout source code
       uses: actions/checkout@v2
       
+    - name: Install dependencies
+      run: |
+        set -ex
+        python -m pip install --upgrade pip
+        pip install -r projeto_puppy_core/requirements.txt
+      
     - name: Generate deployment package
       run: |
+        set -ex
         cd projeto_puppy_core
         python manage.py migrate
         sleep 2
