@@ -18,7 +18,7 @@
 
 <body class="site_body">
     <header class="site-header">
-        <img class="logo" alt="Woof" onclick="window.location.replace('/homeAdm/')"
+        <img class="logo" alt="Woof" onclick="history.back()"
             src="{% static 'app_puppy_core/images/logomaisnome.png' %}">
     </header>
     <div class="forms_title">
@@ -46,7 +46,7 @@
                     checked></label>
             <br>
             <button id='cancelar' type="button"
-                onclick="window.location.replace('/homeAdm/')">Cancelar</button>
+            onclick="history.back()">Cancelar</button>
             <button id='enviar' type="submit">Salvar Alterações</button>
         </form>
     </div>

@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="{% static 'app_puppy_core/sections.css' %}">
     <link rel="stylesheet" href="{% static 'app_puppy_core/texts.css' %}">
     <link rel="stylesheet" href="{% static 'app_puppy_core/reset.css' %}">
-    <title>Cartão de Exames</title>
+    <title>Cartão de Vacinas</title>
 </head>
 
 <body>
@@ -25,26 +25,19 @@
         <div class="table, table th, table td">
             <table>
                 <tr>
-                    <th>Data Solicitação</th>
-                    <th>Nome do Exame</th>
-                    <th>Data do Resultado</th>
-                    <th>Veterinário</th>
-                    <th>Resultados</th>
+                    <th>Médico Veterinário</th>
+                    <th>Tipo de Vacina</th>
+                    <th>Data da Aplicação</th>
                 </tr>
-                {% for CartaoExames in dados %}
+                {% for item in dados %}
                 <tr>
-                    <td>{{ CartaoExames.dataSolicitacao }}</td>
-                    <td>{{ CartaoExames.exame }}</td>
-                    <td>{{ CartaoExames.dataResultado }}</td>
-                    <td>{{ CartaoExames.nomeVeterinario}}</td>
-                    <td><div class="button-container-footer">
-                            <button type="button" class="button-base-footer"
-                            onclick="window.alert('Funcionalidade Indisponível')">+</button>
-                    </div></td>
+                    <td>{{ item.nomeVeterinario }}</td>
+                    <td>{{ item.tipoVacina }}</td>
+                    <td>{{item.dataVacina}}</td>
                 </tr>
                 {% endfor %}
             </table>
-        </div>      
+        </div>
     </main>
     <footer class="site-footer">
         <div class="button-container-footer">
@@ -52,7 +45,6 @@
                 onclick="window.alert('Funcionalidade Indisponível')">?</button>
         </div>
     </footer>
-
 </body>
 
 </html>
