@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+<!doctype html>
 {%load static%}
 
-<html>
+<html lang="pt-br">
 
 <head>
     <meta charset="utf-8">
@@ -13,23 +13,32 @@
     <link rel="stylesheet" href="{% static 'app_puppy_core/sections.css' %}">
     <link rel="stylesheet" href="{% static 'app_puppy_core/texts.css' %}">
     <link rel="stylesheet" href="{% static 'app_puppy_core/reset.css' %}">
-    <title>Área do Tutor</title>
+    <title>Cartão de Vacinas</title>
 </head>
 
 <body>
     <header class="site-header">
-        <img class="logo" alt="Woof" onclick="window.location.replace('/')"
+        <img class="logo" alt="Woof" onclick="window.location.replace('/homeAdm/infoTutor/{{ pk }}/infoPet/{{ id_pet }}/')"
             src="{% static 'app_puppy_core/images/logomaisnome.png' %}">
     </header>
-
     <main class="site-main">
-        <div>
-            <button id="marcar_vacina" type="button" class="button_color"
-                onclick="window.location.replace('cartaoVacinas/ ')">Cartão de Vacinas</button>
+        <div class="table, table th, table td">
+            <table>
+                <tr>
+                    <th>Médico Veterinário</th>
+                    <th>Tipo de Vacina</th>
+                    <th>Data da Aplicação</th>
+                </tr>
+                {% for item in dados %}
+                <tr>
+                    <td>{{ item.nomeVeterinario }}</td>
+                    <td>{{ item.tipoVacina }}</td>
+                    <td>{{item.dataVacina}}</td>
+                </tr>
+                {% endfor %}
+            </table>
         </div>
-
     </main>
-
     <footer class="site-footer">
         <div class="button-container-footer">
             <button type="button" class="button-base-footer"

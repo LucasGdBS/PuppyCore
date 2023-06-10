@@ -179,7 +179,7 @@ def cartaoVacinaAdm(request, pk: int, id_pet: int):
 
     }
 
-    return render(request, 'tutor/verVacinas.html', context)
+    return render(request, 'clinica/verVacinas.html', context)
 
 def vacinar(request):
     if request.method == 'POST':
