@@ -328,7 +328,11 @@ class TesteTutor(TestCase):
     #     driver.find_element(By.ID, 'confirmar').click()
     #     sleep(1)
 
-    #     driver.find_element(By.NAME, 'Capitã Marvel').click()
+    #     elements = driver.find_elements(By.ID, 'nome_tutor')
+    #     for i in elements:
+    #         if i.text == 'Capitã Marvel':
+    #             i.click()
+    #             break
     #     sleep(2)
     #     driver.find_element(By.ID, 'cadastrar_pet').click()
 
@@ -395,7 +399,7 @@ class TesteTutor(TestCase):
         driver.find_element(By.ID, 'raca').send_keys('C')
         driver.find_element(By.ID, 'dtNasc').send_keys('02062023')
         driver.find_element(By.ID, 'sexo').click()
-        driver.find_element(By.ID, 'peso').send_keys(1)
+        driver.find_element(By.ID, 'peso').send_keys('1')
         driver.find_element(By.ID, 'porte').send_keys('G')
         sleep(2)
         driver.find_element(By.ID, 'enviar').click()
@@ -450,7 +454,7 @@ class TesteTutor(TestCase):
         driver.find_element(By.ID, 'raca').send_keys('C')
         driver.find_element(By.ID, 'dtNasc').send_keys('02062023')
         driver.find_element(By.ID, 'sexo').click()
-        driver.find_element(By.ID, 'peso').send_keys(1)
+        driver.find_element(By.ID, 'peso').send_keys('1')
         driver.find_element(By.ID, 'porte').send_keys('G')
         sleep(2)
         driver.find_element(By.ID, 'enviar').click()
@@ -483,7 +487,7 @@ class TesteTutor(TestCase):
 
         assert driver.find_element(By.ID, 'raca_pet').text == "Raça: SRD" and\
             driver.find_element(By.ID, 'data_pet').text == "Data de Nascimento: March 12, 2012" and\
-            driver.find_element(By.ID, 'peso_pet').text == 'Peso: 1.0' 
+            driver.find_element(By.ID, 'peso_pet').text == 'Peso: 2.0' 
 
         driver.close()
 
