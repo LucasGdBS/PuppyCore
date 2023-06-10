@@ -18,7 +18,7 @@ def set_up():
 
 class TesteTutor(TestCase):
 
-    def teste_ver_tutores(self): # OK
+    def teste_ver_tutores(self):
         driver = set_up()
         driver.get('http://127.0.0.1:8000')
         sleep(2)
@@ -104,7 +104,7 @@ class TesteTutor(TestCase):
 
     #     driver.close()
 
-    def teste_dados_alterar_preenchidos(self): # OK
+    def teste_dados_alterar_preenchidos(self): 
         driver = set_up()
         driver.get('http://127.0.0.1:8000')
         sleep(2)
@@ -152,7 +152,7 @@ class TesteTutor(TestCase):
 
         driver.close()
 
-    def teste_alterar_cadastro(self): # OK
+    def teste_alterar_cadastro(self): 
         driver = set_up()
         driver.get('http://127.0.0.1:8000')
         sleep(2)
@@ -207,7 +207,7 @@ class TesteTutor(TestCase):
 
         driver.close()
 
-    def teste_alterar_cadastro_faltando_dados(self): # OK
+    def teste_alterar_cadastro_faltando_dados(self): 
         driver = set_up()
         driver.get('http://127.0.0.1:8000')
         sleep(2)
@@ -304,7 +304,7 @@ class TesteTutor(TestCase):
     #     sleep(2)
     #     driver.close()
 
-    def teste_ver_info_pet(self): # Erro no comando de click
+    def teste_ver_info_pet(self):
         driver = set_up()
         driver.get('http://127.0.0.1:8000/')
 
@@ -364,7 +364,7 @@ class TesteTutor(TestCase):
 
         driver.close()
   
-    def teste_dados_alterar_preenchidos_pet(self): # Dando erro no assert
+    def teste_dados_alterar_preenchidos_pet(self):
         driver = set_up()
         driver.get('http://127.0.0.1:8000/homeAdm/')
 
@@ -425,7 +425,7 @@ class TesteTutor(TestCase):
 
         driver.close()
 
-    def teste_alterar_cadastro_pet(self):# Dando erro no assert
+    def teste_alterar_cadastro_pet(self):
         driver = set_up()
         driver.get('http://127.0.0.1:8000/homeAdm/')
 
@@ -565,7 +565,7 @@ class TesteTutor(TestCase):
     #     driver.close()
 
 
-    def teste_confirmarMarcarVacina(self): # OK
+    def teste_confirmarMarcarVacina(self): 
         driver = set_up()
         driver.get('http://127.0.0.1:8000/homeAdm/cadastroTutor/')
 
@@ -628,7 +628,7 @@ class TesteTutor(TestCase):
         driver.close()
 
 
-    def teste_incompletoMarcarVacina(self): # OK
+    def teste_incompletoMarcarVacina(self): 
         driver = set_up()
         driver.get('http://127.0.0.1:8000/homeAdm/')
 
@@ -685,7 +685,7 @@ class TesteTutor(TestCase):
 
         driver.close()
 
-    def teste_cadastro_exames_em_branco(self): # OK
+    def teste_cadastro_exames_em_branco(self): 
         driver = set_up()
         driver.get('http://127.0.0.1:8000/homeAdm/')
         sleep(2)
@@ -744,7 +744,7 @@ class TesteTutor(TestCase):
 
         driver.close()
 
-    def teste_cadastro_exames(self): # Failed
+    def teste_cadastro_exames(self): 
         driver = set_up()
         driver.get('http://127.0.0.1:8000/homeAdm/')
         sleep(2)
