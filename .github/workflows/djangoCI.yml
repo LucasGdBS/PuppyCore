@@ -68,7 +68,7 @@ jobs:
         aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         application_name: PuppyCore
         environment_name: PuppyCore-env
-        version_label: V4.1
+        version_label: V4.2
         region: "sa-east-1"
         deployment_package:  projeto_puppy_core/deploy.zip
       
