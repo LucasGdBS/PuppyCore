@@ -128,6 +128,8 @@ Com isso seu ambiente estará pronto para começar a desenvolver com o django!
   <h3 align="center">Relato Pair Programming</h3>
   <p>Nossa equipe tem desfrutado de uma experiência extremamente positiva ao continuar praticando o pair programming. Podemos afirmar que, ao adotar esse método, conseguimos avançar mais facilmente em nosso aprendizado. Além de que trabalhando em pares, somos capazes de produzir um código mais limpo, eficiente e de qualidade superior.A colaboração constante nos permite compartilhar conhecimentos e aprender uns com os outros, fortalecendo a coesão da equipe e aprimorando nossas habilidades de trabalho em equipe. Como resultado, conseguimos identificar problemas e soluções de forma mais rápida, tornando o processo de desenvolvimento mais eficiente, pois podemos nos ajudar mutuamente durante todo o processo. Ao dividir as tarefas em grupos de duas pessoas, podemos compartilhar nossas especialidades, tornando a equipe mais diversificada e capaz de enfrentar diversos desafios. Sintetizando tudo, conseguimos concluir com sucesso a quarta entrega graças à fluidez do processo, que foi facilitada pelo uso desse método.</p>
   
+Slide usado na apresentação: https://drive.google.com/file/d/1HEmuTrkreFfq829hh_gQ2zOuD2jLvW0T/view?usp=sharing
+  
 
   
 
